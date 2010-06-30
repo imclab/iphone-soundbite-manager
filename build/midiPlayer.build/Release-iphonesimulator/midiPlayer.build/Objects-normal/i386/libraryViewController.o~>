@@ -1,0 +1,8 @@
+/Users/aaronleese/Desktop/FlyLoops/iphone/audioPlayer/Classes/../libraryViewController.mm: In function 'void -[libraryViewController refreshLibrary](libraryViewController*, objc_selector*)':
+/Users/aaronleese/Desktop/FlyLoops/iphone/audioPlayer/Classes/../libraryViewController.mm:106: warning: 'UIView' may not respond to '-reloadData'
+/Users/aaronleese/Desktop/FlyLoops/iphone/audioPlayer/Classes/../libraryViewController.mm:106: warning: (Messages without a matching method signature
+/Users/aaronleese/Desktop/FlyLoops/iphone/audioPlayer/Classes/../libraryViewController.mm:106: warning: will be assumed to return 'id' and accept
+/Users/aaronleese/Desktop/FlyLoops/iphone/audioPlayer/Classes/../libraryViewController.mm:106: warning: '...' as arguments.)
+/Users/aaronleese/Desktop/FlyLoops/iphone/audioPlayer/Classes/../libraryViewController.mm:77: warning: unused variable 'appDirectory'
+/Users/aaronleese/Desktop/FlyLoops/iphone/audioPlayer/Classes/../libraryViewController.mm: In function 'void -[libraryViewController tableView:didSelectRowAtIndexPath:](libraryViewController*, objc_selector*, UITableView*, NSIndexPath*)':
+/Users/aaronleese/Desktop/FlyLoops/iphone/audioPlayer/Classes/../libraryViewController.mm:120: warning: unused variable 'dbFilePath'

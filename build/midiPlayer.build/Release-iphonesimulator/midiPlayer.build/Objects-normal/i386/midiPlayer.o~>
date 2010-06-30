@@ -1,0 +1,2 @@
+/Users/aaronleese/Desktop/Noteloop/midiplay/Classes/midiPlayer.mm: In member function 'void MidiPlayer::tryLoad()':
+/Users/aaronleese/Desktop/Noteloop/midiplay/Classes/midiPlayer.mm:155: error: 'progress' was not declared in this scope

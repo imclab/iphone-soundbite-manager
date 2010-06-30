@@ -1,0 +1,1053 @@
+TaudioPlayer
+v7
+r0
+t299617511.776391
+cCheck dependencies
+cProcessInfoPlistFile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/Info.plist audioPlayer-Info.plist
+cCompileXIB /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/MainWindow.xib
+cCompileXIB /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/libraryView.xib
+cCompileXIB /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/playView.xib
+cCompileXIB /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/downloadView.xib
+cCpResource build/Release-iphonesimulator/midiPlayer.app/Default.png resources/Default.png
+cCpResource build/Release-iphonesimulator/midiPlayer.app/download.png resources/download.png
+cCpResource build/Release-iphonesimulator/midiPlayer.app/Icon-Small.png resources/Icon-Small.png
+cCpResource build/Release-iphonesimulator/midiPlayer.app/Icon.png resources/Icon.png
+cCpResource build/Release-iphonesimulator/midiPlayer.app/library.png resources/library.png
+cCpResource build/Release-iphonesimulator/midiPlayer.app/play.png resources/play.png
+cCpResource build/Release-iphonesimulator/midiPlayer.app/Hi-Hat4.wav "audio files/Hi-Hat4.wav"
+cCpResource build/Release-iphonesimulator/midiPlayer.app/Hi-Hat5.wav "audio files/Hi-Hat5.wav"
+cCpResource build/Release-iphonesimulator/midiPlayer.app/Hi-Hat6.wav "audio files/Hi-Hat6.wav"
+cCpResource build/Release-iphonesimulator/midiPlayer.app/Hi-Hat7.wav "audio files/Hi-Hat7.wav"
+cProcessPCH++ /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-etfavzopuwmopfbajnlkbbqamren/midiPlayer_Prefix.pch.gch midiPlayer_Prefix.pch normal i386 objective-c++ com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-czoqctmvovxyrvevdeyrlkckirmh/midiPlayer_Prefix.pch.gch midiPlayer_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/main.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/main.mm normal i386 objective-c++ com.apple.compilers.gcc.4_2
+cCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/audioPlayerAppDelegate.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm normal i386 objective-c++ com.apple.compilers.gcc.4_2
+cCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/libraryViewController.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm normal i386 objective-c++ com.apple.compilers.gcc.4_2
+cCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/playViewController.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm normal i386 objective-c++ com.apple.compilers.gcc.4_2
+cCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/downloadViewController.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm normal i386 objective-c++ com.apple.compilers.gcc.4_2
+cCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/NLPDownloadWebView.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIAuthenticationDialog.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIAuthenticationDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIInputStream.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIInputStream.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIFormDataRequest.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIFormDataRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIHTTPRequest.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIHTTPRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASINetworkQueue.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASINetworkQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASINSStringAdditions.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASINSStringAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/Reachability.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/External/Reachability2.0/Reachability.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/libraryManager.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/midiPlayer normal i386
+cGenerateDSYMFile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app.dSYM /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/midiPlayer
+cTouch /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk
+c000000004B69B45C00000000000000EE
+t1265218652
+s238
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+c000000004B2B4DF500000000000120D0
+t1261129205
+s73936
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.h
+c000000004B2B4DEF00000000000000EB
+t1261129199
+s235
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004B2B4D460000000000193960
+t1261129030
+s1653088
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000004B2B4D5700000000001097C0
+t1261129047
+s1087424
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetwork.h
+c000000004B2B4CD600000000000004CF
+t1261128918
+s1231
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h
+c000000004B2B4C170000000000000A99
+t1261128727
+s2713
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004B2B4CC3000000000026EE30
+t1261128899
+s2551344
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B2B4DC8000000000027E880
+t1261129160
+s2615424
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B2B4DAE0000000000001355
+t1261129134
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/MobileCoreServices.framework/Headers/MobileCoreServices.h
+c000000004B2B4DDB00000000000000C7
+t1261129179
+s199
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c000000004B2B4DDC0000000000018E90
+t1261129180
+s102032
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/SystemConfiguration.framework/Headers/SystemConfiguration.h
+c000000004B2B4C490000000000001A78
+t1261128777
+s6776
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c000000004B2B4C500000000000055360
+t1261128784
+s349024
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004B2B61620000000000000788
+t1261134178
+s1928
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004B2B62B500000000016721E0
+t1261134517
+s23536096
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/arpa/inet.h
+c00000000464386D70000000000001533
+t1178830551
+s5427
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/ifaddrs.h
+c00000000464386E00000000000000782
+t1178830560
+s1922
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/netdb.h
+c00000000464386E20000000000002F2B
+t1178830562
+s12075
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/netinet/in.h
+c00000000476344B700000000000052AA
+t1197687991
+s21162
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/netinet6/in6.h
+c00000000476344BA0000000000004970
+t1197687994
+s18800
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/stdio.h
+c000000004748A1330000000000003D1D
+t1195942195
+s15645
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/sys/socket.h
+c00000000476344C000000000000055F1
+t1197688000
+s22001
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/zlib.h
+c000000004748ECC900000000000102A5
+t1195961545
+s66213
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/lib/libz.1.2.3.dylib
+c00000000476CCCD10000000000006EE8
+t1198312657
+s28392
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.h
+c000000004C28356800000000000005F7
+t1277703528
+s1527
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+i"ASIHTTPRequest.h"
+i"ASINetworkQueue.h"
+i"libraryViewController.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm
+c000000004C2835680000000000002C73
+t1277703528
+s11379
+i"downloadViewController.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm
+c000000004C2B94660000000000001002
+t1277924454
+s4098
+i<Foundation/Foundation.h>
+i"libraryViewController.h"
+i"audioPlayerAppDelegate.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm
+c000000004C283568000000000000150E
+t1277703528
+s5390
+i"playViewController.h"
+i"audioPlayerAppDelegate.h"
+i<AVFoundation/AVFoundation.h>
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/ASIHTTPRequest.h
+c000000004C2835610000000000008755
+t1277703521
+s34645
+i<Foundation/Foundation.h>
+i<CFNetwork/CFNetwork.h>
+i<stdio.h>
+i"ASIHTTPRequestConfig.h"
+i"ASIHTTPRequestDelegate.h"
+i"ASIProgressDelegate.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/ASINetworkQueue.h
+c000000004C2835610000000000001182
+t1277703521
+s4482
+i<Foundation/Foundation.h>
+i"ASIHTTPRequestDelegate.h"
+i"ASIProgressDelegate.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.h
+c000000004C28356100000000000004E8
+t1277703521
+s1256
+i<UIKit/UIKit.h>
+i"ASIHTTPRequest.h"
+i"ASINetworkQueue.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m
+c000000004C283561000000000000221A
+t1277703521
+s8730
+i"NLPDownloadWebView.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.h
+c000000004C2B913700000000000004C0
+t1277923639
+s1216
+i<UIKit/UIKit.h>
+i<AVFoundation/AVFoundation.h>
+i"downloadViewController.h"
+i"libraryManager.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm
+c000000004C2B951C0000000000001AED
+t1277924636
+s6893
+i"audioPlayerAppDelegate.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.h
+c000000004C2B9503000000000000015C
+t1277924611
+s348
+i<Foundation/Foundation.h>
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m
+c000000004C2B956400000000000008CD
+t1277924708
+s2253
+i"libraryManager.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/MainWindow.xib
+c000000004C2835610000000000008E6C
+t1277703521
+s36460
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIAuthenticationDialog.h
+c000000004BEC6C8E0000000000000388
+t1273785486
+s904
+i<Foundation/Foundation.h>
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIAuthenticationDialog.m
+c000000004BEC6C8E0000000000002124
+t1273785486
+s8484
+i"ASIAuthenticationDialog.h"
+i"ASIHTTPRequest.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIFormDataRequest.h
+c000000004BEC6C8E0000000000000A6D
+t1273785486
+s2669
+i<Foundation/Foundation.h>
+i"ASIHTTPRequest.h"
+i"ASIHTTPRequestConfig.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIFormDataRequest.m
+c000000004BEC6C8E0000000000002B8E
+t1273785486
+s11150
+i"ASIFormDataRequest.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIHTTPRequest.h
+c000000004BEC6C8E0000000000008755
+t1273785486
+s34645
+i<Foundation/Foundation.h>
+i<CFNetwork/CFNetwork.h>
+i<stdio.h>
+i"ASIHTTPRequestConfig.h"
+i"ASIHTTPRequestDelegate.h"
+i"ASIProgressDelegate.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIHTTPRequest.m
+c000000004BEC8F0E000000000002269E
+t1273794318
+s140958
+i"ASIHTTPRequest.h"
+i<zlib.h>
+i"Reachability.h"
+i"ASIAuthenticationDialog.h"
+i<MobileCoreServices/MobileCoreServices.h>
+i<SystemConfiguration/SystemConfiguration.h>
+i"ASIInputStream.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIHTTPRequestConfig.h
+c000000004BEC6C8E0000000000000832
+t1273785486
+s2098
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIHTTPRequestDelegate.h
+c000000004BEC6C8E0000000000000599
+t1273785486
+s1433
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIInputStream.h
+c000000004BEC6C8E00000000000003C9
+t1273785486
+s969
+i<Foundation/Foundation.h>
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIInputStream.m
+c000000004BEC6C8E0000000000000BF0
+t1273785486
+s3056
+i"ASIInputStream.h"
+i"ASIHTTPRequest.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASINSStringAdditions.h
+c000000004BEC6C8E0000000000000173
+t1273785486
+s371
+i<Foundation/Foundation.h>
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASINSStringAdditions.m
+c000000004BEC6C8E000000000000030B
+t1273785486
+s779
+i"ASINSStringAdditions.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASINetworkQueue.h
+c000000004BEC6C8E0000000000001182
+t1273785486
+s4482
+i<Foundation/Foundation.h>
+i"ASIHTTPRequestDelegate.h"
+i"ASIProgressDelegate.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASINetworkQueue.m
+c000000004BEC86500000000000002993
+t1273792080
+s10643
+i"ASINetworkQueue.h"
+i"ASIHTTPRequest.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIProgressDelegate.h
+c000000004BEC6C8E0000000000000678
+t1273785486
+s1656
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/External/Reachability2.0/Reachability.h
+c000000004BEC6C8E0000000000000F19
+t1273785486
+s3865
+i<Foundation/Foundation.h>
+i<SystemConfiguration/SystemConfiguration.h>
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/External/Reachability2.0/Reachability.m
+c000000004BEC908E00000000000023A7
+t1273794702
+s9127
+i<sys/socket.h>
+i<netinet/in.h>
+i<netinet6/in6.h>
+i<arpa/inet.h>
+i<ifaddrs.h>
+i<netdb.h>
+i<CoreFoundation/CoreFoundation.h>
+i"Reachability.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/audio files/Hi-Hat4.wav
+c000000004C283561000000000000B7F8
+t1277703521
+s47096
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/audio files/Hi-Hat5.wav
+c000000004C283561000000000000AE10
+t1277703521
+s44560
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/audio files/Hi-Hat6.wav
+c000000004C283561000000000000B87C
+t1277703521
+s47228
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/audio files/Hi-Hat7.wav
+c000000004C2835610000000000016EF0
+t1277703521
+s93936
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app
+t1277924711
+s646
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app.dSYM
+t1277924711
+s102
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/Default.png
+t1277923294
+s92870
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/Hi-Hat4.wav
+t1277703522
+s47096
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/Hi-Hat5.wav
+t1277703522
+s44560
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/Hi-Hat6.wav
+t1277703522
+s47228
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/Hi-Hat7.wav
+t1277703522
+s93936
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/Icon-Small.png
+t1277923294
+s3587
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/Icon.png
+t1277923294
+s5474
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/Info.plist
+t1277703522
+s598
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/MainWindow.nib
+t1277703522
+s3218
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/PkgInfo
+t1277703522
+s8
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/download.png
+t1277923294
+s2900
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/downloadView.nib
+t1277923295
+s3421
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/library.png
+t1277923294
+s2878
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/libraryView.nib
+t1277923294
+s1367
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/midiPlayer
+t1277924711
+s268468
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/play.png
+t1277923294
+s2994
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/playView.nib
+t1277923294
+s3349
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIAuthenticationDialog.o
+t1277923298
+s62436
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIFormDataRequest.o
+t1277923299
+s38800
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIHTTPRequest.o
+t1277923303
+s282072
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIInputStream.o
+t1277923298
+s22820
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASINSStringAdditions.o
+t1277923299
+s8340
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASINetworkQueue.o
+t1277923299
+s49708
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/NLPDownloadWebView.o
+t1277923298
+s63656
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/Reachability.o
+t1277923300
+s20816
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/audioPlayerAppDelegate.o
+t1277924639
+s67764
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/downloadViewController.o
+t1277923471
+s76544
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/libraryManager.o
+t1277924711
+s11412
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/libraryViewController.o
+t1277924616
+s52032
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/main.o
+t1277923297
+s6584
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/midiPlayer.LinkFileList
+c000000004C2B8FDD0000000000000973
+t1277923293
+s2419
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/playViewController.o
+t1277924616
+s63172
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/downloadView.xib
+c000000004C2835680000000000007666
+t1277703528
+s30310
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/downloadViewController.h
+c000000004C28356800000000000005F7
+t1277703528
+s1527
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+i"ASIHTTPRequest.h"
+i"ASINetworkQueue.h"
+i"libraryViewController.h"
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/libraryView.xib
+c000000004C2835680000000000004A85
+t1277703528
+s19077
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/libraryViewController.h
+c000000004C2B906F00000000000001D5
+t1277923439
+s469
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/main.mm
+c000000004C2835680000000000000169
+t1277703528
+s361
+i<UIKit/UIKit.h>
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/midiPlayer_Prefix.pch
+c000000004C28356800000000000000BD
+t1277703528
+s189
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/playView.xib
+c000000004C28356800000000000064DA
+t1277703528
+s25818
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/playViewController.h
+c000000004C28356800000000000004D1
+t1277703528
+s1233
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/resources/Default.png
+c000000004C2835680000000000016AC6
+t1277703528
+s92870
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/resources/Icon-Small.png
+c000000004C2835680000000000000E03
+t1277703528
+s3587
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/resources/Icon.png
+c000000004C2835680000000000001562
+t1277703528
+s5474
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/resources/download.png
+c000000004C2835680000000000000B54
+t1277703528
+s2900
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/resources/library.png
+c000000004C2835680000000000000B3E
+t1277703528
+s2878
+
+N/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/resources/play.png
+c000000004C2835680000000000000BB2
+t1277703528
+s2994
+
+N/var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-czoqctmvovxyrvevdeyrlkckirmh/midiPlayer_Prefix.pch.gch
+t1277923297
+s12731856
+
+N/var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-etfavzopuwmopfbajnlkbbqamren/midiPlayer_Prefix.pch.gch
+t1277923297
+s14017968
+
+NaudioPlayer-Info.plist
+c000000004C283561000000000000036F
+t1277703521
+s879
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies299617511#299617511#0(0"0(0#1#0"4300911832#0"0#
+
+CCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIAuthenticationDialog.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIAuthenticationDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299616098.299565
+e299616098.909618
+r1
+xCompileC
+xbuild/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIAuthenticationDialog.o
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIAuthenticationDialog.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@125"Compile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIAuthenticationDialog.m299616098#299616098#0(0"0(0#0#117"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIAuthenticationDialog.m4300911832#2673"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DREACHABILITY_20_API=1 -DDLS_SYNTHESIZER -D_FILTER_ENABLED -DUNIFIED_DEBUG_MESSAGES -DEAS_WT_SYNTH -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_22050 -DMAX_SYNTH_VOICES=64 -D_8_BIT_SAMPLES -DNUM_BUFFERS=1 -D_REVERB_ENABLED -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-generated-files.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-own-target-headers.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-all-target-headers.hmap -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-project-headers.hmap -F/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/include -I/Users/aaronleese/asi-http-request/External -I/Users/aaronleese/asi-http-request/Classes -I/Users/aaronleese/juce -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources/i386 -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-czoqctmvovxyrvevdeyrlkckirmh/midiPlayer_Prefix.pch -c /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIAuthenticationDialog.m -o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIAuthenticationDialog.o0#
+
+CCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIFormDataRequest.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIFormDataRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299616098.601779
+e299616099.229677
+r1
+xCompileC
+xbuild/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIFormDataRequest.o
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIFormDataRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@120"Compile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIFormDataRequest.m299616098#299616099#0(0"0(0#0#112"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIFormDataRequest.m4300911832#2663"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DREACHABILITY_20_API=1 -DDLS_SYNTHESIZER -D_FILTER_ENABLED -DUNIFIED_DEBUG_MESSAGES -DEAS_WT_SYNTH -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_22050 -DMAX_SYNTH_VOICES=64 -D_8_BIT_SAMPLES -DNUM_BUFFERS=1 -D_REVERB_ENABLED -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-generated-files.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-own-target-headers.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-all-target-headers.hmap -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-project-headers.hmap -F/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/include -I/Users/aaronleese/asi-http-request/External -I/Users/aaronleese/asi-http-request/Classes -I/Users/aaronleese/juce -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources/i386 -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-czoqctmvovxyrvevdeyrlkckirmh/midiPlayer_Prefix.pch -c /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIFormDataRequest.m -o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIFormDataRequest.o0#
+
+CCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIHTTPRequest.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIHTTPRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299616098.909856
+e299616103.893891
+r1
+xCompileC
+xbuild/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIHTTPRequest.o
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIHTTPRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@116"Compile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIHTTPRequest.m299616098#299616103#0(0"0(0#0#108"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIHTTPRequest.m4300911832#2655"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DREACHABILITY_20_API=1 -DDLS_SYNTHESIZER -D_FILTER_ENABLED -DUNIFIED_DEBUG_MESSAGES -DEAS_WT_SYNTH -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_22050 -DMAX_SYNTH_VOICES=64 -D_8_BIT_SAMPLES -DNUM_BUFFERS=1 -D_REVERB_ENABLED -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-generated-files.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-own-target-headers.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-all-target-headers.hmap -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-project-headers.hmap -F/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/include -I/Users/aaronleese/asi-http-request/External -I/Users/aaronleese/asi-http-request/Classes -I/Users/aaronleese/juce -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources/i386 -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-czoqctmvovxyrvevdeyrlkckirmh/midiPlayer_Prefix.pch -c /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIHTTPRequest.m -o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIHTTPRequest.o0#
+
+CCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIInputStream.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIInputStream.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299616098.402623
+e299616098.601642
+r1
+xCompileC
+xbuild/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIInputStream.o
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIInputStream.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@116"Compile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIInputStream.m299616098#299616098#0(0"0(0#0#108"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIInputStream.m4300911832#2655"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DREACHABILITY_20_API=1 -DDLS_SYNTHESIZER -D_FILTER_ENABLED -DUNIFIED_DEBUG_MESSAGES -DEAS_WT_SYNTH -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_22050 -DMAX_SYNTH_VOICES=64 -D_8_BIT_SAMPLES -DNUM_BUFFERS=1 -D_REVERB_ENABLED -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-generated-files.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-own-target-headers.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-all-target-headers.hmap -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-project-headers.hmap -F/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/include -I/Users/aaronleese/asi-http-request/External -I/Users/aaronleese/asi-http-request/Classes -I/Users/aaronleese/juce -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources/i386 -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-czoqctmvovxyrvevdeyrlkckirmh/midiPlayer_Prefix.pch -c /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASIInputStream.m -o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASIInputStream.o0#
+
+CCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASINSStringAdditions.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASINSStringAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299616099.885687
+e299616099.969458
+r1
+xCompileC
+xbuild/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASINSStringAdditions.o
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASINSStringAdditions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@122"Compile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASINSStringAdditions.m299616099#299616099#0(0"0(0#0#114"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASINSStringAdditions.m4300911832#2667"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DREACHABILITY_20_API=1 -DDLS_SYNTHESIZER -D_FILTER_ENABLED -DUNIFIED_DEBUG_MESSAGES -DEAS_WT_SYNTH -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_22050 -DMAX_SYNTH_VOICES=64 -D_8_BIT_SAMPLES -DNUM_BUFFERS=1 -D_REVERB_ENABLED -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-generated-files.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-own-target-headers.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-all-target-headers.hmap -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-project-headers.hmap -F/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/include -I/Users/aaronleese/asi-http-request/External -I/Users/aaronleese/asi-http-request/Classes -I/Users/aaronleese/juce -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources/i386 -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-czoqctmvovxyrvevdeyrlkckirmh/midiPlayer_Prefix.pch -c /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASINSStringAdditions.m -o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASINSStringAdditions.o0#
+
+CCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASINetworkQueue.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASINetworkQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299616099.229816
+e299616099.885552
+r1
+xCompileC
+xbuild/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASINetworkQueue.o
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASINetworkQueue.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@117"Compile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASINetworkQueue.m299616099#299616099#0(0"0(0#0#109"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASINetworkQueue.m4300911832#2657"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DREACHABILITY_20_API=1 -DDLS_SYNTHESIZER -D_FILTER_ENABLED -DUNIFIED_DEBUG_MESSAGES -DEAS_WT_SYNTH -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_22050 -DMAX_SYNTH_VOICES=64 -D_8_BIT_SAMPLES -DNUM_BUFFERS=1 -D_REVERB_ENABLED -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-generated-files.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-own-target-headers.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-all-target-headers.hmap -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-project-headers.hmap -F/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/include -I/Users/aaronleese/asi-http-request/External -I/Users/aaronleese/asi-http-request/Classes -I/Users/aaronleese/juce -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources/i386 -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-czoqctmvovxyrvevdeyrlkckirmh/midiPlayer_Prefix.pch -c /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/Classes/ASINetworkQueue.m -o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/ASINetworkQueue.o0#
+
+CCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/NLPDownloadWebView.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299616097.907914
+e299616098.402485
+r1
+xCompileC
+xbuild/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/NLPDownloadWebView.o
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m: In function '-[NLPDownloadWebView downloadFinished:]':
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m:126: warning: unused variable 'err'
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m:123: warning: unused variable 'fn'
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m: In function '-[NLPDownloadWebView connection:didReceiveResponse:]':
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m:229: warning: 'UIToolbar' may not respond to '-buttonWithTag:'
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m:229: warning: (Messages without a matching method signature
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m:229: warning: will be assumed to return 'id' and accept
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m:229: warning: '...' as arguments.)
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m:233: warning: 'UIToolbar' may not respond to '-buttonWithTag:'
+lSLF07#2@103"Compile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m299616097#299616098#0(1337"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m: In function '-[NLPDownloadWebView downloadFinished:]':/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m:126: warning: unused variable 'err'/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m:123: warning: unused variable 'fn'/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m: In function '-[NLPDownloadWebView connection:didReceiveResponse:]':/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m:229: warning: 'UIToolbar' may not respond to '-buttonWithTag:'/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m:229: warning: (Messages without a matching method signature/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m:229: warning: will be assumed to return 'id' and accept/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m:229: warning: '...' as arguments.)/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m:233: warning: 'UIToolbar' may not respond to '-buttonWithTag:'5(22@21"Unused variable 'err'299616097#152#132#0(6@95"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m299396321#126#0#126#0#19"unused variable '*'0(22@20"Unused variable 'fn'299616097#284#131#0(6@95"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m299396321#123#0#123#0#19"unused variable '*'0(22@48"'UIToolbar' may not respond to '-buttonWithTag:'299616097#580#159#0(6@95"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m299396321#229#0#229#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)299616097#739#156#0(6@95"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m299396321#229#0#229#0#0"0(22@48"'UIToolbar' may not respond to '-buttonWithTag:'299616097#1178#159#0(6@95"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m299396321#233#0#233#0#26"'*' may not respond to '*'0(0#0#95"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m4300911832#2646"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DREACHABILITY_20_API=1 -DDLS_SYNTHESIZER -D_FILTER_ENABLED -DUNIFIED_DEBUG_MESSAGES -DEAS_WT_SYNTH -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_22050 -DMAX_SYNTH_VOICES=64 -D_8_BIT_SAMPLES -DNUM_BUFFERS=1 -D_REVERB_ENABLED -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-generated-files.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-own-target-headers.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-all-target-headers.hmap -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-project-headers.hmap -F/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/include -I/Users/aaronleese/asi-http-request/External -I/Users/aaronleese/asi-http-request/Classes -I/Users/aaronleese/juce -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources/i386 -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-czoqctmvovxyrvevdeyrlkckirmh/midiPlayer_Prefix.pch -c /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/NLPDownloadWebView.m -o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/NLPDownloadWebView.o0#
+
+CCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/Reachability.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/External/Reachability2.0/Reachability.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299616099.969597
+e299616100.218289
+r1
+xCompileC
+xbuild/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/Reachability.o
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/External/Reachability2.0/Reachability.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@131"Compile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/External/Reachability2.0/Reachability.m299616099#299616100#0(0"0(0#0#123"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/External/Reachability2.0/Reachability.m4300911832#2668"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DREACHABILITY_20_API=1 -DDLS_SYNTHESIZER -D_FILTER_ENABLED -DUNIFIED_DEBUG_MESSAGES -DEAS_WT_SYNTH -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_22050 -DMAX_SYNTH_VOICES=64 -D_8_BIT_SAMPLES -DNUM_BUFFERS=1 -D_REVERB_ENABLED -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-generated-files.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-own-target-headers.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-all-target-headers.hmap -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-project-headers.hmap -F/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/include -I/Users/aaronleese/asi-http-request/External -I/Users/aaronleese/asi-http-request/Classes -I/Users/aaronleese/juce -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources/i386 -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-czoqctmvovxyrvevdeyrlkckirmh/midiPlayer_Prefix.pch -c /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/asi-http-request/External/Reachability2.0/Reachability.m -o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/Reachability.o0#
+
+CCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/audioPlayerAppDelegate.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm normal i386 objective-c++ com.apple.compilers.gcc.4_2
+s299617438.608608
+e299617439.024611
+r1
+xCompileC
+xbuild/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/audioPlayerAppDelegate.o
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate actionSheet:clickedButtonAtIndex:](audioPlayerAppDelegate*, objc_selector*, UIActionSheet*, NSInteger)':
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:98: warning: 'audioPlayerAppDelegate' may not respond to '-showReviewPanel'
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:98: warning: (Messages without a matching method signature
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:98: warning: will be assumed to return 'id' and accept
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:98: warning: '...' as arguments.)
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate startRecording](audioPlayerAppDelegate*, objc_selector*)':
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:129: warning: class 'audioPlayerAppDelegate' does not implement the 'AVAudioRecorderDelegate' protocol
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate audioRecorderDidFinishRecording:successfully:](audioPlayerAppDelegate*, objc_selector*, AVAudioRecorder*, BOOL)':
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:181: warning: 'audioPlayerAppDelegate' may not respond to '-showReviewPanel'
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate showReviewPanel](audioPlayerAppDelegate*, objc_selector*)':
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:192: warning: class 'audioPlayerAppDelegate' does not implement the 'UIActionSheetDelegate' protocol
+lSLF07#2@108"Compile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm299617438#299617439#0(2130"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate actionSheet:clickedButtonAtIndex:](audioPlayerAppDelegate*, objc_selector*, UIActionSheet*, NSInteger)':/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:98: warning: 'audioPlayerAppDelegate' may not respond to '-showReviewPanel'/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:98: warning: (Messages without a matching method signature/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:98: warning: will be assumed to return 'id' and accept/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:98: warning: '...' as arguments.)/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate startRecording](audioPlayerAppDelegate*, objc_selector*)':/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:129: warning: class 'audioPlayerAppDelegate' does not implement the 'AVAudioRecorderDelegate' protocol/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate audioRecorderDidFinishRecording:successfully:](audioPlayerAppDelegate*, objc_selector*, AVAudioRecorder*, BOOL)':/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:181: warning: 'audioPlayerAppDelegate' may not respond to '-showReviewPanel'/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate showReviewPanel](audioPlayerAppDelegate*, objc_selector*)':/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:192: warning: class 'audioPlayerAppDelegate' does not implement the 'UIActionSheetDelegate' protocol5(22@62"'audioPlayerAppDelegate' may not respond to '-showReviewPanel'299617438#250#177#0(6@100"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm299617436#98#0#98#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)299617438#427#160#0(6@100"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm299617436#98#0#98#0#0"0(22@88"Class 'audioPlayerAppDelegate' does not implement the 'AVAudioRecorderDelegate' protocol299617438#1082#204#0(6@100"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm299617436#129#0#129#0#45"class '*' does not implement the '*' protocol0(22@62"'audioPlayerAppDelegate' may not respond to '-showReviewPanel'299617438#1545#178#0(6@100"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm299617436#181#0#181#0#26"'*' may not respond to '*'0(22@86"Class 'audioPlayerAppDelegate' does not implement the 'UIActionSheetDelegate' protocol299617438#1928#202#0(6@100"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm299617436#192#0#192#0#45"class '*' does not implement the '*' protocol0(0#0#100"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm4300911832#2676"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DREACHABILITY_20_API=1 -DDLS_SYNTHESIZER -D_FILTER_ENABLED -DUNIFIED_DEBUG_MESSAGES -DEAS_WT_SYNTH -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_22050 -DMAX_SYNTH_VOICES=64 -D_8_BIT_SAMPLES -DNUM_BUFFERS=1 -D_REVERB_ENABLED -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-generated-files.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-own-target-headers.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-all-target-headers.hmap -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-project-headers.hmap -F/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/include -I/Users/aaronleese/asi-http-request/External -I/Users/aaronleese/asi-http-request/Classes -I/Users/aaronleese/juce -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources/i386 -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-etfavzopuwmopfbajnlkbbqamren/midiPlayer_Prefix.pch -c /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm -o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/audioPlayerAppDelegate.o0#
+
+CCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/downloadViewController.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm normal i386 objective-c++ com.apple.compilers.gcc.4_2
+s299616270.915871
+e299616271.371357
+r1
+xCompileC
+xbuild/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/downloadViewController.o
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm: In function 'void -[downloadViewController downloadFinished:](downloadViewController*, objc_selector*, ASIHTTPRequest*)':
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm:106: warning: unused variable 'err'
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm:103: warning: unused variable 'fn'
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm: In function 'void -[downloadViewController connection:didReceiveResponse:](downloadViewController*, objc_selector*, NSURLConnection*, NSURLResponse*)':
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm:281: warning: class 'downloadViewController' does not implement the 'UIActionSheetDelegate' protocol
+lSLF07#2@111"Compile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm299616270#299616271#0(968"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm: In function 'void -[downloadViewController downloadFinished:](downloadViewController*, objc_selector*, ASIHTTPRequest*)':/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm:106: warning: unused variable 'err'/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm:103: warning: unused variable 'fn'/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm: In function 'void -[downloadViewController connection:didReceiveResponse:](downloadViewController*, objc_selector*, NSURLConnection*, NSURLResponse*)':/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm:281: warning: class 'downloadViewController' does not implement the 'UIActionSheetDelegate' protocol3(22@21"Unused variable 'err'299616271#227#140#0(6@103"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm299396328#106#0#106#0#19"unused variable '*'0(22@20"Unused variable 'fn'299616271#367#139#0(6@103"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm299396328#103#0#103#0#19"unused variable '*'0(22@86"Class 'downloadViewController' does not implement the 'UIActionSheetDelegate' protocol299616271#763#205#0(6@103"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm299396328#281#0#281#0#45"class '*' does not implement the '*' protocol0(0#0#103"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm4300911832#2679"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DREACHABILITY_20_API=1 -DDLS_SYNTHESIZER -D_FILTER_ENABLED -DUNIFIED_DEBUG_MESSAGES -DEAS_WT_SYNTH -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_22050 -DMAX_SYNTH_VOICES=64 -D_8_BIT_SAMPLES -DNUM_BUFFERS=1 -D_REVERB_ENABLED -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-generated-files.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-own-target-headers.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-all-target-headers.hmap -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-project-headers.hmap -F/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/include -I/Users/aaronleese/asi-http-request/External -I/Users/aaronleese/asi-http-request/Classes -I/Users/aaronleese/juce -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources/i386 -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-etfavzopuwmopfbajnlkbbqamren/midiPlayer_Prefix.pch -c /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../downloadViewController.mm -o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/downloadViewController.o0#
+
+CCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/libraryManager.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s299617511.290342
+e299617511.541129
+r1
+xCompileC
+xbuild/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/libraryManager.o
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@99"Compile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m299617511#299617511#0(0"0(0#0#91"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m4300911832#2638"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DREACHABILITY_20_API=1 -DDLS_SYNTHESIZER -D_FILTER_ENABLED -DUNIFIED_DEBUG_MESSAGES -DEAS_WT_SYNTH -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_22050 -DMAX_SYNTH_VOICES=64 -D_8_BIT_SAMPLES -DNUM_BUFFERS=1 -D_REVERB_ENABLED -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-generated-files.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-own-target-headers.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-all-target-headers.hmap -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-project-headers.hmap -F/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/include -I/Users/aaronleese/asi-http-request/External -I/Users/aaronleese/asi-http-request/Classes -I/Users/aaronleese/juce -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources/i386 -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-czoqctmvovxyrvevdeyrlkckirmh/midiPlayer_Prefix.pch -c /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m -o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/libraryManager.o0#
+
+CCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/libraryViewController.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm normal i386 objective-c++ com.apple.compilers.gcc.4_2
+s299617416.177880
+e299617416.470537
+r1
+xCompileC
+xbuild/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/libraryViewController.o
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm: In function 'void -[libraryViewController refreshLibraryView](libraryViewController*, objc_selector*)':
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm:29: warning: 'UIView' may not respond to '-reloadData'
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm:29: warning: (Messages without a matching method signature
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm:29: warning: will be assumed to return 'id' and accept
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm:29: warning: '...' as arguments.)
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm: In function 'void -[libraryViewController tableView:didSelectRowAtIndexPath:](libraryViewController*, objc_selector*, UITableView*, NSIndexPath*)':
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm:81: warning: 'audioPlayerAppDelegate' may not respond to '-setCurrentQuestion:'
+lSLF07#2@110"Compile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm299617416#299617416#0(1258"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm: In function 'void -[libraryViewController refreshLibraryView](libraryViewController*, objc_selector*)':/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm:29: warning: 'UIView' may not respond to '-reloadData'/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm:29: warning: (Messages without a matching method signature/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm:29: warning: will be assumed to return 'id' and accept/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm:29: warning: '...' as arguments.)/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm: In function 'void -[libraryViewController tableView:didSelectRowAtIndexPath:](libraryViewController*, objc_selector*, UITableView*, NSIndexPath*)':/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm:81: warning: 'audioPlayerAppDelegate' may not respond to '-setCurrentQuestion:'3(22@41"'UIView' may not respond to '-reloadData'299617416#208#158#0(6@102"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm299617254#29#0#29#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)299617416#366#162#0(6@102"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm299617254#29#0#29#0#0"0(22@66"'audioPlayerAppDelegate' may not respond to '-setCurrentQuestion:'299617416#1075#183#0(6@102"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm299617254#81#0#81#0#26"'*' may not respond to '*'0(0#0#102"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm4300911832#2677"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DREACHABILITY_20_API=1 -DDLS_SYNTHESIZER -D_FILTER_ENABLED -DUNIFIED_DEBUG_MESSAGES -DEAS_WT_SYNTH -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_22050 -DMAX_SYNTH_VOICES=64 -D_8_BIT_SAMPLES -DNUM_BUFFERS=1 -D_REVERB_ENABLED -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-generated-files.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-own-target-headers.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-all-target-headers.hmap -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-project-headers.hmap -F/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/include -I/Users/aaronleese/asi-http-request/External -I/Users/aaronleese/asi-http-request/Classes -I/Users/aaronleese/juce -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources/i386 -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-etfavzopuwmopfbajnlkbbqamren/midiPlayer_Prefix.pch -c /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../libraryViewController.mm -o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/libraryViewController.o0#
+
+CCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/main.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/main.mm normal i386 objective-c++ com.apple.compilers.gcc.4_2
+s299616097.343119
+e299616097.479078
+r1
+xCompileC
+xbuild/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/main.o
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/main.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/main.mm299616097#299616097#0(0"0(0#0#74"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/main.mm4300911832#2632"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DREACHABILITY_20_API=1 -DDLS_SYNTHESIZER -D_FILTER_ENABLED -DUNIFIED_DEBUG_MESSAGES -DEAS_WT_SYNTH -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_22050 -DMAX_SYNTH_VOICES=64 -D_8_BIT_SAMPLES -DNUM_BUFFERS=1 -D_REVERB_ENABLED -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-generated-files.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-own-target-headers.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-all-target-headers.hmap -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-project-headers.hmap -F/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/include -I/Users/aaronleese/asi-http-request/External -I/Users/aaronleese/asi-http-request/Classes -I/Users/aaronleese/juce -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources/i386 -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-etfavzopuwmopfbajnlkbbqamren/midiPlayer_Prefix.pch -c /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/main.mm -o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/main.o0#
+
+CCompileC build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/playViewController.o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm normal i386 objective-c++ com.apple.compilers.gcc.4_2
+s299617416.470677
+e299617416.838689
+r1
+xCompileC
+xbuild/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/playViewController.o
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:67: warning: incomplete implementation of class 'levelIndicator'
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:67: warning: method definition for '-init' not found
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm: In function 'void -[playViewController buttonPressed:](playViewController*, objc_selector*, objc_object*)':
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:143: warning: class 'playViewController' does not implement the 'AVAudioPlayerDelegate' protocol
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm: At global scope:
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:195: warning: property 'instrumentSelector' requires method '-instrumentSelector' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:195: warning: property 'instrumentSelector' requires the method 'setInstrumentSelector:' to be defined - use @synthesize, @dynamic or provide a method implementation
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:195: warning: incomplete implementation of class 'playViewController'
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:195: warning: method definition for '-pickerView:numberOfRowsInComponent:' not found
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:195: warning: method definition for '-numberOfComponentsInPickerView:' not found
+o/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:195: warning: class 'playViewController' does not fully implement the 'UIPickerViewDataSource' protocol
+lSLF07#2@107"Compile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm299617416#299617416#0(2107"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:67: warning: incomplete implementation of class 'levelIndicator'/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:67: warning: method definition for '-init' not found/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm: In function 'void -[playViewController buttonPressed:](playViewController*, objc_selector*, objc_object*)':/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:143: warning: class 'playViewController' does not implement the 'AVAudioPlayerDelegate' protocol/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm: At global scope:/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:195: warning: property 'instrumentSelector' requires method '-instrumentSelector' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:195: warning: property 'instrumentSelector' requires the method 'setInstrumentSelector:' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:195: warning: incomplete implementation of class 'playViewController'/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:195: warning: method definition for '-pickerView:numberOfRowsInComponent:' not found/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:195: warning: method definition for '-numberOfComponentsInPickerView:' not found/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:195: warning: class 'playViewController' does not fully implement the 'UIPickerViewDataSource' protocol10(22@51"Incomplete implementation of class 'levelIndicator'299617416#0#165#0(6@99"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm299396328#67#0#67#0#38"incomplete implementation of class '*'0(22@39"Method definition for '-init' not found299617416#165#153#0(6@99"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm299396328#67#0#67#0#35"method definition for '*' not found0(22@82"Class 'playViewController' does not implement the 'AVAudioPlayerDelegate' protocol299617416#527#197#0(6@99"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm299396328#143#0#143#0#45"class '*' does not implement the '*' protocol0(23@16"At global scope:299617416#724#118#0(6@99"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm299396328#0#0#0#0#0"0(22@144"Property 'instrumentSelector' requires method '-instrumentSelector' to be defined - use @synthesize, @dynamic or provide a method implementation299617416#842#259#0(6@99"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm299396328#195#0#195#0#0"0(22@151"Property 'instrumentSelector' requires the method 'setInstrumentSelector:' to be defined - use @synthesize, @dynamic or provide a method implementation299617416#1101#266#0(6@99"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm299396328#195#0#195#0#0"0(22@55"Incomplete implementation of class 'playViewController'299617416#1367#170#0(6@99"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm299396328#195#0#195#0#38"incomplete implementation of class '*'0(22@70"Method definition for '-pickerView:numberOfRowsInComponent:' not found299617416#1537#185#0(6@99"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm299396328#195#0#195#0#35"method definition for '*' not found0(22@66"Method definition for '-numberOfComponentsInPickerView:' not found299617416#1722#181#0(6@99"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm299396328#195#0#195#0#35"method definition for '*' not found0(22@89"Class 'playViewController' does not fully implement the 'UIPickerViewDataSource' protocol299617416#1903#204#0(6@99"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm299396328#195#0#195#0#51"class '*' does not fully implement the '*' protocol0(0#0#99"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm4300911832#2671"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DREACHABILITY_20_API=1 -DDLS_SYNTHESIZER -D_FILTER_ENABLED -DUNIFIED_DEBUG_MESSAGES -DEAS_WT_SYNTH -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_22050 -DMAX_SYNTH_VOICES=64 -D_8_BIT_SAMPLES -DNUM_BUFFERS=1 -D_REVERB_ENABLED -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-generated-files.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-own-target-headers.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-all-target-headers.hmap -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-project-headers.hmap -F/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/include -I/Users/aaronleese/asi-http-request/External -I/Users/aaronleese/asi-http-request/Classes -I/Users/aaronleese/juce -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources/i386 -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-etfavzopuwmopfbajnlkbbqamren/midiPlayer_Prefix.pch -c /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm -o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/playViewController.o0#
+
+CCompileXIB /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/MainWindow.xib
+s298925008.028269
+e298925008.526158
+r1
+xCompileXIB
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib298925008#298925008#0(0"0(0#0#81"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/MainWindow.xib4300911832#571"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/MainWindow.nib /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/MainWindow.xib0#
+
+CCompileXIB /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/downloadView.xib
+s299616094.687883
+e299616095.527946
+r1
+xCompileXIB
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/downloadView.xib
+lSLF07#2@27"CompileXIB downloadView.xib299616094#299616095#0(0"0(0#0#83"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/downloadView.xib4300911832#575"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/downloadView.nib /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/downloadView.xib0#
+
+CCompileXIB /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/libraryView.xib
+s299616093.505528
+e299616094.687679
+r1
+xCompileXIB
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/libraryView.xib
+lSLF07#2@26"CompileXIB libraryView.xib299616093#299616094#0(0"0(0#0#82"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/libraryView.xib7579403624630930432#573"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/libraryView.nib /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/libraryView.xib0#
+
+CCompileXIB /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/playView.xib
+s299616093.521647
+e299616094.761932
+r1
+xCompileXIB
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/playView.xib
+lSLF07#2@23"CompileXIB playView.xib299616093#299616094#0(0"0(0#0#79"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/playView.xib4300911832#567"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/playView.nib /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/playView.xib0#
+
+CCpResource build/Release-iphonesimulator/midiPlayer.app/Default.png resources/Default.png
+s299616094.762050
+e299616094.911171
+r1
+xCpResource
+xbuild/Release-iphonesimulator/midiPlayer.app/Default.png
+xresources/Default.png
+lSLF07#2@26"Copy resources/Default.png299616094#299616094#0(0"0(0#0#88"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/resources/Default.png4300911832#575"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/resources/Default.png /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app0#
+
+CCpResource build/Release-iphonesimulator/midiPlayer.app/Hi-Hat4.wav "audio files/Hi-Hat4.wav"
+s298574775.256966
+e298574775.364612
+r1
+xCpResource
+xbuild/Release-iphonesimulator/midiPlayer.app/Hi-Hat4.wav
+xaudio files/Hi-Hat4.wav
+lSLF07#2@28"Copy audio files/Hi-Hat4.wav298574775#298574775#0(0"0(0#0#90"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/audio files/Hi-Hat4.wav4300911832#579"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/audio files/Hi-Hat4.wav" /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app0#
+
+CCpResource build/Release-iphonesimulator/midiPlayer.app/Hi-Hat5.wav "audio files/Hi-Hat5.wav"
+s298574775.258069
+e298574775.365921
+r1
+xCpResource
+xbuild/Release-iphonesimulator/midiPlayer.app/Hi-Hat5.wav
+xaudio files/Hi-Hat5.wav
+lSLF07#2@28"Copy audio files/Hi-Hat5.wav298574775#298574775#0(0"0(0#0#90"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/audio files/Hi-Hat5.wav4300911832#579"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/audio files/Hi-Hat5.wav" /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app0#
+
+CCpResource build/Release-iphonesimulator/midiPlayer.app/Hi-Hat6.wav "audio files/Hi-Hat6.wav"
+s298574775.259700
+e298574775.366396
+r1
+xCpResource
+xbuild/Release-iphonesimulator/midiPlayer.app/Hi-Hat6.wav
+xaudio files/Hi-Hat6.wav
+lSLF07#2@28"Copy audio files/Hi-Hat6.wav298574775#298574775#0(0"0(0#0#90"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/audio files/Hi-Hat6.wav4300911832#579"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/audio files/Hi-Hat6.wav" /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app0#
+
+CCpResource build/Release-iphonesimulator/midiPlayer.app/Hi-Hat7.wav "audio files/Hi-Hat7.wav"
+s298574775.313706
+e298574775.408366
+r1
+xCpResource
+xbuild/Release-iphonesimulator/midiPlayer.app/Hi-Hat7.wav
+xaudio files/Hi-Hat7.wav
+lSLF07#2@28"Copy audio files/Hi-Hat7.wav298574775#298574775#0(0"0(0#0#90"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/audio files/Hi-Hat7.wav4300911832#579"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks "/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/audio files/Hi-Hat7.wav" /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app0#
+
+CCpResource build/Release-iphonesimulator/midiPlayer.app/Icon-Small.png resources/Icon-Small.png
+s299616094.765388
+e299616094.902714
+r1
+xCpResource
+xbuild/Release-iphonesimulator/midiPlayer.app/Icon-Small.png
+xresources/Icon-Small.png
+lSLF07#2@29"Copy resources/Icon-Small.png299616094#299616094#0(0"0(0#0#91"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/resources/Icon-Small.png4300911832#578"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/resources/Icon-Small.png /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app0#
+
+CCpResource build/Release-iphonesimulator/midiPlayer.app/Icon.png resources/Icon.png
+s299616094.767436
+e299616094.909854
+r1
+xCpResource
+xbuild/Release-iphonesimulator/midiPlayer.app/Icon.png
+xresources/Icon.png
+lSLF07#2@23"Copy resources/Icon.png299616094#299616094#0(0"0(0#0#85"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/resources/Icon.png4300911832#572"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/resources/Icon.png /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app0#
+
+CCpResource build/Release-iphonesimulator/midiPlayer.app/download.png resources/download.png
+s299616094.763360
+e299616094.902524
+r1
+xCpResource
+xbuild/Release-iphonesimulator/midiPlayer.app/download.png
+xresources/download.png
+lSLF07#2@27"Copy resources/download.png299616094#299616094#0(0"0(0#0#89"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/resources/download.png4300911832#576"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/resources/download.png /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app0#
+
+CCpResource build/Release-iphonesimulator/midiPlayer.app/library.png resources/library.png
+s299616094.769627
+e299616094.900268
+r1
+xCpResource
+xbuild/Release-iphonesimulator/midiPlayer.app/library.png
+xresources/library.png
+lSLF07#2@26"Copy resources/library.png299616094#299616094#0(0"0(0#0#88"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/resources/library.png4300911832#575"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/resources/library.png /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app0#
+
+CCpResource build/Release-iphonesimulator/midiPlayer.app/play.png resources/play.png
+s299616094.771702
+e299616094.902982
+r1
+xCpResource
+xbuild/Release-iphonesimulator/midiPlayer.app/play.png
+xresources/play.png
+lSLF07#2@23"Copy resources/play.png299616094#299616094#0(0"0(0#0#85"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/resources/play.png4300911832#572"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/resources/play.png /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app0#
+
+CGenerateDSYMFile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app.dSYM /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/midiPlayer
+s299617511.631466
+e299617511.772255
+r1
+xGenerateDSYMFile
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app.dSYM
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/midiPlayer
+lSLF07#2@122"GenerateDSYMFile build/Release-iphonesimulator/midiPlayer.app.dSYM build/Release-iphonesimulator/midiPlayer.app/midiPlayer299617511#299617511#0(0"0(0#0#122"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/midiPlayer4300911832#480"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/midiPlayer -o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app.dSYM0#
+
+CLd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/midiPlayer normal i386
+s299617511.541251
+e299617511.631329
+r1
+xLd
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/midiPlayer
+xnormal
+xi386
+old: warning: directory '/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/../../../asi-http-request/External/GHUnit/Project-IPhone/build/CombinedDebug3_0' following -L not found
+lSLF07#2@127"Link /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/midiPlayer299617511#299617511#0(195"ld: warning: directory '/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/../../../asi-http-request/External/GHUnit/Project-IPhone/build/CombinedDebug3_0' following -L not found1(22@181"Directory '/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/../../../asi-http-request/External/GHUnit/Project-IPhone/build/CombinedDebug3_0' following -L not found299617511#0#195#0(6@0"299617511#0#0#0#0#0"0(0#0#0"4300911832#1318"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -L/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator -L/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/../../../asi-http-request/External/GHUnit/Project-IPhone/build/CombinedDebug3_0 -F/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator -filelist /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/Objects-normal/i386/midiPlayer.LinkFileList -mmacosx-version-min=10.5 -framework Foundation -framework UIKit -framework CoreGraphics -framework AudioToolbox -framework CFNetwork -framework SystemConfiguration -framework MobileCoreServices -lz.1.2.3 -framework AVFoundation -o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/midiPlayer0#
+
+CProcessInfoPlistFile /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/Info.plist audioPlayer-Info.plist
+s298574774.274106
+e298574774.279398
+r1
+xProcessInfoPlistFile
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/Info.plist
+xaudioPlayer-Info.plist
+lSLF07#2@30"Process audioPlayer-Info.plist298574774#298574774#0(0"0(0#0#89"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/audioPlayer-Info.plist4300911832#577"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility audioPlayer-Info.plist -genpkginfo /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app/Info.plist0#
+
+CProcessPCH /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-czoqctmvovxyrvevdeyrlkckirmh/midiPlayer_Prefix.pch.gch midiPlayer_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s299616095.529924
+e299616097.232481
+r1
+xProcessPCH
+x/var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-czoqctmvovxyrvevdeyrlkckirmh/midiPlayer_Prefix.pch.gch
+xmidiPlayer_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@32"Precompile midiPlayer_Prefix.pch299616095#299616097#0(0"0(0#0#88"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/midiPlayer_Prefix.pch4300911832#2467"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DREACHABILITY_20_API=1 -DDLS_SYNTHESIZER -D_FILTER_ENABLED -DUNIFIED_DEBUG_MESSAGES -DEAS_WT_SYNTH -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_22050 -DMAX_SYNTH_VOICES=64 -D_8_BIT_SAMPLES -DNUM_BUFFERS=1 -D_REVERB_ENABLED -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-generated-files.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-own-target-headers.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-all-target-headers.hmap -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-project-headers.hmap -F/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/include -I/Users/aaronleese/asi-http-request/External -I/Users/aaronleese/asi-http-request/Classes -I/Users/aaronleese/juce -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources/i386 -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources -c /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/midiPlayer_Prefix.pch -o /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-czoqctmvovxyrvevdeyrlkckirmh/midiPlayer_Prefix.pch.gch0#
+
+CProcessPCH++ /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-etfavzopuwmopfbajnlkbbqamren/midiPlayer_Prefix.pch.gch midiPlayer_Prefix.pch normal i386 objective-c++ com.apple.compilers.gcc.4_2
+s299616095.528485
+e299616097.342912
+r1
+xProcessPCH++
+x/var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-etfavzopuwmopfbajnlkbbqamren/midiPlayer_Prefix.pch.gch
+xmidiPlayer_Prefix.pch
+xnormal
+xi386
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@32"Precompile midiPlayer_Prefix.pch299616095#299616097#0(0"0(0#0#88"/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/midiPlayer_Prefix.pch4300911832#2488"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c++-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DREACHABILITY_20_API=1 -DDLS_SYNTHESIZER -D_FILTER_ENABLED -DUNIFIED_DEBUG_MESSAGES -DEAS_WT_SYNTH -DNUM_OUTPUT_CHANNELS=2 -D_SAMPLE_RATE_22050 -DMAX_SYNTH_VOICES=64 -D_8_BIT_SAMPLES -DNUM_BUFFERS=1 -D_REVERB_ENABLED -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-generated-files.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-own-target-headers.hmap -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-all-target-headers.hmap -iquote /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/midiPlayer-project-headers.hmap -F/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/include -I/Users/aaronleese/asi-http-request/External -I/Users/aaronleese/asi-http-request/Classes -I/Users/aaronleese/juce -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources/i386 -I/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/audioPlayer.build/Release-iphonesimulator/audioPlayer.build/DerivedSources -c /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/midiPlayer_Prefix.pch -o /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/midiPlayer_Prefix-etfavzopuwmopfbajnlkbbqamren/midiPlayer_Prefix.pch.gch0#
+
+CTouch /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app
+s299617511.772373
+e299617511.776326
+r1
+xTouch
+x/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app
+lSLF07#2@117"Touch /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app299617511#299617511#0(0"0(0#0#0"4300911832#339"    cd /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/build/Release-iphonesimulator/midiPlayer.app0#
+

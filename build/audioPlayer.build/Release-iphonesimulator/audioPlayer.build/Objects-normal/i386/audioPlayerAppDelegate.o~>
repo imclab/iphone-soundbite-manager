@@ -1,0 +1,11 @@
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate actionSheet:clickedButtonAtIndex:](audioPlayerAppDelegate*, objc_selector*, UIActionSheet*, NSInteger)':
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:98: warning: 'audioPlayerAppDelegate' may not respond to '-showReviewPanel'
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:98: warning: (Messages without a matching method signature
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:98: warning: will be assumed to return 'id' and accept
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:98: warning: '...' as arguments.)
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate startRecording](audioPlayerAppDelegate*, objc_selector*)':
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:126: warning: class 'audioPlayerAppDelegate' does not implement the 'AVAudioRecorderDelegate' protocol
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate audioRecorderDidFinishRecording:successfully:](audioPlayerAppDelegate*, objc_selector*, AVAudioRecorder*, BOOL)':
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:178: warning: 'audioPlayerAppDelegate' may not respond to '-showReviewPanel'
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate showReviewPanel](audioPlayerAppDelegate*, objc_selector*)':
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:189: warning: class 'audioPlayerAppDelegate' does not implement the 'UIActionSheetDelegate' protocol

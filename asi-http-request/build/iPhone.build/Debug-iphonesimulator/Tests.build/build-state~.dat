@@ -1,0 +1,1336 @@
+TTests
+v7
+r0
+t295486823.412679
+cCheck dependencies
+cProcessInfoPlistFile /Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app/Info.plist "iPhone Sample/Tests-Info.plist"
+cCpResource build/Debug-iphonesimulator/Tests.app/iphone-tests-icon.png "iPhone Sample/iphone-tests-icon.png"
+cProcessPCH /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch.gch "iPhone Sample/iPhone_Prefix.pch" normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIFormDataRequest.o /Users/aaronleese/asi-http-request/Classes/ASIFormDataRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIHTTPRequest.o /Users/aaronleese/asi-http-request/Classes/ASIHTTPRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASINetworkQueue.o /Users/aaronleese/asi-http-request/Classes/ASINetworkQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASINSStringAdditions.o /Users/aaronleese/asi-http-request/Classes/ASINSStringAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIFormDataRequestTests.o /Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIHTTPRequestTests.o /Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASINetworkQueueTests.o /Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3RequestTests.o /Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASITestCase.o /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ProxyTests.o /Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIInputStream.o /Users/aaronleese/asi-http-request/Classes/ASIInputStream.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIAuthenticationDialog.o /Users/aaronleese/asi-http-request/Classes/ASIAuthenticationDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/StressTests.o /Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/Reachability.o /Users/aaronleese/asi-http-request/External/Reachability1.5/Reachability.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/PerformanceTests.o /Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3BucketObject.o /Users/aaronleese/asi-http-request/Classes/S3/ASIS3BucketObject.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3Request.o /Users/aaronleese/asi-http-request/Classes/S3/ASIS3Request.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesCDNRequest.o /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesCDNRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesContainer.o /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainer.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesContainerRequest.o /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainerRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesContainerXMLParserDelegate.o /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesObject.o /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesObject.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesObjectRequest.o /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesObjectRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesRequest.o /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesRequestTests.o /Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3Bucket.o /Users/aaronleese/asi-http-request/Classes/S3/ASIS3Bucket.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3BucketRequest.o /Users/aaronleese/asi-http-request/Classes/S3/ASIS3BucketRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3ObjectRequest.o /Users/aaronleese/asi-http-request/Classes/S3/ASIS3ObjectRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3ServiceRequest.o /Users/aaronleese/asi-http-request/Classes/S3/ASIS3ServiceRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/GHUnitIPhoneTestMain.o /Users/aaronleese/asi-http-request/External/GHUnit/Project-IPhone/build/Debug-iphonesimulator/GHUnitIPhoneTestMain.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cPBXCp build/Debug-iphonesimulator/Tests.app/Frameworks/libGHUnitIPhone3_0.a External/GHUnit/Project-IPhone/build/CombinedDebug3_0/libGHUnitIPhone3_0.a
+cPhaseScriptExecution "Run Script" /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Script-B52D492410DA403A008E8365.sh
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk
+c000000004B69B45C00000000000000EE
+t1265218652
+s238
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000004B2B4D5700000000001097C0
+t1261129047
+s1087424
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetwork.h
+c000000004B2B4CD600000000000004CF
+t1261128918
+s1231
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004B2B4CC3000000000026EE30
+t1261128899
+s2551344
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B2B4DC8000000000027E880
+t1261129160
+s2615424
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B2B4DAE0000000000001355
+t1261129134
+s4949
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/MobileCoreServices.framework/Headers/MobileCoreServices.h
+c000000004B2B4DDB00000000000000C7
+t1261129179
+s199
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c000000004B2B4DDC0000000000018E90
+t1261129180
+s102032
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/SystemConfiguration.framework/Headers/SCNetworkReachability.h
+c000000004B2B4C4A00000000000035EC
+t1261128778
+s13804
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/SystemConfiguration.framework/Headers/SystemConfiguration.h
+c000000004B2B4C490000000000001A78
+t1261128777
+s6776
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c000000004B2B4C500000000000055360
+t1261128784
+s349024
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004B2B61620000000000000788
+t1261134178
+s1928
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004B2B62B500000000016721E0
+t1261134517
+s23536096
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/CommonCrypto/CommonHMAC.h
+c000000004748A1090000000000000DE2
+t1195942153
+s3554
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/arpa/inet.h
+c00000000464386D70000000000001533
+t1178830551
+s5427
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/ifaddrs.h
+c00000000464386E00000000000000782
+t1178830560
+s1922
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/netdb.h
+c00000000464386E20000000000002F2B
+t1178830562
+s12075
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/netinet/in.h
+c00000000476344B700000000000052AA
+t1197687991
+s21162
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/netinet6/in6.h
+c00000000476344BA0000000000004970
+t1197687994
+s18800
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/stdio.h
+c000000004748A1330000000000003D1D
+t1195942195
+s15645
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/sys/socket.h
+c00000000476344C000000000000055F1
+t1197688000
+s22001
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/include/zlib.h
+c000000004748ECC900000000000102A5
+t1195961545
+s66213
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk/usr/lib/libz.1.2.3.dylib
+c00000000476CCCD10000000000006EE8
+t1198312657
+s28392
+
+N/Users/aaronleese/asi-http-request/Classes/ASIAuthenticationDialog.h
+c000000004BEC6C8E0000000000000388
+t1273785486
+s904
+i<Foundation/Foundation.h>
+
+N/Users/aaronleese/asi-http-request/Classes/ASIAuthenticationDialog.m
+c000000004BEC6C8E0000000000002124
+t1273785486
+s8484
+i"ASIAuthenticationDialog.h"
+i"ASIHTTPRequest.h"
+
+N/Users/aaronleese/asi-http-request/Classes/ASIFormDataRequest.h
+c000000004BEC6C8E0000000000000A6D
+t1273785486
+s2669
+i<Foundation/Foundation.h>
+i"ASIHTTPRequest.h"
+i"ASIHTTPRequestConfig.h"
+
+N/Users/aaronleese/asi-http-request/Classes/ASIFormDataRequest.m
+c000000004BEC6C8E0000000000002B8E
+t1273785486
+s11150
+i"ASIFormDataRequest.h"
+
+N/Users/aaronleese/asi-http-request/Classes/ASIHTTPRequest.h
+c000000004BEC6C8E0000000000008755
+t1273785486
+s34645
+i<Foundation/Foundation.h>
+i<CFNetwork/CFNetwork.h>
+i<stdio.h>
+i"ASIHTTPRequestConfig.h"
+i"ASIHTTPRequestDelegate.h"
+i"ASIProgressDelegate.h"
+
+N/Users/aaronleese/asi-http-request/Classes/ASIHTTPRequest.m
+c000000004BEC8886000000000002269E
+t1273792646
+s140958
+i"ASIHTTPRequest.h"
+i<zlib.h>
+i"Reachability.h"
+i"ASIAuthenticationDialog.h"
+i<MobileCoreServices/MobileCoreServices.h>
+i<SystemConfiguration/SystemConfiguration.h>
+i"ASIInputStream.h"
+
+N/Users/aaronleese/asi-http-request/Classes/ASIHTTPRequestConfig.h
+c000000004BEC6C8E0000000000000832
+t1273785486
+s2098
+
+N/Users/aaronleese/asi-http-request/Classes/ASIHTTPRequestDelegate.h
+c000000004BEC6C8E0000000000000599
+t1273785486
+s1433
+
+N/Users/aaronleese/asi-http-request/Classes/ASIInputStream.h
+c000000004BEC6C8E00000000000003C9
+t1273785486
+s969
+i<Foundation/Foundation.h>
+
+N/Users/aaronleese/asi-http-request/Classes/ASIInputStream.m
+c000000004BEC6C8E0000000000000BF0
+t1273785486
+s3056
+i"ASIInputStream.h"
+i"ASIHTTPRequest.h"
+
+N/Users/aaronleese/asi-http-request/Classes/ASINSStringAdditions.h
+c000000004BEC6C8E0000000000000173
+t1273785486
+s371
+i<Foundation/Foundation.h>
+
+N/Users/aaronleese/asi-http-request/Classes/ASINSStringAdditions.m
+c000000004BEC6C8E000000000000030B
+t1273785486
+s779
+i"ASINSStringAdditions.h"
+
+N/Users/aaronleese/asi-http-request/Classes/ASINetworkQueue.h
+c000000004BEC6C8E0000000000001182
+t1273785486
+s4482
+i<Foundation/Foundation.h>
+i"ASIHTTPRequestDelegate.h"
+i"ASIProgressDelegate.h"
+
+N/Users/aaronleese/asi-http-request/Classes/ASINetworkQueue.m
+c000000004BEC86500000000000002993
+t1273792080
+s10643
+i"ASINetworkQueue.h"
+i"ASIHTTPRequest.h"
+
+N/Users/aaronleese/asi-http-request/Classes/ASIProgressDelegate.h
+c000000004BEC6C8E0000000000000678
+t1273785486
+s1656
+
+N/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesCDNRequest.h
+c000000004BEC6C8E0000000000000735
+t1273785486
+s1845
+i"ASICloudFilesRequest.h"
+
+N/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesCDNRequest.m
+c000000004BEC6C8E00000000000013A0
+t1273785486
+s5024
+i"ASICloudFilesCDNRequest.h"
+i"ASICloudFilesContainerXMLParserDelegate.h"
+
+N/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainer.h
+c000000004BEC6C8E0000000000000341
+t1273785486
+s833
+i<Foundation/Foundation.h>
+
+N/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainer.m
+c000000004BEC6C8E00000000000001F4
+t1273785486
+s500
+i"ASICloudFilesContainer.h"
+
+N/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainerRequest.h
+c000000004BEC6C8E00000000000005C2
+t1273785486
+s1474
+i"ASICloudFilesRequest.h"
+
+N/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainerRequest.m
+c000000004BEC6C8E0000000000001183
+t1273785486
+s4483
+i"ASICloudFilesContainerRequest.h"
+i"ASICloudFilesContainer.h"
+i"ASICloudFilesContainerXMLParserDelegate.h"
+
+N/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.h
+c000000004BEC6C8E0000000000000365
+t1273785486
+s869
+i"ASICloudFilesRequest.h"
+
+N/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.m
+c000000004BEC6C8E0000000000000A4D
+t1273785486
+s2637
+i"ASICloudFilesContainerXMLParserDelegate.h"
+i"ASICloudFilesContainer.h"
+
+N/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesObject.h
+c000000004BEC6C8E0000000000000258
+t1273785486
+s600
+i<Foundation/Foundation.h>
+
+N/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesObject.m
+c000000004BEC6C8E00000000000001E5
+t1273785486
+s485
+i"ASICloudFilesObject.h"
+
+N/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesObjectRequest.h
+c000000004BEC6C8E0000000000000E46
+t1273785486
+s3654
+i"ASICloudFilesRequest.h"
+
+N/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesObjectRequest.m
+c000000004BEC6C8E0000000000002957
+t1273785486
+s10583
+i"ASICloudFilesObjectRequest.h"
+i"ASICloudFilesObject.h"
+
+N/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesRequest.h
+c000000004BEC6C8E0000000000000434
+t1273785486
+s1076
+i<Foundation/Foundation.h>
+i"ASIHTTPRequest.h"
+
+N/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesRequest.m
+c000000004BEC6C8E0000000000000B7C
+t1273785486
+s2940
+i"ASICloudFilesRequest.h"
+
+N/Users/aaronleese/asi-http-request/Classes/S3/ASIS3Bucket.h
+c000000004BEC6C8E00000000000003CC
+t1273785486
+s972
+i<Foundation/Foundation.h>
+
+N/Users/aaronleese/asi-http-request/Classes/S3/ASIS3Bucket.m
+c000000004BEC6C8E00000000000002F4
+t1273785486
+s756
+i"ASIS3Bucket.h"
+
+N/Users/aaronleese/asi-http-request/Classes/S3/ASIS3BucketObject.h
+c000000004BEC6C8E000000000000060E
+t1273785486
+s1550
+i<Foundation/Foundation.h>
+
+N/Users/aaronleese/asi-http-request/Classes/S3/ASIS3BucketObject.m
+c000000004BEC6C8E0000000000000781
+t1273785486
+s1921
+i"ASIS3BucketObject.h"
+i"ASIS3ObjectRequest.h"
+
+N/Users/aaronleese/asi-http-request/Classes/S3/ASIS3BucketRequest.h
+c000000004BEC6C8E0000000000000A48
+t1273785486
+s2632
+i<Foundation/Foundation.h>
+i"ASIS3Request.h"
+
+N/Users/aaronleese/asi-http-request/Classes/S3/ASIS3BucketRequest.m
+c000000004BEC6C8E000000000000179B
+t1273785486
+s6043
+i"ASIS3BucketRequest.h"
+i"ASIS3BucketObject.h"
+
+N/Users/aaronleese/asi-http-request/Classes/S3/ASIS3ObjectRequest.h
+c000000004BEC6C8E0000000000000B41
+t1273785486
+s2881
+i<Foundation/Foundation.h>
+i"ASIS3Request.h"
+
+N/Users/aaronleese/asi-http-request/Classes/S3/ASIS3ObjectRequest.m
+c000000004BEC6C8E0000000000001262
+t1273785486
+s4706
+i"ASIS3ObjectRequest.h"
+
+N/Users/aaronleese/asi-http-request/Classes/S3/ASIS3Request.h
+c000000004BEC6C8E0000000000000DE3
+t1273785486
+s3555
+i<Foundation/Foundation.h>
+i"ASIHTTPRequest.h"
+
+N/Users/aaronleese/asi-http-request/Classes/S3/ASIS3Request.m
+c000000004BEC6C8E000000000000220F
+t1273785486
+s8719
+i"ASIS3Request.h"
+i<CommonCrypto/CommonHMAC.h>
+
+N/Users/aaronleese/asi-http-request/Classes/S3/ASIS3ServiceRequest.h
+c000000004BEC6C8E0000000000000325
+t1273785486
+s805
+i<Foundation/Foundation.h>
+i"ASIS3Request.h"
+
+N/Users/aaronleese/asi-http-request/Classes/S3/ASIS3ServiceRequest.m
+c000000004BEC6C8E00000000000009B9
+t1273785486
+s2489
+i"ASIS3ServiceRequest.h"
+i"ASIS3Bucket.h"
+
+N/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.h
+c000000004BEC6C8E000000000000012E
+t1273785486
+s302
+i"ASITestCase.h"
+
+N/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m
+c000000004BEC6C8E00000000000031AE
+t1273785486
+s12718
+i"ASICloudFilesRequestTests.h"
+i"ASICloudFilesContainer.h"
+i"ASICloudFilesObject.h"
+i"ASICloudFilesRequest.h"
+i"ASICloudFilesContainerRequest.h"
+i"ASICloudFilesObjectRequest.h"
+i"ASICloudFilesCDNRequest.h"
+
+N/Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.h
+c000000004BEC8CCD00000000000001DB
+t1273793741
+s475
+i"ASITestCase.h"
+
+N/Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.m
+c000000004BEC6C8E000000000000329B
+t1273785486
+s12955
+i"ASIFormDataRequestTests.h"
+i"ASIFormDataRequest.h"
+
+N/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.h
+c000000004BEC6C8E00000000000007A8
+t1273785486
+s1960
+i"ASITestCase.h"
+
+N/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m
+c000000004BEC6C8E0000000000011038
+t1273785486
+s69688
+i"ASIHTTPRequestTests.h"
+i"ASIHTTPRequest.h"
+i"ASINSStringAdditions.h"
+i"ASINetworkQueue.h"
+i"ASIFormDataRequest.h"
+i<SystemConfiguration/SystemConfiguration.h>
+
+N/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.h
+c000000004BEC6C8E000000000000092B
+t1273785486
+s2347
+i"ASITestCase.h"
+
+N/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m
+c000000004BEC6C8E000000000000A5F8
+t1273785486
+s42488
+i"ASINetworkQueueTests.h"
+i"ASIHTTPRequest.h"
+i"ASINetworkQueue.h"
+i"ASIFormDataRequest.h"
+i<SystemConfiguration/SystemConfiguration.h>
+
+N/Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.h
+c000000004BEC6C8E0000000000000242
+t1273785486
+s578
+i"ASITestCase.h"
+
+N/Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.m
+c000000004BEC6C8E0000000000007D00
+t1273785486
+s32000
+i"ASIS3RequestTests.h"
+i"ASINetworkQueue.h"
+i"ASIS3BucketObject.h"
+i"ASIS3ObjectRequest.h"
+i"ASIS3BucketRequest.h"
+i"ASIS3ServiceRequest.h"
+
+N/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h
+c000000004BEC6C8E0000000000000196
+t1273785486
+s406
+i<Foundation/Foundation.h>
+i"GHUnit.h"
+i<GHUnit/GHUnit.h>
+
+N/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.m
+c000000004BEC6C8E00000000000002C3
+t1273785486
+s707
+i"ASITestCase.h"
+
+N/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.h
+c000000004BEC6C8E00000000000002E6
+t1273785486
+s742
+i<Foundation/Foundation.h>
+i"ASITestCase.h"
+
+N/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m
+c000000004BEC6C8E0000000000001AE9
+t1273785486
+s6889
+i"PerformanceTests.h"
+i"ASIHTTPRequest.h"
+
+N/Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.h
+c000000004BEC6C8E00000000000002F4
+t1273785486
+s756
+i<Foundation/Foundation.h>
+i"ASITestCase.h"
+
+N/Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.m
+c000000004BEC6C8E0000000000001D30
+t1273785486
+s7472
+i"ProxyTests.h"
+i"ASIHTTPRequest.h"
+i"ASINetworkQueue.h"
+
+N/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.h
+c000000004BEC6C8E00000000000003EE
+t1273785486
+s1006
+i<Foundation/Foundation.h>
+i"ASITestCase.h"
+
+N/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m
+c000000004BEC6C8E000000000000161B
+t1273785486
+s5659
+i"StressTests.h"
+i"ASIHTTPRequest.h"
+i"ASINetworkQueue.h"
+
+N/Users/aaronleese/asi-http-request/External/GHUnit/Project-IPhone/build/CombinedDebug3_0/libGHUnitIPhone3_0.a
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/aaronleese/asi-http-request/External/GHUnit/Project-IPhone/build/Debug-iphonesimulator/GHUnit.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/aaronleese/asi-http-request/External/GHUnit/Project-IPhone/build/Debug-iphonesimulator/GHUnitIPhoneTestMain.m
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/aaronleese/asi-http-request/External/Reachability1.5/Reachability.h
+c000000004BEC6C8E00000000000013B4
+t1273785486
+s5044
+i<UIKit/UIKit.h>
+i<SystemConfiguration/SystemConfiguration.h>
+
+N/Users/aaronleese/asi-http-request/External/Reachability1.5/Reachability.m
+c000000004BEC6C8E0000000000005B34
+t1273785486
+s23348
+i<sys/socket.h>
+i<netinet/in.h>
+i<netinet6/in6.h>
+i<arpa/inet.h>
+i<ifaddrs.h>
+i<netdb.h>
+i"Reachability.h"
+i<SystemConfiguration/SCNetworkReachability.h>
+
+N/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app
+t2
+s0
+
+N/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app.dSYM
+t2
+s0
+
+N/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app/Frameworks/libGHUnitIPhone3_0.a
+t2
+s0
+
+N/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app/Info.plist
+t1273794020
+s588
+
+N/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app/PkgInfo
+t1273794020
+s8
+
+N/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app/Tests
+t2
+s0
+
+N/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app/iphone-tests-icon.png
+t1273794020
+s5893
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIAuthenticationDialog.o
+t1273794021
+s66740
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesCDNRequest.o
+t1273794022
+s27876
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesContainer.o
+t1273794022
+s14932
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesContainerRequest.o
+t1273794022
+s27096
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesContainerXMLParserDelegate.o
+t1273794022
+s18412
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesObject.o
+t1273794022
+s14060
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesObjectRequest.o
+t1273794022
+s45196
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesRequest.o
+t1273794022
+s20200
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesRequestTests.o
+t2
+s0
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIFormDataRequest.o
+t1273794020
+s40772
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIFormDataRequestTests.o
+t2
+s0
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIHTTPRequest.o
+t1273794021
+s319676
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIHTTPRequestTests.o
+t2
+s0
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIInputStream.o
+t1273794021
+s23520
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASINSStringAdditions.o
+t1273794020
+s8572
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASINetworkQueue.o
+t1273794020
+s51812
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASINetworkQueueTests.o
+t2
+s0
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3Bucket.o
+t1273794023
+s10944
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3BucketObject.o
+t1273794022
+s24400
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3BucketRequest.o
+t1273794023
+s37860
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3ObjectRequest.o
+t1273794023
+s30172
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3Request.o
+t1273794022
+s43492
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3RequestTests.o
+t2
+s0
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3ServiceRequest.o
+t1273794023
+s22096
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASITestCase.o
+t2
+s0
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/GHUnitIPhoneTestMain.o
+t2
+s0
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/PerformanceTests.o
+t2
+s0
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ProxyTests.o
+t2
+s0
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/Reachability.o
+t1273794022
+s38200
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/StressTests.o
+t2
+s0
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/Tests.LinkFileList
+c000000004BEC8DE40000000000000F33
+t1273794020
+s3891
+
+N/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Script-B52D492410DA403A008E8365.sh
+c000000004BEC8DE40000000000000022
+t1273794020
+s34
+
+N/Users/aaronleese/asi-http-request/iPhone Sample/iPhone_Prefix.pch
+c000000004BEC6C8E00000000000000B5
+t1273785486
+s181
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/aaronleese/asi-http-request/iPhone Sample/iphone-tests-icon.png
+c000000004BEC6C8E0000000000001705
+t1273785486
+s5893
+
+N/var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch.gch
+t1273793917
+s13018544
+
+NiPhone Sample/Tests-Info.plist
+c000000004BEC6C8E0000000000000308
+t1273785486
+s776
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies295486820#295486820#0(0"0(0#1#0"4300911832#0"0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIAuthenticationDialog.o /Users/aaronleese/asi-http-request/Classes/ASIAuthenticationDialog.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486821.724945
+e295486821.996941
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIAuthenticationDialog.o
+x/Users/aaronleese/asi-http-request/Classes/ASIAuthenticationDialog.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/aaronleese/asi-http-request/Classes/ASIAuthenticationDialog.m295486821#295486822#0(0"0(0#0#68"/Users/aaronleese/asi-http-request/Classes/ASIAuthenticationDialog.m4300911832#1821"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/ASIAuthenticationDialog.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIAuthenticationDialog.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesCDNRequest.o /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesCDNRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486822.265093
+e295486822.437701
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesCDNRequest.o
+x/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesCDNRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@87"Compile /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesCDNRequest.m295486822#295486822#0(0"0(0#0#79"/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesCDNRequest.m4300911832#1832"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesCDNRequest.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesCDNRequest.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesContainer.o /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainer.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486822.385559
+e295486822.508800
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesContainer.o
+x/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainer.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainer.m295486822#295486822#0(0"0(0#0#78"/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainer.m4300911832#1830"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainer.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesContainer.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesContainerRequest.o /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainerRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486822.437843
+e295486822.640066
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesContainerRequest.o
+x/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainerRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@93"Compile /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainerRequest.m295486822#295486822#0(0"0(0#0#85"/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainerRequest.m4300911832#1844"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainerRequest.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesContainerRequest.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesContainerXMLParserDelegate.o /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486822.508947
+e295486822.663765
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesContainerXMLParserDelegate.o
+x/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@103"Compile /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.m295486822#295486822#0(0"0(0#0#95"/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.m4300911832#1864"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesContainerXMLParserDelegate.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesContainerXMLParserDelegate.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesObject.o /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesObject.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486822.640206
+e295486822.758903
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesObject.o
+x/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesObject.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@83"Compile /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesObject.m295486822#295486822#0(0"0(0#0#75"/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesObject.m4300911832#1824"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesObject.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesObject.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesObjectRequest.o /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesObjectRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486822.663961
+e295486822.887352
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesObjectRequest.o
+x/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesObjectRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@90"Compile /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesObjectRequest.m295486822#295486822#0(0"0(0#0#82"/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesObjectRequest.m4300911832#1838"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesObjectRequest.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesObjectRequest.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesRequest.o /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486822.759036
+e295486822.931003
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesRequest.o
+x/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@84"Compile /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesRequest.m295486822#295486822#0(0"0(0#0#76"/Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesRequest.m4300911832#1826"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/CloudFiles/ASICloudFilesRequest.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesRequest.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesRequestTests.o /Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486822.887492
+e295486823.088252
+r0
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesRequestTests.o
+x/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.h:7,
+o                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m:7:
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:12:19: error: GHUnit.h: No such file or directory
+oIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.h:7,
+o                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m:7:
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:17: error: cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m: In function '-[ASICloudFilesRequestTests dealloc]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m:335: warning: 'ASITestCase' may not respond to '-dealloc'
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m:335: warning: (Messages without a matching method signature
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m:335: warning: will be assumed to return 'id' and accept
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m:335: warning: '...' as arguments.)
+lSLF07#2@84"Compile /Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m295486822#295486823#0(1322"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.h:7,                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m:7:/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:12:19: error: GHUnit.h: No such file or directoryIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.h:7,                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m:7:/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:17: error: cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m: In function '-[ASICloudFilesRequestTests dealloc]':/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m:335: warning: 'ASITestCase' may not respond to '-dealloc'/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m:335: warning: (Messages without a matching method signature/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m:335: warning: will be assumed to return 'id' and accept/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m:335: warning: '...' as arguments.)4(4@35"GHUnit.h: No such file or directory295486822#204#113#3(7@98"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m295486822#18446744073709551615#0#0(6@76"/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m295478286#7#0#7#0#0"0(7@98"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.h295486822#18446744073709551615#0#0(6@76"/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.h295478286#7#0#7#0#0"0(13@101"GHUnit.h: No such file or directory in /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295486822#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#12#0#12#0#0"0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#12#0#12#0#28"*: No such file or directory0(4@79"Cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'295486822#521#154#3(7@98"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m295486822#18446744073709551615#0#0(6@76"/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m295478286#7#0#7#0#0"0(7@98"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.h295486822#18446744073709551615#0#0(6@76"/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.h295478286#7#0#7#0#0"0(13@145"Cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase' in /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295486822#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#17#0#17#0#0"0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#17#0#17#0#60"cannot find interface declaration for '*', superclass of '*'0(22@43"'ASITestCase' may not respond to '-dealloc'295486823#805#135#0(6@76"/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m295478286#335#0#335#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)295486823#940#137#0(6@76"/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m295478286#335#0#335#0#0"0(0#0#76"/Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m4300911832#1831"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/Tests/ASICloudFilesRequestTests.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASICloudFilesRequestTests.o1#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIFormDataRequest.o /Users/aaronleese/asi-http-request/Classes/ASIFormDataRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486820.168524
+e295486820.418077
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIFormDataRequest.o
+x/Users/aaronleese/asi-http-request/Classes/ASIFormDataRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@71"Compile /Users/aaronleese/asi-http-request/Classes/ASIFormDataRequest.m295486820#295486820#0(0"0(0#0#63"/Users/aaronleese/asi-http-request/Classes/ASIFormDataRequest.m4300911832#1811"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/ASIFormDataRequest.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIFormDataRequest.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIFormDataRequestTests.o /Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486820.687070
+e295486820.839206
+r0
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIFormDataRequestTests.o
+x/Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.h:9,
+o                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.m:9:
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:12:19: error: GHUnit.h: No such file or directory
+oIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.h:9,
+o                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.m:9:
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:17: error: cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'
+lSLF07#2@82"Compile /Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.m295486820#295486820#0(667"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.h:9,                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.m:9:/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:12:19: error: GHUnit.h: No such file or directoryIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.h:9,                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.m:9:/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:17: error: cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'2(4@35"GHUnit.h: No such file or directory295486820#200#113#3(7@96"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.m295486820#18446744073709551615#0#0(6@74"/Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.m295478286#9#0#9#0#0"0(7@96"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.h295486820#18446744073709551615#0#0(6@74"/Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.h295486541#9#0#9#0#0"0(13@101"GHUnit.h: No such file or directory in /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295486820#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#12#0#12#0#0"0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#12#0#12#0#28"*: No such file or directory0(4@79"Cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'295486820#513#154#3(7@96"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.m295486820#18446744073709551615#0#0(6@74"/Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.m295478286#9#0#9#0#0"0(7@96"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.h295486820#18446744073709551615#0#0(6@74"/Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.h295486541#9#0#9#0#0"0(13@145"Cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase' in /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295486820#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#17#0#17#0#0"0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#17#0#17#0#60"cannot find interface declaration for '*', superclass of '*'0(0#0#74"/Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.m4300911832#1827"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/Tests/ASIFormDataRequestTests.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIFormDataRequestTests.o1#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIHTTPRequest.o /Users/aaronleese/asi-http-request/Classes/ASIHTTPRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486820.170535
+e295486821.585316
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIHTTPRequest.o
+x/Users/aaronleese/asi-http-request/Classes/ASIHTTPRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/aaronleese/asi-http-request/Classes/ASIHTTPRequest.m295486820#295486821#0(0"0(0#0#59"/Users/aaronleese/asi-http-request/Classes/ASIHTTPRequest.m4300911832#1803"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/ASIHTTPRequest.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIHTTPRequest.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIHTTPRequestTests.o /Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486820.839337
+e295486821.097392
+r0
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIHTTPRequestTests.o
+x/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.h:9,
+o                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:9:
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:12:19: error: GHUnit.h: No such file or directory
+oIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.h:9,
+o                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:9:
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:17: error: cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m: In function '-[ASIHTTPRequestTests testCancel]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:71: warning: 'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:71: warning: (Messages without a matching method signature
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:71: warning: will be assumed to return 'id' and accept
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:71: warning: '...' as arguments.)
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m: In function '-[ASIHTTPRequestTests testDelegateMethods]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:107: warning: 'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m: In function '-[ASIHTTPRequestTests testRedirectedResume]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:470: warning: 'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m: In function '-[ASIHTTPRequestTests testDownloadProgress]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:586: warning: 'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m: In function '-[ASIHTTPRequestTests testUploadProgress]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:619: warning: 'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m: In function '-[ASIHTTPRequestTests testPostBodyStreamedFromDisk]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:638: warning: 'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m: In function '-[ASIHTTPRequestTests testPartialFetch]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:1118: warning: 'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m: In function '-[ASIHTTPRequestTests testRemoveUploadProgress]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:1518: warning: 'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'
+lSLF07#2@78"Compile /Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m295486820#295486821#0(3520"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.h:9,                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:9:/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:12:19: error: GHUnit.h: No such file or directoryIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.h:9,                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:9:/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:17: error: cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m: In function '-[ASIHTTPRequestTests testCancel]':/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:71: warning: 'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:71: warning: (Messages without a matching method signature/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:71: warning: will be assumed to return 'id' and accept/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:71: warning: '...' as arguments.)/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m: In function '-[ASIHTTPRequestTests testDelegateMethods]':/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:107: warning: 'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m: In function '-[ASIHTTPRequestTests testRedirectedResume]':/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:470: warning: 'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m: In function '-[ASIHTTPRequestTests testDownloadProgress]':/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:586: warning: 'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m: In function '-[ASIHTTPRequestTests testUploadProgress]':/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:619: warning: 'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m: In function '-[ASIHTTPRequestTests testPostBodyStreamedFromDisk]':/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:638: warning: 'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m: In function '-[ASIHTTPRequestTests testPartialFetch]':/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:1118: warning: 'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m: In function '-[ASIHTTPRequestTests testRemoveUploadProgress]':/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m:1518: warning: 'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'11(4@35"GHUnit.h: No such file or directory295486820#192#113#3(7@92"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m295486820#18446744073709551615#0#0(6@70"/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m295478286#9#0#9#0#0"0(7@92"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.h295486820#18446744073709551615#0#0(6@70"/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.h295478286#9#0#9#0#0"0(13@101"GHUnit.h: No such file or directory in /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295486820#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#12#0#12#0#0"0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#12#0#12#0#28"*: No such file or directory0(4@79"Cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'295486820#497#154#3(7@92"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m295486820#18446744073709551615#0#0(6@70"/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m295478286#9#0#9#0#0"0(7@92"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.h295486820#18446744073709551615#0#0(6@70"/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.h295478286#9#0#9#0#0"0(13@145"Cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase' in /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295486820#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#17#0#17#0#0"0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#17#0#17#0#60"cannot find interface declaration for '*', superclass of '*'0(22@97"'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'295486820#772#182#0(6@70"/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m295478286#71#0#71#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)295486820#954#130#0(6@70"/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m295478286#71#0#71#0#0"0(22@97"'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'295486820#1445#183#0(6@70"/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m295478286#107#0#107#0#26"'*' may not respond to '*'0(22@97"'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'295486820#1759#183#0(6@70"/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m295478286#470#0#470#0#26"'*' may not respond to '*'0(22@97"'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'295486820#2073#183#0(6@70"/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m295478286#586#0#586#0#26"'*' may not respond to '*'0(22@97"'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'295486820#2385#183#0(6@70"/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m295478286#619#0#619#0#26"'*' may not respond to '*'0(22@97"'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'295486820#2707#183#0(6@70"/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m295478286#638#0#638#0#26"'*' may not respond to '*'0(22@97"'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'295486821#3017#184#0(6@70"/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m295478286#1118#0#1118#0#26"'*' may not respond to '*'0(22@97"'ASIHTTPRequestTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'295486821#3336#184#0(6@70"/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m295478286#1518#0#1518#0#26"'*' may not respond to '*'0(0#0#70"/Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m4300911832#1819"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/Tests/ASIHTTPRequestTests.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIHTTPRequestTests.o1#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIInputStream.o /Users/aaronleese/asi-http-request/Classes/ASIInputStream.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486821.607528
+e295486821.761260
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIInputStream.o
+x/Users/aaronleese/asi-http-request/Classes/ASIInputStream.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/aaronleese/asi-http-request/Classes/ASIInputStream.m295486821#295486821#0(0"0(0#0#59"/Users/aaronleese/asi-http-request/Classes/ASIInputStream.m4300911832#1803"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/ASIInputStream.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIInputStream.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASINSStringAdditions.o /Users/aaronleese/asi-http-request/Classes/ASINSStringAdditions.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486820.612338
+e295486820.686923
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASINSStringAdditions.o
+x/Users/aaronleese/asi-http-request/Classes/ASINSStringAdditions.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/aaronleese/asi-http-request/Classes/ASINSStringAdditions.m295486820#295486820#0(0"0(0#0#65"/Users/aaronleese/asi-http-request/Classes/ASINSStringAdditions.m4300911832#1815"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/ASINSStringAdditions.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASINSStringAdditions.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASINetworkQueue.o /Users/aaronleese/asi-http-request/Classes/ASINetworkQueue.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486820.418229
+e295486820.612200
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASINetworkQueue.o
+x/Users/aaronleese/asi-http-request/Classes/ASINetworkQueue.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/aaronleese/asi-http-request/Classes/ASINetworkQueue.m295486820#295486820#0(0"0(0#0#60"/Users/aaronleese/asi-http-request/Classes/ASINetworkQueue.m4300911832#1805"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/ASINetworkQueue.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASINetworkQueue.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASINetworkQueueTests.o /Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486821.097515
+e295486821.327805
+r0
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASINetworkQueueTests.o
+x/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.h:9,
+o                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m:9:
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:12:19: error: GHUnit.h: No such file or directory
+oIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.h:9,
+o                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m:9:
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:17: error: cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m: In function '-[ASINetworkQueueTests testAddingRequestsToQueueWhileInProgress]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m:249: warning: 'ASINetworkQueueTests' may not respond to '-performSelector:withObject:afterDelay:'
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m:249: warning: (Messages without a matching method signature
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m:249: warning: will be assumed to return 'id' and accept
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m:249: warning: '...' as arguments.)
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m: In function '-[ASINetworkQueueTests testQueueFinishedCalledOnFailure]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m:1134: warning: 'ASINetworkQueueTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'
+lSLF07#2@79"Compile /Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m295486821#295486821#0(1676"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.h:9,                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m:9:/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:12:19: error: GHUnit.h: No such file or directoryIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.h:9,                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m:9:/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:17: error: cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m: In function '-[ASINetworkQueueTests testAddingRequestsToQueueWhileInProgress]':/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m:249: warning: 'ASINetworkQueueTests' may not respond to '-performSelector:withObject:afterDelay:'/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m:249: warning: (Messages without a matching method signature/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m:249: warning: will be assumed to return 'id' and accept/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m:249: warning: '...' as arguments.)/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m: In function '-[ASINetworkQueueTests testQueueFinishedCalledOnFailure]':/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m:1134: warning: 'ASINetworkQueueTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'5(4@35"GHUnit.h: No such file or directory295486821#194#113#3(7@93"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m295486821#18446744073709551615#0#0(6@71"/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m295478286#9#0#9#0#0"0(7@93"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.h295486821#18446744073709551615#0#0(6@71"/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.h295478286#9#0#9#0#0"0(13@101"GHUnit.h: No such file or directory in /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295486821#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#12#0#12#0#0"0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#12#0#12#0#28"*: No such file or directory0(4@79"Cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'295486821#501#154#3(7@93"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m295486821#18446744073709551615#0#0(6@71"/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m295478286#9#0#9#0#0"0(7@93"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.h295486821#18446744073709551615#0#0(6@71"/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.h295478286#9#0#9#0#0"0(13@145"Cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase' in /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295486821#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#17#0#17#0#0"0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#17#0#17#0#60"cannot find interface declaration for '*', superclass of '*'0(22@83"'ASINetworkQueueTests' may not respond to '-performSelector:withObject:afterDelay:'295486821#808#170#0(6@71"/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m295478286#249#0#249#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)295486821#978#132#0(6@71"/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m295478286#249#0#249#0#0"0(22@98"'ASINetworkQueueTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'295486821#1490#186#0(6@71"/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m295478286#1134#0#1134#0#26"'*' may not respond to '*'0(0#0#71"/Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m4300911832#1821"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/Tests/ASINetworkQueueTests.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASINetworkQueueTests.o1#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3Bucket.o /Users/aaronleese/asi-http-request/Classes/S3/ASIS3Bucket.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486822.931156
+e295486823.031422
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3Bucket.o
+x/Users/aaronleese/asi-http-request/Classes/S3/ASIS3Bucket.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/aaronleese/asi-http-request/Classes/S3/ASIS3Bucket.m295486822#295486823#0(0"0(0#0#59"/Users/aaronleese/asi-http-request/Classes/S3/ASIS3Bucket.m4300911832#1800"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/S3/ASIS3Bucket.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3Bucket.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3BucketObject.o /Users/aaronleese/asi-http-request/Classes/S3/ASIS3BucketObject.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486822.125332
+e295486822.264958
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3BucketObject.o
+x/Users/aaronleese/asi-http-request/Classes/S3/ASIS3BucketObject.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/aaronleese/asi-http-request/Classes/S3/ASIS3BucketObject.m295486822#295486822#0(0"0(0#0#65"/Users/aaronleese/asi-http-request/Classes/S3/ASIS3BucketObject.m4300911832#1812"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/S3/ASIS3BucketObject.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3BucketObject.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3BucketRequest.o /Users/aaronleese/asi-http-request/Classes/S3/ASIS3BucketRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486823.031562
+e295486823.242775
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3BucketRequest.o
+x/Users/aaronleese/asi-http-request/Classes/S3/ASIS3BucketRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/aaronleese/asi-http-request/Classes/S3/ASIS3BucketRequest.m295486823#295486823#0(0"0(0#0#66"/Users/aaronleese/asi-http-request/Classes/S3/ASIS3BucketRequest.m4300911832#1814"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/S3/ASIS3BucketRequest.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3BucketRequest.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3ObjectRequest.o /Users/aaronleese/asi-http-request/Classes/S3/ASIS3ObjectRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486823.088379
+e295486823.263743
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3ObjectRequest.o
+x/Users/aaronleese/asi-http-request/Classes/S3/ASIS3ObjectRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/aaronleese/asi-http-request/Classes/S3/ASIS3ObjectRequest.m295486823#295486823#0(0"0(0#0#66"/Users/aaronleese/asi-http-request/Classes/S3/ASIS3ObjectRequest.m4300911832#1814"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/S3/ASIS3ObjectRequest.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3ObjectRequest.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3Request.o /Users/aaronleese/asi-http-request/Classes/S3/ASIS3Request.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486822.127624
+e295486822.384113
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3Request.o
+x/Users/aaronleese/asi-http-request/Classes/S3/ASIS3Request.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/aaronleese/asi-http-request/Classes/S3/ASIS3Request.m295486822#295486822#0(0"0(0#0#60"/Users/aaronleese/asi-http-request/Classes/S3/ASIS3Request.m4300911832#1802"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/S3/ASIS3Request.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3Request.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3RequestTests.o /Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486821.327937
+e295486821.520787
+r0
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3RequestTests.o
+x/Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.h:9,
+o                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.m:9:
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:12:19: error: GHUnit.h: No such file or directory
+oIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.h:9,
+o                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.m:9:
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:17: error: cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'
+lSLF07#2@76"Compile /Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.m295486821#295486821#0(643"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.h:9,                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.m:9:/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:12:19: error: GHUnit.h: No such file or directoryIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.h:9,                 from /Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.m:9:/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:17: error: cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'2(4@35"GHUnit.h: No such file or directory295486821#188#113#3(7@90"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.m295486821#18446744073709551615#0#0(6@68"/Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.m295478286#9#0#9#0#0"0(7@90"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.h295486821#18446744073709551615#0#0(6@68"/Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.h295478286#9#0#9#0#0"0(13@101"GHUnit.h: No such file or directory in /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295486821#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#12#0#12#0#0"0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#12#0#12#0#28"*: No such file or directory0(4@79"Cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'295486821#489#154#3(7@90"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.m295486821#18446744073709551615#0#0(6@68"/Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.m295478286#9#0#9#0#0"0(7@90"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.h295486821#18446744073709551615#0#0(6@68"/Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.h295478286#9#0#9#0#0"0(13@145"Cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase' in /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295486821#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#17#0#17#0#0"0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#17#0#17#0#60"cannot find interface declaration for '*', superclass of '*'0(0#0#68"/Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.m4300911832#1815"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/Tests/ASIS3RequestTests.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3RequestTests.o1#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3ServiceRequest.o /Users/aaronleese/asi-http-request/Classes/S3/ASIS3ServiceRequest.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486823.243087
+e295486823.367163
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3ServiceRequest.o
+x/Users/aaronleese/asi-http-request/Classes/S3/ASIS3ServiceRequest.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/aaronleese/asi-http-request/Classes/S3/ASIS3ServiceRequest.m295486823#295486823#0(0"0(0#0#67"/Users/aaronleese/asi-http-request/Classes/S3/ASIS3ServiceRequest.m4300911832#1816"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/S3/ASIS3ServiceRequest.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASIS3ServiceRequest.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASITestCase.o /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486821.520916
+e295486821.607260
+r0
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASITestCase.o
+x/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.m:9:
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:12:19: error: GHUnit.h: No such file or directory
+oIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.m:9:
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:17: error: cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'
+lSLF07#2@70"Compile /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.m295486821#295486821#0(443"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.m:9:/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:12:19: error: GHUnit.h: No such file or directoryIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.m:9:/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:17: error: cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'2(4@35"GHUnit.h: No such file or directory295486821#88#113#2(7@84"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.m295486821#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.m295478286#9#0#9#0#0"0(13@101"GHUnit.h: No such file or directory in /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295486821#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#12#0#12#0#0"0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#12#0#12#0#28"*: No such file or directory0(4@79"Cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'295486821#289#154#2(7@84"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.m295486821#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.m295478286#9#0#9#0#0"0(13@145"Cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase' in /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295486821#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#17#0#17#0#0"0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#17#0#17#0#60"cannot find interface declaration for '*', superclass of '*'0(0#0#62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.m4300911832#1803"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ASITestCase.o1#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/GHUnitIPhoneTestMain.o /Users/aaronleese/asi-http-request/External/GHUnit/Project-IPhone/build/Debug-iphonesimulator/GHUnitIPhoneTestMain.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486823.263894
+e295486823.273665
+r0
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/GHUnitIPhoneTestMain.o
+x/Users/aaronleese/asi-http-request/External/GHUnit/Project-IPhone/build/Debug-iphonesimulator/GHUnitIPhoneTestMain.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: /Users/aaronleese/asi-http-request/External/GHUnit/Project-IPhone/build/Debug-iphonesimulator/GHUnitIPhoneTestMain.m: No such file or directory
+oi686-apple-darwin10-gcc-4.2.1: warning: '-x objective-c' after last input file has no effect
+oi686-apple-darwin10-gcc-4.2.1: no input files
+lSLF07#2@124"Compile /Users/aaronleese/asi-http-request/External/GHUnit/Project-IPhone/build/Debug-iphonesimulator/GHUnitIPhoneTestMain.m295486823#295486823#0(418"i686-apple-darwin10-gcc-4.2.1: /Users/aaronleese/asi-http-request/External/GHUnit/Project-IPhone/build/Debug-iphonesimulator/GHUnitIPhoneTestMain.m: No such file or directoryi686-apple-darwin10-gcc-4.2.1: warning: '-x objective-c' after last input file has no effecti686-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 failed with exit code 11(4@103"Command /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 failed with exit code 1295486823#18446744073709551615#0#0(1@0"0(0#0#116"/Users/aaronleese/asi-http-request/External/GHUnit/Project-IPhone/build/Debug-iphonesimulator/GHUnitIPhoneTestMain.m4300911832#1866"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/External/GHUnit/Project-IPhone/build/Debug-iphonesimulator/GHUnitIPhoneTestMain.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/GHUnitIPhoneTestMain.o1#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/PerformanceTests.o /Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486821.997071
+e295486822.125213
+r0
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/PerformanceTests.o
+x/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.h:10,
+o                 from /Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:9:
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:12:19: error: GHUnit.h: No such file or directory
+oIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.h:10,
+o                 from /Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:9:
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:17: error: cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'
+o/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m: In function '-[PerformanceTests testASIHTTPRequestSynchronousPerformance]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:34: warning: 'PerformanceTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'
+o/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:34: warning: (Messages without a matching method signature
+o/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:34: warning: will be assumed to return 'id' and accept
+o/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:34: warning: '...' as arguments.)
+o/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m: In function '-[PerformanceTests testNSURLConnectionSynchronousPerformance]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:75: warning: 'PerformanceTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'
+o/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m: In function '-[PerformanceTests testASIHTTPRequestAsyncPerformance]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:115: warning: 'PerformanceTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'
+o/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m: In function '-[PerformanceTests testQueuedASIHTTPRequestAsyncPerformance]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:120: warning: 'PerformanceTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'
+o/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m: In function '-[PerformanceTests testNSURLConnectionAsyncPerformance]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:178: warning: 'PerformanceTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'
+lSLF07#2@75"Compile /Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m295486821#295486822#0(2591"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.h:10,                 from /Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:9:/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:12:19: error: GHUnit.h: No such file or directoryIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.h:10,                 from /Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:9:/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:17: error: cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m: In function '-[PerformanceTests testASIHTTPRequestSynchronousPerformance]':/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:34: warning: 'PerformanceTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:34: warning: (Messages without a matching method signature/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:34: warning: will be assumed to return 'id' and accept/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:34: warning: '...' as arguments.)/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m: In function '-[PerformanceTests testNSURLConnectionSynchronousPerformance]':/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:75: warning: 'PerformanceTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m: In function '-[PerformanceTests testASIHTTPRequestAsyncPerformance]':/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:115: warning: 'PerformanceTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m: In function '-[PerformanceTests testQueuedASIHTTPRequestAsyncPerformance]':/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:120: warning: 'PerformanceTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m: In function '-[PerformanceTests testNSURLConnectionAsyncPerformance]':/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m:178: warning: 'PerformanceTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'8(4@35"GHUnit.h: No such file or directory295486822#187#113#3(7@89"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m295486822#18446744073709551615#0#0(6@67"/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m295478286#9#0#9#0#0"0(7@89"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.h295486822#18446744073709551615#0#0(6@67"/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.h295478286#10#0#10#0#0"0(13@101"GHUnit.h: No such file or directory in /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295486822#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#12#0#12#0#0"0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#12#0#12#0#28"*: No such file or directory0(4@79"Cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'295486822#487#154#3(7@89"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m295486822#18446744073709551615#0#0(6@67"/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m295478286#9#0#9#0#0"0(7@89"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.h295486822#18446744073709551615#0#0(6@67"/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.h295478286#10#0#10#0#0"0(13@145"Cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase' in /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295486822#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#17#0#17#0#0"0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#17#0#17#0#60"cannot find interface declaration for '*', superclass of '*'0(22@94"'PerformanceTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'295486822#786#176#0(6@67"/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m295478286#34#0#34#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)295486822#962#127#0(6@67"/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m295478286#34#0#34#0#0"0(22@94"'PerformanceTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'295486822#1460#176#0(6@67"/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m295478286#75#0#75#0#26"'*' may not respond to '*'0(22@94"'PerformanceTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'295486822#1775#177#0(6@67"/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m295478286#115#0#115#0#26"'*' may not respond to '*'0(22@94"'PerformanceTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'295486822#2097#177#0(6@67"/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m295478286#120#0#120#0#26"'*' may not respond to '*'0(22@94"'PerformanceTests' may not respond to '-performSelectorOnMainThread:withObject:waitUntilDone:'295486822#2414#177#0(6@67"/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m295478286#178#0#178#0#26"'*' may not respond to '*'0(0#0#67"/Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m4300911832#1813"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/Tests/PerformanceTests.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/PerformanceTests.o1#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ProxyTests.o /Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486821.585446
+e295486821.724627
+r0
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ProxyTests.o
+x/Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.h:10,
+o                 from /Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.m:9:
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:12:19: error: GHUnit.h: No such file or directory
+oIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.h:10,
+o                 from /Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.m:9:
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:17: error: cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'
+lSLF07#2@69"Compile /Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.m295486821#295486821#0(617"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.h:10,                 from /Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.m:9:/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:12:19: error: GHUnit.h: No such file or directoryIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.h:10,                 from /Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.m:9:/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:17: error: cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'2(4@35"GHUnit.h: No such file or directory295486821#175#113#3(7@83"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.m295486821#18446744073709551615#0#0(6@61"/Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.m295478286#9#0#9#0#0"0(7@83"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.h295486821#18446744073709551615#0#0(6@61"/Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.h295478286#10#0#10#0#0"0(13@101"GHUnit.h: No such file or directory in /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295486821#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#12#0#12#0#0"0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#12#0#12#0#28"*: No such file or directory0(4@79"Cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'295486821#463#154#3(7@83"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.m295486821#18446744073709551615#0#0(6@61"/Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.m295478286#9#0#9#0#0"0(7@83"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.h295486821#18446744073709551615#0#0(6@61"/Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.h295478286#10#0#10#0#0"0(13@145"Cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase' in /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295486821#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#17#0#17#0#0"0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#17#0#17#0#60"cannot find interface declaration for '*', superclass of '*'0(0#0#61"/Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.m4300911832#1801"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/Tests/ProxyTests.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/ProxyTests.o1#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/Reachability.o /Users/aaronleese/asi-http-request/External/Reachability1.5/Reachability.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486821.878660
+e295486822.127492
+r1
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/Reachability.o
+x/Users/aaronleese/asi-http-request/External/Reachability1.5/Reachability.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/aaronleese/asi-http-request/External/Reachability1.5/Reachability.m295486821#295486822#0(0"0(0#0#74"/Users/aaronleese/asi-http-request/External/Reachability1.5/Reachability.m4300911832#1816"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/External/Reachability1.5/Reachability.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/Reachability.o0#
+
+CCompileC build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/StressTests.o /Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s295486821.761406
+e295486821.878537
+r0
+xCompileC
+xbuild/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/StressTests.o
+x/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/StressTests.h:10,
+o                 from /Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m:16:
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:12:19: error: GHUnit.h: No such file or directory
+oIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/StressTests.h:10,
+o                 from /Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m:16:
+o/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:17: error: cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'
+o/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m: In function '-[StressTests performRedirectRequest]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m:109: warning: 'StressTests' may not respond to '-performSelector:withObject:afterDelay:'
+o/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m:109: warning: (Messages without a matching method signature
+o/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m:109: warning: will be assumed to return 'id' and accept
+o/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m:109: warning: '...' as arguments.)
+o/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m: In function '-[StressTests performSetDelegateRequest]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m:145: warning: 'StressTests' may not respond to '-performSelectorInBackground:withObject:'
+o/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m: In function '-[StressTests setProgress:]':
+o/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m:173: warning: 'StressTests' may not respond to '-performSelector:withObject:afterDelay:'
+lSLF07#2@70"Compile /Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m295486821#295486821#0(1764"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/StressTests.h:10,                 from /Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m:16:/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:12:19: error: GHUnit.h: No such file or directoryIn file included from /Users/aaronleese/asi-http-request/Classes/Tests/StressTests.h:10,                 from /Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m:16:/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h:17: error: cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m: In function '-[StressTests performRedirectRequest]':/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m:109: warning: 'StressTests' may not respond to '-performSelector:withObject:afterDelay:'/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m:109: warning: (Messages without a matching method signature/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m:109: warning: will be assumed to return 'id' and accept/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m:109: warning: '...' as arguments.)/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m: In function '-[StressTests performSetDelegateRequest]':/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m:145: warning: 'StressTests' may not respond to '-performSelectorInBackground:withObject:'/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m: In function '-[StressTests setProgress:]':/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m:173: warning: 'StressTests' may not respond to '-performSelector:withObject:afterDelay:'6(4@35"GHUnit.h: No such file or directory295486821#178#113#3(7@84"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m295486821#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m295478286#16#0#16#0#0"0(7@84"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/StressTests.h295486821#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.h295478286#10#0#10#0#0"0(13@101"GHUnit.h: No such file or directory in /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295486821#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#12#0#12#0#0"0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#12#0#12#0#28"*: No such file or directory0(4@79"Cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase'295486821#469#154#3(7@84"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m295486821#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m295478286#16#0#16#0#0"0(7@84"In file included from /Users/aaronleese/asi-http-request/Classes/Tests/StressTests.h295486821#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.h295478286#10#0#10#0#0"0(13@145"Cannot find interface declaration for 'GHTestCase', superclass of 'ASITestCase' in /Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295486821#18446744073709551615#0#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#17#0#17#0#0"0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/ASITestCase.h295478286#17#0#17#0#60"cannot find interface declaration for '*', superclass of '*'0(22@74"'StressTests' may not respond to '-performSelector:withObject:afterDelay:'295486821#740#152#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m295478286#109#0#109#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)295486821#892#123#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m295478286#109#0#109#0#0"0(22@75"'StressTests' may not respond to '-performSelectorInBackground:withObject:'295486821#1352#153#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m295478286#145#0#145#0#26"'*' may not respond to '*'0(22@74"'StressTests' may not respond to '-performSelector:withObject:afterDelay:'295486821#1612#152#0(6@62"/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m295478286#173#0#173#0#26"'*' may not respond to '*'0(0#0#62"/Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m4300911832#1803"    cd /Users/aaronleese/asi-http-request    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -D__IPHONE_OS_VERSION_MIN_REQUIRED=30000 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk -fvisibility=hidden -mmacosx-version-min=10.5 -gdwarf-2 -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-generated-files.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-own-target-headers.hmap -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-all-target-headers.hmap -iquote /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-project-headers.hmap -F/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator -I/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources/i386 -I/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources -include /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch -c /Users/aaronleese/asi-http-request/Classes/Tests/StressTests.m -o /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/StressTests.o1#
+
+CCpResource build/Debug-iphonesimulator/Tests.app/iphone-tests-icon.png "iPhone Sample/iphone-tests-icon.png"
+s295486820.148627
+e295486820.168228
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/Tests.app/iphone-tests-icon.png
+xiPhone Sample/iphone-tests-icon.png
+lSLF07#2@40"Copy iPhone Sample/iphone-tests-icon.png295486820#295486820#0(0"0(0#0#70"/Users/aaronleese/asi-http-request/iPhone Sample/iphone-tests-icon.png4300911832#467"    cd /Users/aaronleese/asi-http-request    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Users/aaronleese/asi-http-request/iPhone Sample/iphone-tests-icon.png" /Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app0#
+
+CGenerateDSYMFile /Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app.dSYM /Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app/Tests
+r0
+
+CLd /Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app/Tests normal i386
+r0
+
+CPBXCp build/Debug-iphonesimulator/Tests.app/Frameworks/libGHUnitIPhone3_0.a External/GHUnit/Project-IPhone/build/CombinedDebug3_0/libGHUnitIPhone3_0.a
+s295486823.367291
+e295486823.373901
+r0
+xPBXCp
+xbuild/Debug-iphonesimulator/Tests.app/Frameworks/libGHUnitIPhone3_0.a
+xExternal/GHUnit/Project-IPhone/build/CombinedDebug3_0/libGHUnitIPhone3_0.a
+o/Users/aaronleese/asi-http-request/External/GHUnit/Project-IPhone/build/CombinedDebug3_0: No such file or directory
+lSLF07#2@79"Copy External/GHUnit/Project-IPhone/build/CombinedDebug3_0/libGHUnitIPhone3_0.a295486823#295486823#0(224"/Users/aaronleese/asi-http-request/External/GHUnit/Project-IPhone/build/CombinedDebug3_0: No such file or directoryCommand /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp failed with exit code 11(4@107"Command /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp failed with exit code 1295486823#18446744073709551615#0#0(1@0"0(0#0#109"/Users/aaronleese/asi-http-request/External/GHUnit/Project-IPhone/build/CombinedDebug3_0/libGHUnitIPhone3_0.a4300911832#515"    cd /Users/aaronleese/asi-http-request    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/aaronleese/asi-http-request/External/GHUnit/Project-IPhone/build/CombinedDebug3_0/libGHUnitIPhone3_0.a /Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app/Frameworks1#
+
+CPhaseScriptExecution "Run Script" /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Script-B52D492410DA403A008E8365.sh
+s295486823.374031
+e295486823.412572
+r1
+xPhaseScriptExecution
+xRun Script
+x/Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Script-B52D492410DA403A008E8365.sh
+o./set_version_number.rb:2: command not found: /opt/local/bin/git describe --tags
+lSLF07#2@36"Run custom shell script 'Run Script'295486823#295486823#0(81"./set_version_number.rb:2: command not found: /opt/local/bin/git describe --tags1(4@53"Command not found: /opt/local/bin/git describe --tags295486823#0#81#0(6@23"./set_version_number.rb295486823#2#0#2#0#0"0(0#0#0"4300911832#16979"    cd /Users/aaronleese/asi-http-request    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER aaronleese    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_UNIVERSAL_IPHONE_OS i386    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/aaronleese/asi-http-request/build    setenv BUILD_ROOT /Users/aaronleese/asi-http-request/build    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/aaronleese/asi-http-request/build/Debug-iphonesimulator    setenv CACHE_ROOT /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app    setenv CODE_SIGN_CONTEXT_CLASS XCCodeSignContext    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/aaronleese/asi-http-request/build/Debug-iphonesimulator    setenv CONFIGURATION_TEMP_DIR /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator    setenv CONTENTS_FOLDER_PATH Tests.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH /Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/iPhone.dst    setenv DWARF_DSYM_FILE_NAME Tests.app.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/aaronleese/asi-http-request/build/Debug-iphonesimulator    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH Tests.app/Executables    setenv EXECUTABLE_FOLDER_PATH Tests.app    setenv EXECUTABLE_NAME Tests    setenv EXECUTABLE_PATH Tests.app/Tests    setenv FILE_LIST /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH Tests.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME Tests.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD compiler-default    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER "iPhone Sample/iPhone_Prefix.pch"    setenv GCC_PRODUCT_TYPE_PREPROCESSOR_DEFINITIONS " __IPHONE_OS_VERSION_MIN_REQUIRED=30000"    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE "iPhone Sample/Tests-Info.plist"    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH Tests.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH /InfoPlist.strings    setenv INSTALL_DIR /tmp/iPhone.dst/Users/aaronleese/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER aaronleese    setenv INSTALL_PATH /Users/aaronleese/Applications    setenv INSTALL_ROOT /tmp/iPhone.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 2.2.1    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH Tests.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Tests-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator\" \"/Users/aaronleese/asi-http-request/Frameworks/libGHUnitIPhone\" \"/Users/aaronleese/asi-http-request/Frameworks/libGHUnitIPhone3_0-0\" \"/Users/aaronleese/asi-http-request/External/GHUnit/Project-IPhone/build/CombinedDebug3_0\" \"/Users/aaronleese/asi-http-request/External/GHUnit/Project-IPhone/build/Debug-iphoneos\" \"/Users/aaronleese/asi-http-request/External/GHUnit/Project-IPhone/build/Debug-iphonesimulator\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal/i386/Tests.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv MAC_OS_X_VERSION_ACTUAL 1063    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0603    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Objects-normal    setenv OBJROOT /Users/aaronleese/asi-http-request/build    setenv ONLY_ACTIVE_ARCH YES    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-all_load -ObjC"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH Tests.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/PkgInfo    setenv PKGINFO_PATH Tests.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH Tests.app/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH Tests.app/PrivateHeaders    setenv PRODUCT_NAME Tests    setenv PRODUCT_SETTINGS_PATH "/Users/aaronleese/asi-http-request/iPhone Sample/Tests-Info.plist"    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT iPhone    setenv PROJECT_DERIVED_FILE_DIR /Users/aaronleese/asi-http-request/build/iPhone.build/DerivedSources    setenv PROJECT_DIR /Users/aaronleese/asi-http-request    setenv PROJECT_FILE_PATH /Users/aaronleese/asi-http-request/iPhone.xcodeproj    setenv PROJECT_NAME iPhone    setenv PROJECT_TEMP_DIR /Users/aaronleese/asi-http-request/build/iPhone.build    setenv PUBLIC_HEADERS_FOLDER_PATH Tests.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH Tests.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk    setenv SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator3.1.3.sdk    setenv SDK_NAME iphonesimulator3.1.3    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH Tests.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH Tests.app/SharedSupport    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Users/aaronleese/asi-http-request    setenv SRCROOT /Users/aaronleese/asi-http-request    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SYMBOL_REPOSITORY_DIR /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/SymbolRepositories    setenv SYMROOT /Users/aaronleese/asi-http-request/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1    setenv TARGETNAME Tests    setenv TARGET_BUILD_DIR /Users/aaronleese/asi-http-request/build/Debug-iphonesimulator    setenv TARGET_NAME Tests    setenv TARGET_TEMP_DIR /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build    setenv TEMP_DIR /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build    setenv TEMP_FILES_DIR /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build    setenv TEMP_FILE_DIR /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build    setenv TEMP_ROOT /Users/aaronleese/asi-http-request/build    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH Tests.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER aaronleese    setenv USER_APPS_DIR /Users/aaronleese/Applications    setenv USER_LIBRARY_DIR /Users/aaronleese/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH Tests.app/version.plist    setenv VERSION_INFO_BUILDER aaronleese    setenv VERSION_INFO_FILE Tests_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:Tests  PROJECT:iPhone-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME Tests.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0322    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c /Users/aaronleese/asi-http-request/build/iPhone.build/Debug-iphonesimulator/Tests.build/Script-B52D492410DA403A008E8365.sh0#
+
+CProcessInfoPlistFile /Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app/Info.plist "iPhone Sample/Tests-Info.plist"
+s295486820.086393
+e295486820.148479
+r1
+xProcessInfoPlistFile
+x/Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app/Info.plist
+xiPhone Sample/Tests-Info.plist
+lSLF07#2@38"Process iPhone Sample/Tests-Info.plist295486820#295486820#0(0"0(0#0#65"/Users/aaronleese/asi-http-request/iPhone Sample/Tests-Info.plist4300911832#477"    cd /Users/aaronleese/asi-http-request    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility "iPhone Sample/Tests-Info.plist" -genpkginfo /Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app/Info.plist0#
+
+CProcessPCH /var/folders/Lp/Lp5IngLeEvmm6aJjiT337++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/iPhone_Prefix-cnphnobzmvrubqbhrxsgivwcwodc/iPhone_Prefix.pch.gch "iPhone Sample/iPhone_Prefix.pch" normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CTouch /Users/aaronleese/asi-http-request/build/Debug-iphonesimulator/Tests.app
+r0
+
