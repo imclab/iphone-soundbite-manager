@@ -2,8 +2,7 @@
 //  NLPDownloadWebView.m
 //  iPad
 //
-//  Created on 10-05-06.
-//  Copyright 2010 Noteloop Systems Inc. All rights reserved.
+//  Created on 10-05-06. 
 //
 
 #import "NLPDownloadWebView.h"
@@ -30,7 +29,7 @@ void MUSICFILE_PATH ()
 //#import "NLPScorePDF.h"
 
 #define kTagForDownloadButton 99
-#define kDefaultDownloadURL @"http://www.noteloop.com/studios/sw/pdfsmr/"
+#define kDefaultDownloadURL @"http://www.flyloops.com/"
 
 @interface NLPDownloadWebView (Private)
 -(void)downloadItem;

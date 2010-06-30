@@ -2,8 +2,7 @@
 //  NLPDownloadWebView.h
 //  iPad
 //
-//  Created on 10-05-06.
-//  Copyright 2010 Noteloop Systems Inc. All rights reserved.
+//  Created on 10-05-06. 
 //
 
 #import <UIKit/UIKit.h>

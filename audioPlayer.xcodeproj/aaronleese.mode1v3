@@ -204,7 +204,7 @@
 				<key>PBXProjectModuleGUID</key>
 				<string>3655F9CD11DBC70500C00E2E</string>
 				<key>PBXProjectModuleLabel</key>
-				<string>audioPlayerAppDelegate.mm</string>
+				<string>audioPlayer.m</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
 				<dict>
 					<key>Split0</key>
@@ -212,19 +212,21 @@
 						<key>PBXProjectModuleGUID</key>
 						<string>3655F9FC11DBC90D00C00E2E</string>
 						<key>PBXProjectModuleLabel</key>
-						<string>audioPlayerAppDelegate.mm</string>
+						<string>audioPlayer.m</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>3655FA7411DBCD5B00C00E2E</string>
+						<string>3655FB3911DBD6A700C00E2E</string>
 						<key>history</key>
 						<array>
-							<string>3655FA4911DBCC6F00C00E2E</string>
 							<string>3655FA5F11DBCC9F00C00E2E</string>
 							<string>3655FA6011DBCC9F00C00E2E</string>
 							<string>3655FA6A11DBCCE800C00E2E</string>
-							<string>3655FA7111DBCD5700C00E2E</string>
-							<string>3655FA6911DBCCE800C00E2E</string>
+							<string>3655FABD11DBD17400C00E2E</string>
+							<string>3655FB2A11DBD66800C00E2E</string>
+							<string>3655FB2B11DBD66800C00E2E</string>
+							<string>3655FB3511DBD68E00C00E2E</string>
+							<string>3655FB2C11DBD66800C00E2E</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -240,7 +242,7 @@
 				<key>PBXModuleWindowStatusBarHidden2</key>
 				<false/>
 				<key>RubberWindowFrame</key>
-				<string>23 59 1240 702 0 0 1280 778 </string>
+				<string>25 63 1240 702 0 0 1280 778 </string>
 			</dict>
 		</dict>
 	</array>
@@ -319,13 +321,13 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>17</integer>
+									<integer>19</integer>
 									<integer>7</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 59}, {278, 637}}</string>
+							<string>{{0, 82}, {278, 637}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -360,7 +362,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>audioPlayerAppDelegate.h</string>
+								<string>audioPlayer.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -368,11 +370,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>audioPlayerAppDelegate.h</string>
+										<string>audioPlayer.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>3655FA7311DBCD5B00C00E2E</string>
+										<string>3655FB3811DBD6A700C00E2E</string>
 										<key>history</key>
 										<array>
 											<string>36C19F1E1187AD19008CB824</string>
@@ -393,13 +395,15 @@
 											<string>36C04DCF11D27771008AE92C</string>
 											<string>36F74F4B11DBC5FB00CA3C74</string>
 											<string>3655F9F411DBC90D00C00E2E</string>
-											<string>3655F9F611DBC90D00C00E2E</string>
-											<string>3655FA3411DBCBE800C00E2E</string>
-											<string>3655FA5B11DBCC9F00C00E2E</string>
 											<string>3655FA5C11DBCC9F00C00E2E</string>
 											<string>3655FA6E11DBCD5700C00E2E</string>
-											<string>3655FA6F11DBCD5700C00E2E</string>
-											<string>3655FA6711DBCCE800C00E2E</string>
+											<string>3655FAB611DBD17400C00E2E</string>
+											<string>3655FAB711DBD17400C00E2E</string>
+											<string>3655FAD511DBD2EC00C00E2E</string>
+											<string>3655FAFA11DBD3E300C00E2E</string>
+											<string>3655FB3211DBD68E00C00E2E</string>
+											<string>3655FB3311DBD68E00C00E2E</string>
+											<string>3655FB2711DBD66800C00E2E</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -630,7 +634,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>libraryManager.m</string>
+								<string>audioPlayerAppDelegate.mm</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -848,7 +852,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>audioPlayerAppDelegate.mm</string>
+										<string>audioPlayer.h</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>

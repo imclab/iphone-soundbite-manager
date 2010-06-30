@@ -99,5 +99,13 @@
 }
 
 
+-(void) saveLibrary
+{
+	NSString *libFile = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/Library"];
+	[libraryArray writeToFile:libFile atomically:YES]; 	
+	
+}
+
+
 @end
  
