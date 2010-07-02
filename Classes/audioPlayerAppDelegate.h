@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h> 
 #import "downloadViewController.h"
+
+#import "libraryViewController.h"
+
+#import "downloadManager.h"
 #import "libraryManager.h"
 #import "audioPlayer.h"
 
@@ -16,13 +20,13 @@
     UITabBarController *tabBarController;
  
 	NSString *currentQuestion;
-	
-	IBOutlet downloadViewController *downloader;
-	
+	 	
 	// custom classed objects ...
 	libraryManager *myLibrary;
 	audioPlayer *myAudioPlayer;
+	downloadManager *downloader;
 	
+	IBOutlet libraryViewController *myLibraryView;
 
 }
 

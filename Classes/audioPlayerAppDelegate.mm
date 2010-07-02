@@ -17,7 +17,10 @@
 	
 	NSLog(@"Init recorder");
 	myAudioPlayer = [[audioPlayer alloc] init];
-
+	
+	NSLog(@"Init Downloader");
+	downloader = [[downloadManager alloc] init];
+	
 	NSLog(@"Init Library");
 	myLibrary = [[libraryManager alloc] init];
 	
@@ -62,6 +65,8 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
 	
     [tabBarController release];
     [window release];
+	[myAudioPlayer release];
+	[downloader release];
 	[myLibrary release];
     [super dealloc];
 }
@@ -77,7 +82,7 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
 
 -(void) play:(NSString*) filePath {
 	
-	NSLog(@"play %@",filePath);
+	NSLog(@"trigger play");
 	[myAudioPlayer play:filePath];
 	
 }
@@ -122,6 +127,14 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
 - (void) triggerDownload:(NSURL*) newItem {
 	[downloader triggerDownload:newItem];
 }
+
+- (void) refreshLibraryView
+{
+	NSLog(@"refresh Library View ...");
+	[myLibraryView refreshLibraryView];
+	
+}
+
 
 - (float) getInputLevel {
 	

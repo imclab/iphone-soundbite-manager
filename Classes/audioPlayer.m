@@ -119,7 +119,7 @@
 	// place it in a temp file ??? , and trigger modal dialog / review ....
 	
 }
--(void) play:(NSString*) filePath {
+- (void) play:(NSString*) filePath {
 	
 	NSLog(@"play %@",filePath);
 	

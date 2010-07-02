@@ -59,7 +59,6 @@
     return self;
 }
 
-
 - (void)dealloc {
     [super dealloc];
 }
@@ -113,10 +112,18 @@
 		 
 		 return;
 		}
+	
+		NSString *fileName = [appDelegate getCurrentQuestion];
+	 	NSString *docDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/"];
+		NSString *soundFilePath = [docDirectory stringByAppendingPathComponent:fileName];
+
 		
+		[appDelegate play:soundFilePath];
+
+		//play:(NSString*) filePath {
 		
+		/*
 		NSString *soundFilePath = [appDelegate getCurrentQuestion];
-		//[[NSBundle mainBundle] pathForResource:@"Hi-Hat5" ofType:@"wav"];
 		NSURL *soundFileURL = [[NSURL alloc] initFileURLWithPath: soundFilePath];
 		
 		
@@ -143,6 +150,9 @@
 		[appSoundPlayer setDelegate: self];
 		[appSoundPlayer play];
 
+		 */
+		
+		
 	
 	}
 

@@ -8,6 +8,7 @@
 
 #import "libraryManager.h"
 
+#import "audioPlayerAppDelegate.h"
 
 @implementation libraryManager
 
@@ -26,6 +27,10 @@
 		libraryArray = [[NSMutableArray alloc] init];
 	}
 	
+	[self refreshLibrary];
+	//[self updateLibrary];
+	
+
 	return self;
 	
 }
@@ -37,19 +42,67 @@
 	
 	// CHECK ONLINE for new soundbites  ::::::::::::::::::::::::::::
 	///////////////////////////////////////////////////////////////////////
-	NSString *const URL = @"http://www.flyloops.com/iphone/test.xml";
+	//NSString *const URL = @"http://www.flyloops.com/iphone/test10.xml";
+	
+	NSString *URL = @"http://www.flyloops.com/iphone/index.php?viewNew=1";
 	NSURL* url = [NSURL URLWithString:URL];
-	NSXMLParser* parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+	
+	
+	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+
+	[request setDelegate:self];
+	[request setDidFinishSelector:@selector(requestFinished:)];
+	[request setDidFailSelector:@selector(requestFailed:)];
+	[request startAsynchronous];
+	
+    
+	//NSData *returnData = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+	
+	//[NSURLConnection sendSynchronousRequest:req returningResponse: nil error: nil];
+    
+	//NSString *html = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
+	
+	
+	
+	
+}
+
+
+- (void) requestFinished:(ASIHTTPRequest *)request
+{
+    NSString *response = [request responseString];
+    // response contains the data returned from the server.
+	
+	NSLog(@"%@", response);
+	
+	//NSData *xmlData = [NSData response];
+	NSData *xmlData = [response dataUsingEncoding:NSUTF8StringEncoding];
+
+	NSXMLParser* parser = [[NSXMLParser alloc] initWithData:xmlData];
 	
 	[parser setDelegate:self];
 	[parser parse];
 	
 }
 
+- (void) requestFailed:(ASIHTTPRequest *)request
+{
+    NSError *error = [request error];
+    // Do something with the error.
+}
+
+
+
+
+
 - (void) refreshLibrary
 { 
+
+	[libraryArray removeAllObjects]; // clear ....
+	[self updateLibrary]; // get from online .....
+	return;
 	
-	[libraryArray removeAllObjects];
+	// OLD method below ... which just looked for files in the local directories ....
 	
 	NSString* appDirectory = [[NSBundle mainBundle] bundlePath]; // stringByDeletingLastPathComponent];
 	NSString *docDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/"];
@@ -98,13 +151,66 @@
 	return libraryArray;
 }
 
-
 -(void) saveLibrary
 {
 	NSString *libFile = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/Library"];
 	[libraryArray writeToFile:libFile atomically:YES]; 	
 	
 }
+
+
+- (void) parser:(NSXMLParser *)parser 
+didStartElement:(NSString *)elementName 
+   namespaceURI:(NSString *)namespaceURI 
+  qualifiedName:(NSString *)qualifiedName 
+	 attributes:(NSDictionary *)attributeDict
+{
+    
+	NSLog(@"Started parsing %@", elementName); 	
+	
+	if([elementName isEqualToString:@"question"]) 
+	{
+		 
+		//Extract the attribute here.
+		//NSString *newitem = [attributeDict objectForKey:@"name"]; 
+		
+		NSString *fileName =  [attributeDict objectForKey:@"id"]; 
+		
+		// intuit the path from the filename for now ....
+		NSString *remotePath = @"http://www.flyloops.com/iphone/questions/";
+		NSString *remotePathFull = [remotePath stringByAppendingString:fileName];
+		NSURL *newItemURL = [NSURL URLWithString:remotePathFull];
+		NSLog(@"url: %@", newItemURL);
+		
+		// Local path
+		NSString* appDirectory = [[[NSBundle mainBundle] bundlePath] stringByDeletingLastPathComponent];
+		NSString* docDirectory  = [appDirectory stringByAppendingString:@"/Documents/"];
+		NSString *path = [docDirectory stringByAppendingString:fileName];
+		NSLog(@"local path: %@", path);
+		
+		
+		// if this is a question that is not in the local library already, download and add it ....
+		if ([[path pathExtension] isEqualToString: @"wav"])
+		{
+			//download  
+			audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+			[appDelegate triggerDownload:newItemURL];
+			
+			// and add to the library 
+			[libraryArray addObject:fileName];
+		}
+		
+		// if it is in the library .... OVERWRITE it ....
+		
+		// refresh the view ?
+		
+		
+		
+	}		
+	
+	
+}
+
 
 
 @end

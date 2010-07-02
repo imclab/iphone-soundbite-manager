@@ -8,9 +8,6 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-#import "ASIHTTPRequest.h"
-#import "ASINetworkQueue.h"
-
 #import "libraryViewController.h"
 
 @interface downloadViewController : UIViewController <UIWebViewDelegate, UITextFieldDelegate>{
@@ -21,8 +18,6 @@
 	NSURL *currentURL;
 	UIActivityIndicatorView *activityIndicator;
 	NSURLConnection *connection;
-	ASIHTTPRequest *downloadRequest;
-	ASINetworkQueue *networkQueue; 
 	UIProgressView *progressView;
 	
 	IBOutlet libraryViewController *libController;
@@ -39,9 +34,6 @@
 
 -(BOOL)webView:(UIWebView*)webView shouldStartLoadWithRequest:(NSURLRequest*)request
 navigationType:(UIWebViewNavigationType)navigationType;
-
--(void)downloadItem;
--(void)triggerDownload:(NSURL*)newItem;
 
 -(IBAction)done:(UIBarButtonItem*)btn;
 -(IBAction)back:(UIBarButtonItem*)btn;

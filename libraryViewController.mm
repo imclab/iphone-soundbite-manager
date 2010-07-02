@@ -29,9 +29,6 @@ NSMutableArray* libraryArray;
 	[self.view reloadData];
 }
 
-#pragma mark -
-#pragma mark Table view data source
-
 // Customize the number of sections in the table view.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -61,11 +58,7 @@ NSMutableArray* libraryArray;
     
 	// load the appropriate file to the midiPlayer
 	NSString *fileName = [libraryArray objectAtIndex:indexPath.row]; //[[NSBundle mainBundle] pathForResource:testin ofType:@"mid"];
-	
-	// if ([fileManager fileExistsAtPath:filePath]) {
-	
 	NSString *dbFilePath = [[NSBundle mainBundle] pathForResource:[fileName stringByDeletingPathExtension] ofType:@"wav"];
-	 
 	
 	// since we have files in the main bundle, and ones that are downloaded to the doc folder ....
 	if (dbFilePath.length == 0)
@@ -74,11 +67,10 @@ NSMutableArray* libraryArray;
 		dbFilePath = [docDirectory stringByAppendingPathComponent:fileName];
 	 
 	}
-	
 
 	// start Playing ...
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
-	[appDelegate setCurrentQuestion:dbFilePath];
+	[appDelegate setCurrentQuestion:fileName];
 	[appDelegate play:dbFilePath];
 	
 	// switch view ....
@@ -93,49 +85,5 @@ NSMutableArray* libraryArray;
 	 */
 	 
 }
- 
-- (void) parser:(NSXMLParser *)parser 
-didStartElement:(NSString *)elementName 
-   namespaceURI:(NSString *)namespaceURI 
-  qualifiedName:(NSString *)qualifiedName 
-	 attributes:(NSDictionary *)attributeDict
-{
-    
-	NSLog(@"Started parsing %@", elementName); 	
-	
-	if([elementName isEqualToString:@"question"]) 
-	{
-		//Extract the attribute here.
-		
-		//NSString *newitem = [attributeDict objectForKey:@"name"]; 
-		
-		NSString *path =  [attributeDict objectForKey:@"id"]; 
-		
-		// intuit the path from the filename for now ....
-		NSString *filePath = @"http://www.flyloops.com/iphone/questions/";
-		filePath = [filePath stringByAppendingString:path];
-		
-		NSURL *test = [NSURL URLWithString:filePath];
-		
-		NSLog(@"asasdasd %@", test);
-		
-		// if this is a question that is not in the local library already, download and add it ....
-		if ([[filePath pathExtension] isEqualToString: @"wav"])
-		{
-			NSLog(@"added %@", filePath); 	
-			
-			//downloader 
-			audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
-			
-			[appDelegate triggerDownload:test];
-			
-			//[libraryArray addObject:newitem];
-		}
-		
-		
-	}		
-	
-	
-}
-
+  
 @end
