@@ -23,12 +23,13 @@
 	// Here we send a quick response to the server to indicate that we recieved the new items
 	// The server PHP handles these requests and marks the files as delivered
 	/////////////////////////////////////////
-	/*
-	ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
-	[request setPostValue:@"Ben" forKey:@"first_name"];
-	[request setPostValue:@"Copsey" forKey:@"last_name"];
-	[request setFile:@"/Users/ben/Desktop/ben.jpg" forKey:@"photo"];
-	*/
+	NSString *URL = @"http://www.flyloops.com/iphone/index.php";
+	NSURL* url = [NSURL URLWithString:URL];
+	
+	// ping the web app, note that this question has been recieved ....
+	//ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+	//[request setPostValue:@"1" forKey:@"QuestionNum"];
+	//[request startAsynchronous];
 	
 }
 
@@ -119,7 +120,8 @@
 	
 	//LOG(@"downloadFinished: %@", [request downloadDestinationPath]);
 	NSString* ext = [[request downloadDestinationPath] pathExtension];
-	NSString* fn = [[request downloadDestinationPath] lastPathComponent];
+	//NSString* fn = [[request downloadDestinationPath] lastPathComponent];
+	
 	if([ext caseInsensitiveCompare: @"pdf"] == NSOrderedSame) {
 		//	LOG(@"!adding PDF --> [%@] %@", fn, MUSICFILE_PATH(fn));
 		NSError *err;
@@ -165,8 +167,6 @@
 	//	[self.toolBar buttonWithTag:10].enabled = [self.webView canGoBack]; 
 	//	[self.toolBar buttonWithTag:11].enabled = [self.webView canGoForward];
 }
-
-
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
 	[self loadURL:textField.text];

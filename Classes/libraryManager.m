@@ -44,7 +44,7 @@
 	///////////////////////////////////////////////////////////////////////
 	//NSString *const URL = @"http://www.flyloops.com/iphone/test10.xml";
 	
-	NSString *URL = @"http://www.flyloops.com/iphone/index.php?viewNew=1";
+	NSString *URL = @"http://www.flyloops.com/iphone/index.php?viewNew=1&user=1";
 	NSURL* url = [NSURL URLWithString:URL];
 	
 	
@@ -61,9 +61,6 @@
 	//[NSURLConnection sendSynchronousRequest:req returningResponse: nil error: nil];
     
 	//NSString *html = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
-	
-	
-	
 	
 }
 
@@ -172,9 +169,9 @@ didStartElement:(NSString *)elementName
 	{
 		 
 		//Extract the attribute here.
-		//NSString *newitem = [attributeDict objectForKey:@"name"]; 
+		NSString *fileName = [attributeDict objectForKey:@"name"]; 
 		
-		NSString *fileName =  [attributeDict objectForKey:@"id"]; 
+		//NSString *fileName =  [attributeDict objectForKey:@"id"]; 
 		
 		// intuit the path from the filename for now ....
 		NSString *remotePath = @"http://www.flyloops.com/iphone/questions/";
@@ -198,6 +195,23 @@ didStartElement:(NSString *)elementName
 			
 			// and add to the library 
 			[libraryArray addObject:fileName];
+			
+			
+			// for now, assume this downloads correctly ... and ping the server that i has been recieved 
+			NSString *questionID =  [attributeDict objectForKey:@"id"]; 
+			NSString* docDirectory  = [appDirectory stringByAppendingString:@"/Documents/"];
+			
+			NSString *URL = [@"http://www.flyloops.com/iphone/index.php?questionNum=" stringByAppendingString:questionID];
+			NSURL* url = [NSURL URLWithString:URL];
+			
+			
+			
+			// ping the web app, note that this question has been recieved ....
+			
+			//ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+			//[request startAsynchronous];
+			
+			
 		}
 		
 		// if it is in the library .... OVERWRITE it ....

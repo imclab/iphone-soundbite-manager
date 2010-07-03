@@ -202,28 +202,25 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>36BE4BE411DE9F3D008B5DE2</string>
+				<string>36BE4C4B11DEB4AD008B5DE2</string>
 				<key>PBXProjectModuleLabel</key>
-				<string>audioPlayerAppDelegate.mm</string>
+				<string>libraryManager.m</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
 				<dict>
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>36BE4BF111DE9F9C008B5DE2</string>
+						<string>36BE4C5611DEB5A0008B5DE2</string>
 						<key>PBXProjectModuleLabel</key>
-						<string>audioPlayerAppDelegate.mm</string>
+						<string>libraryManager.m</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>36BE4C1F11DEA0DB008B5DE2</string>
+						<string>36BE4C9C11DEC292008B5DE2</string>
 						<key>history</key>
 						<array>
-							<string>36BE4BFB11DE9FE3008B5DE2</string>
-							<string>36BE4BFC11DE9FE3008B5DE2</string>
-							<string>36BE4C0D11DEA091008B5DE2</string>
-							<string>36BE4C1911DEA0D6008B5DE2</string>
-							<string>36BE4C0C11DEA091008B5DE2</string>
+							<string>36BE4C9111DEBA61008B5DE2</string>
+							<string>36BE4C8111DEB9CB008B5DE2</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -310,6 +307,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
+								<string>36FBF91B119CBDA200491F35</string>
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>36CE40FB11DE5ABA009962A1</string>
 								<string>36CE40FC11DE5AD8009962A1</string>
@@ -319,13 +317,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>19</integer>
-									<integer>3</integer>
+									<integer>14</integer>
+									<integer>8</integer>
+									<integer>7</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 19}, {278, 637}}</string>
+							<string>{{0, 0}, {278, 637}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -360,7 +359,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>audioPlayerAppDelegate.mm</string>
+								<string>downloadManager.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -368,11 +367,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>audioPlayerAppDelegate.mm</string>
+										<string>downloadManager.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>36BE4C1E11DEA0DB008B5DE2</string>
+										<string>36BE4C9B11DEC292008B5DE2</string>
 										<key>history</key>
 										<array>
 											<string>36C19F1E1187AD19008CB824</string>
@@ -393,17 +392,22 @@
 											<string>36CE419811DE61F1009962A1</string>
 											<string>36CE41F811DE66FD009962A1</string>
 											<string>36CE420911DE67EF009962A1</string>
-											<string>36CE424A11DE6C69009962A1</string>
 											<string>36CE426311DE6E1B009962A1</string>
 											<string>36CE426611DE6E1B009962A1</string>
 											<string>36BE4A7011DE7D7C008B5DE2</string>
-											<string>36BE4BED11DE9F9B008B5DE2</string>
-											<string>36BE4C0811DEA091008B5DE2</string>
 											<string>36BE4C0911DEA091008B5DE2</string>
 											<string>36BE4C0A11DEA091008B5DE2</string>
 											<string>36BE4C1611DEA0D6008B5DE2</string>
 											<string>36BE4C1711DEA0D6008B5DE2</string>
-											<string>36CE415C11DE6014009962A1</string>
+											<string>36BE4C2D11DEAE8B008B5DE2</string>
+											<string>36BE4C4E11DEB5A0008B5DE2</string>
+											<string>36BE4C5011DEB5A0008B5DE2</string>
+											<string>36BE4C5111DEB5A0008B5DE2</string>
+											<string>36BE4C5211DEB5A0008B5DE2</string>
+											<string>36BE4C5311DEB5A0008B5DE2</string>
+											<string>36BE4C6F11DEB961008B5DE2</string>
+											<string>36BE4C7011DEB961008B5DE2</string>
+											<string>36BE4C7F11DEB9CB008B5DE2</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -578,7 +582,7 @@
 	<key>PerspectivesBarVisible</key>
 	<false/>
 	<key>PinnedNavigatorIdentifier</key>
-	<string>36BE4BE411DE9F3D008B5DE2</string>
+	<string>36BE4C4B11DEB4AD008B5DE2</string>
 	<key>ShelfIsVisible</key>
 	<false/>
 	<key>SourceDescription</key>
@@ -603,15 +607,14 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>36BE4C2011DEA0DB008B5DE2</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>36BE4A8011DE7D7C008B5DE2</string>
 		<string>36BE4A8211DE7D7C008B5DE2</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>36C19E2811877FB7008CB824</string>
 		<string>/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/audioPlayer.xcodeproj</string>
-		<string>36BE4BE411DE9F3D008B5DE2</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>36BE4C4B11DEB4AD008B5DE2</string>
 	</array>
 	<key>WindowString</key>
 	<string>33 71 1182 696 0 0 1280 778 </string>
@@ -706,7 +709,7 @@
 			<key>WindowToolGUID</key>
 			<string>36C19E2811877FB7008CB824</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -848,12 +851,14 @@
 							<key>Dock</key>
 							<array>
 								<dict>
+									<key>BecomeActive</key>
+									<true/>
 									<key>ContentConfiguration</key>
 									<dict>
 										<key>PBXProjectModuleGUID</key>
 										<string>1CDD528C0622207200134675</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>audioPlayer.m</string>
+										<string>libraryManager.m</string>
 										<key>StatusBarVisibility</key>
 										<true/>
 									</dict>
@@ -874,8 +879,6 @@
 							<string>221pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
