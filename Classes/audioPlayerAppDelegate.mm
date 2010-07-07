@@ -53,12 +53,29 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
     }
 	else if (buttonIndex == 2) {
 		// Sae ...
-		NSLog(@"save answer");
+		NSLog(@"upload the answer");
+		
+		
     }
 	else if (buttonIndex == 3) {
 		// cancel ... do nothing
 		NSLog(@"cancelled"); 
     }
+}
+
+- (void)showReviewPanel // show the action sheet
+{
+	UIActionSheet *popupQuery = [[UIActionSheet alloc]
+								 initWithTitle:nil
+								 delegate:self
+								 cancelButtonTitle:@"Cancel"
+								 destructiveButtonTitle:nil
+								 otherButtonTitles:@"Review", @"Record", @"Upload", nil];
+	
+	popupQuery.actionSheetStyle = UIActionSheetStyleBlackOpaque;
+	[popupQuery showInView:self.tabBarController.view];
+	[popupQuery release];
+	
 }
 
 - (void)dealloc {
@@ -77,6 +94,7 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
 	 
 }
 - (void) stopRecording{
+
 	[myAudioPlayer stopRecording];
 }
 
@@ -87,8 +105,8 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
 	
 }
 
--(bool) isRecording
-{
+-(bool) isRecording {
+	
 	return [myAudioPlayer isRecording];
 }
 
@@ -100,20 +118,6 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
 	 
 }
 
-- (void)showReviewPanel
-{
-	UIActionSheet *popupQuery = [[UIActionSheet alloc]
-								 initWithTitle:nil
-								 delegate:self
-								 cancelButtonTitle:@"Cancel"
-								 destructiveButtonTitle:nil
-								 otherButtonTitles:@"Review", @"Record", @"Save", nil];
-	
-	popupQuery.actionSheetStyle = UIActionSheetStyleBlackOpaque;
-	[popupQuery showInView:self.tabBarController.view];
-	[popupQuery release];
-	
-}
 
 - (NSString*) getCurrentQuestion
 {
@@ -123,6 +127,7 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
 { 
 	currentQuestion = questionPath;
 }
+
 
 - (void) triggerDownload:(NSURL*) newItem {
 	[downloader triggerDownload:newItem];
@@ -135,16 +140,29 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
 	
 }
 
+- (void) setVolume:(float)newVolume {
+	 
+	[myAudioPlayer setPlaybackVolume:newVolume];	
+}
 
-- (float) getInputLevel {
+- (float) getInputOrOutputLevel {
 	
-	return [myAudioPlayer getInputLevel];
+	if ([myAudioPlayer isRecording])
+	{
+		return [myAudioPlayer getInputLevel];
+	}
+	else 
+	{
+		return [myAudioPlayer getOutputLevel];
+	}
+
+	
+	
 }
 
-- (NSMutableArray*) getLibrary
-{ 
-	return [myLibrary getLibraryArray];
-}
+- (NSArray*) getLibrary:(NSString*)QuestionGroup
+{  
+	return [myLibrary getLibraryArray:QuestionGroup];}
 
 @end
 

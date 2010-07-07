@@ -6,7 +6,23 @@
 	<dict>
 		<key>Default.png</key>
 		<data>
-		SVbO5jKG19Kee7NpmEWw9cmiZ44=
+		sDCltxmxERh8EQAMijCUIbCmFto=
+		</data>
+		<key>Hi-Hat4.wav</key>
+		<data>
+		6NMFFkJgEdlPzVSn2CbgfKcyiXM=
+		</data>
+		<key>Hi-Hat5.wav</key>
+		<data>
+		Lo25vo6esBiBhC32iJlQuVfEzvg=
+		</data>
+		<key>Hi-Hat6.wav</key>
+		<data>
+		ciZI8G1de/B3OAXyXuOoBjLtvd4=
+		</data>
+		<key>Hi-Hat7.wav</key>
+		<data>
+		UJIf53CclSKAlY/Ziu9ekckmfLQ=
 		</data>
 		<key>ISawHerStandingThere.mid</key>
 		<data>
@@ -14,15 +30,15 @@
 		</data>
 		<key>Icon-Small.png</key>
 		<data>
-		Lz/qU8T33paACJQxC5atbCia62s=
+		DnpyOXRzsxe4cGm+2yqSugiFEUg=
 		</data>
 		<key>Icon.png</key>
 		<data>
-		8FEZ+d0RsJ7+co/vHlEhp6g93HM=
+		14FNvn2rxLKjThS5k24MEsUJpYU=
 		</data>
 		<key>MainWindow.nib</key>
 		<data>
-		QGoGz/Vy6PbU8KD8h56M6clEiSE=
+		6JCOeAdmvHGHOGjT+V7OInl9GOk=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -46,7 +62,7 @@
 		</data>
 		<key>downloadView.nib</key>
 		<data>
-		MDJV++nJJV7XUrXp9myEeJEgBow=
+		x7YPOYxrNHXbilXhqzA+6uC0eVY=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -62,7 +78,7 @@
 		</data>
 		<key>libraryView.nib</key>
 		<data>
-		eClA5jfAVDz449p18cmToeleC24=
+		vboXmSF+oSjYKfxtTYv+iRBA/Go=
 		</data>
 		<key>lion.mid</key>
 		<data>
@@ -78,7 +94,7 @@
 		</data>
 		<key>playView.nib</key>
 		<data>
-		VhxDldHrr0EbIkPwwCYXMuTeklQ=
+		vSgYHCH+ryy4NnY3Ce2YK/8NUtU=
 		</data>
 		<key>reve.mid</key>
 		<data>

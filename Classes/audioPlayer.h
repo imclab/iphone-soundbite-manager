@@ -20,6 +20,8 @@
 	NSString *recorderFilePath; 
 	NSString *currentQuestion;
 	
+	AVAudioPlayer *appSoundPlayer;
+	float playBackVolume;
 	
 }
 
@@ -31,10 +33,9 @@
 
 - (void) reviewRecorded;
 
-
+- (void) setPlaybackVolume:(float)newVolume;
 - (float) getInputLevel;
-
-//- (NSString *) getCurrentQuestion;
+- (float) getOutputLevel;
 
 
 @end

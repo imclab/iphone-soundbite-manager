@@ -20,11 +20,11 @@
 	
 	if (fileExists)
 	{
-		libraryArray = [[NSMutableArray alloc] initWithContentsOfFile:libFile];
+		libraryArray = [[NSMutableDictionary alloc] initWithContentsOfFile:libFile];
 	}
 	else
 	{
-		libraryArray = [[NSMutableArray alloc] init];
+		libraryArray = [[NSMutableDictionary alloc] init];
 	}
 	
 	[self refreshLibrary];
@@ -32,6 +32,57 @@
 	
 
 	return self;
+	
+}
+
+- (void) refreshLibrary
+{ 
+	
+	[libraryArray removeAllObjects]; // clear ....
+	[self updateLibrary]; // get from online .....
+	return;
+	
+	// *** OLD ***** method below ... which just looked for files in the local directories ....
+	
+	NSString* appDirectory = [[NSBundle mainBundle] bundlePath]; // stringByDeletingLastPathComponent];
+	NSString *docDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/"];
+	
+	NSFileManager *filemgr; 
+	NSArray *filelist;
+	int count;
+	int i;
+	
+	
+	filemgr = [NSFileManager defaultManager];
+	
+	// get files in the documents folder ... 
+	filelist = [filemgr directoryContentsAtPath: docDirectory];
+	count = [filelist count];
+	NSLog (@"%@", docDirectory);
+	for (i = 0; i < count; i++)
+	{
+        NSLog (@"%@", [filelist objectAtIndex: i]);
+		
+		if ([[[filelist objectAtIndex: i] pathExtension] isEqualToString: @"wav"])
+		{
+			[libraryArray addObject:[filelist objectAtIndex: i]];
+		}
+		
+	}
+	
+	// get files in the bundle
+	filelist = [filemgr directoryContentsAtPath: appDirectory];
+	count = [filelist count];
+	NSLog (@"%@", appDirectory);
+	for (i = 0; i < count; i++)
+	{
+        NSLog (@"%@", [filelist objectAtIndex: i]);
+		
+		if ([[[filelist objectAtIndex: i] pathExtension] isEqualToString: @"wav"])
+		{
+			[libraryArray addObject:[filelist objectAtIndex: i]];
+		}
+	}
 	
 }
 
@@ -90,62 +141,31 @@
 
 
 
-
-
-- (void) refreshLibrary
-{ 
-
-	[libraryArray removeAllObjects]; // clear ....
-	[self updateLibrary]; // get from online .....
-	return;
-	
-	// OLD method below ... which just looked for files in the local directories ....
-	
-	NSString* appDirectory = [[NSBundle mainBundle] bundlePath]; // stringByDeletingLastPathComponent];
-	NSString *docDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/"];
-	
-	NSFileManager *filemgr; 
-	NSArray *filelist;
-	int count;
-	int i;
-	
-	
-	filemgr = [NSFileManager defaultManager];
-	
-	// get files in the documents folder ... 
-	filelist = [filemgr directoryContentsAtPath: docDirectory];
-	count = [filelist count];
-	NSLog (@"%@", docDirectory);
-	for (i = 0; i < count; i++)
-	{
-        NSLog (@"%@", [filelist objectAtIndex: i]);
-		
-		if ([[[filelist objectAtIndex: i] pathExtension] isEqualToString: @"wav"])
-		{
-			[libraryArray addObject:[filelist objectAtIndex: i]];
-		}
-		
-	}
-	
-	// get files in the bundle
-	filelist = [filemgr directoryContentsAtPath: appDirectory];
-	count = [filelist count];
-	NSLog (@"%@", appDirectory);
-	for (i = 0; i < count; i++)
-	{
-        NSLog (@"%@", [filelist objectAtIndex: i]);
-		
-		if ([[[filelist objectAtIndex: i] pathExtension] isEqualToString: @"wav"])
-		{
-			[libraryArray addObject:[filelist objectAtIndex: i]];
-		}
-	}
-	
-}
-
-- (NSMutableArray*) getLibraryArray
+- (NSArray*) getLibraryArray:(NSString*)QuestionGroup
 {
-	return libraryArray;
+	
+	// if we are at the root node ...
+	
+	
+	if ([QuestionGroup length] == 0) // if the string is empty, show all groups ....
+	{
+		
+		//NSArray* test = [libraryArray allKeys];
+
+		NSMutableArray *keys;
+		keys = [[NSMutableArray alloc] initWithCapacity: [[libraryArray allKeys] count]];
+		[keys addObjectsFromArray:[libraryArray allKeys]]; 		
+		
+		return keys; 
+		// Aaron - memory leak ??
+	}
+	else // return an array showing just this Question Group ...
+	{
+		return [libraryArray objectForKey:QuestionGroup];
+	}
+	
+	
+	
 }
 
 -(void) saveLibrary
@@ -194,8 +214,16 @@ didStartElement:(NSString *)elementName
 			[appDelegate triggerDownload:newItemURL];
 			
 			// and add to the library 
-			[libraryArray addObject:fileName];
+			//[libraryArray addObject:fileName];
+
+			//self.tableDataSource = [AppDelegate.data objectForKey:@"Rows"];
 			
+			NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+			[tempArray addObjectsFromArray:[libraryArray objectForKey:@"test"]];
+			[tempArray addObject:fileName];
+			[libraryArray setObject:tempArray forKey:@"test"];
+			[tempArray release];
+		
 			
 			// for now, assume this downloads correctly ... and ping the server that i has been recieved 
 			NSString *questionID =  [attributeDict objectForKey:@"id"]; 
@@ -203,7 +231,6 @@ didStartElement:(NSString *)elementName
 			
 			NSString *URL = [@"http://www.flyloops.com/iphone/index.php?questionNum=" stringByAppendingString:questionID];
 			NSURL* url = [NSURL URLWithString:URL];
-			
 			
 			
 			// ping the web app, note that this question has been recieved ....

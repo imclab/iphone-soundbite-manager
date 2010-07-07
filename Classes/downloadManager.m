@@ -33,6 +33,20 @@
 	
 }
 
+- (void) uploadAnAnswer {
+	
+	// hmmm .....
+	
+}
+
+
+- (void) uploadANewQuestion {
+	
+	// hmmm ....
+}
+
+
+
 // DOWNLOAD methods 
 
 -(void)downloadItem {
@@ -162,12 +176,7 @@
 	NSLog(@"Server Response: %d, %@", request.responseStatusCode, request.responseHeaders);
 	//[NLPAlert alert:@"DownloadError" withMessage:[NSString stringWithFormat:@"%@", error]];
 }
-
-- (void)updateButtonStati {
-	//	[self.toolBar buttonWithTag:10].enabled = [self.webView canGoBack]; 
-	//	[self.toolBar buttonWithTag:11].enabled = [self.webView canGoForward];
-}
-
+ 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
 	[self loadURL:textField.text];
 	[textField resignFirstResponder];

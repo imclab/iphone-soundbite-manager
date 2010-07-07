@@ -29,6 +29,7 @@
         //return;
 	}
 	
+	playBackVolume = 1;
 	
 	NSMutableDictionary *recordSetting = [[NSMutableDictionary alloc] init];
 	
@@ -129,10 +130,11 @@
 	
     //NSError *activationError = nil;
     //[[AVAudioSession sharedInstance] setActive: YES error: &activationError];
-	
-    AVAudioPlayer *appSoundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL: soundFileURL error: nil];
+	[appSoundPlayer release];
+	appSoundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL: soundFileURL error: nil];
 	[appSoundPlayer prepareToPlay];
-    [appSoundPlayer setVolume: 1.0];
+	[appSoundPlayer setMeteringEnabled: YES];
+    [appSoundPlayer setVolume:playBackVolume];
 	[appSoundPlayer play];
 	
 }
@@ -141,14 +143,25 @@
 	return recorder.recording;
 }
 
-- (float) getInputLevel
+- (void) setPlaybackVolume:(float) newVolume
 {
-	[recorder updateMeters];
-	//NSLog(@"Peak Power : %f , %f", [recorder peakPowerForChannel:0], [recorder peakPowerForChannel:1]);
-	//NSLog(@"Average Power : %f , %f", [recorder averagePowerForChannel:0], [recorder averagePowerForChannel:1]);
-	return ([recorder averagePowerForChannel:0] +[recorder averagePowerForChannel:1]);
+	NSLog(@"volume changed: %f", newVolume);
+	[appSoundPlayer setVolume:newVolume];
+	playBackVolume = newVolume;
 }
 
+- (float) getInputLevel {
+	[recorder updateMeters];
+	 return ([recorder averagePowerForChannel:0] +[recorder averagePowerForChannel:1]);
+}
+- (float) getOutputLevel {
+	[appSoundPlayer updateMeters];
+	
+	NSLog(@"output %f", playBackVolume*([appSoundPlayer averagePowerForChannel:0]+[appSoundPlayer averagePowerForChannel:1]));
+		  
+	return (playBackVolume*([appSoundPlayer averagePowerForChannel:0]+[appSoundPlayer averagePowerForChannel:1]));
+}
+ 
 - (void) reviewRecorded {
 
 	[self play:recorderFilePath];
@@ -160,11 +173,9 @@
 	NSLog (@"audioRecorderDidFinishRecording:successfully:");
 	
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+	
 	[appDelegate showReviewPanel];
 
-	
-	//[self showReviewPanel];
-	
 }
 
 @end

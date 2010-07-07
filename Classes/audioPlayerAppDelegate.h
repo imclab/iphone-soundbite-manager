@@ -37,11 +37,12 @@
 - (void) startRecording;
 - (void) stopRecording;
 - (void) play:(NSString*)fileName; 
+- (void) setVolume:(float) newVolume;
 - (bool) isRecording;
-- (float) getInputLevel;
+- (float) getInputOrOutputLevel;
 
 - (NSString *) getCurrentQuestion;
 
 - (void) triggerDownload:(NSURL*) newItem;
-- (NSMutableArray*) getLibrary;
+- (NSArray*) getLibrary:(NSString*)QuestionGroup;
 @end

@@ -7,10 +7,11 @@
  
 #import <Foundation/Foundation.h> 
 
-NSMutableArray* libraryArray;
+NSArray* libraryArray;
 
 #import "libraryViewController.h"
 #import "audioPlayerAppDelegate.h"
+#import "playViewController.h"
 
 @implementation libraryViewController
 
@@ -18,14 +19,19 @@ NSMutableArray* libraryArray;
 
 -(void)viewDidLoad
 {	
+	NSLog(@"lib View loading ...");
+	
+	CurrentGroup = @"";
+	
 	// init the library Array
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
-
-	libraryArray = [appDelegate getLibrary];
+	libraryArray = [appDelegate getLibrary:@""];
 }
 
 - (void) refreshLibraryView
 { 
+	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+	libraryArray = [appDelegate getLibrary:CurrentGroup];
 	[self.view reloadData];
 }
 
@@ -56,6 +62,15 @@ NSMutableArray* libraryArray;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+	// if currently viewing groups .... just refresh the view with a view of this group
+	if ([CurrentGroup length] == 0)
+	{
+		CurrentGroup = [libraryArray objectAtIndex:indexPath.row]; //[[NSBundle mainBundle] pathForResource:testin ofType:@"mid"];
+		[self refreshLibraryView];
+		return;
+	}
+	
+	
 	// load the appropriate file to the midiPlayer
 	NSString *fileName = [libraryArray objectAtIndex:indexPath.row]; //[[NSBundle mainBundle] pathForResource:testin ofType:@"mid"];
 	NSString *dbFilePath = [[NSBundle mainBundle] pathForResource:[fileName stringByDeletingPathExtension] ofType:@"wav"];

@@ -11,12 +11,12 @@
 
 @interface libraryManager : NSObject {
 
-	NSMutableArray *libraryArray;
+	NSMutableDictionary *libraryArray;
 }
 
 - (void) updateLibrary;
 - (void) refreshLibrary;
 
-- (NSMutableArray*) getLibraryArray;
+- (NSArray*) getLibraryArray:(NSString*)QuestionGroup;
 
 @end

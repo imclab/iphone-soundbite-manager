@@ -18,33 +18,17 @@
 {
 	
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
-	float level = [appDelegate getInputLevel];
-	// in Db ... order of -60 ... up to 0
-	
-	
+	float level = [appDelegate getInputOrOutputLevel];
+	 
 	CGContextRef context = UIGraphicsGetCurrentContext(); 
     
-	CGContextClearRect(context, CGRectMake(0, 0, 50, 300));
+	CGContextClearRect(context, CGRectMake(0, 0, 20, 350));
 	
 	CGContextSetRGBStrokeColor(context, 1.0, 1.0, 0.0, 1.0); // yellow line
 	
-	/*
-    CGContextBeginPath(context);
-	
-    CGContextMoveToPoint(context, 0.0, 0.0); //start point
-    CGContextAddLineToPoint(context, 20.0, 20.0);
-    CGContextAddLineToPoint(context, 250.0, 350.0);
-    CGContextAddLineToPoint(context, 50.0, 350.0); // end path
-    CGContextClosePath(context); // close path
-	
-    CGContextSetLineWidth(context, 8.0); // this is set from now on until you explicitly change it
-	
-    CGContextStrokePath(context); // do actual stroking
-	
-	 */
-	
-	CGContextSetRGBFillColor(context, (level/60 + 1), 1.0, 0.0, 0.5); // green color, half transparent ....
-	CGContextFillRect(context, CGRectMake(0.0, 0.0 - 3*level, 20.0, 300.0)); // a square at the bottom left-hand corner
+	// recall - level is in dB (hance negative)
+	CGContextSetRGBFillColor(context, (level/60 + 1), 1.0, 0.0, 1.0); // green color, half transparent ....
+	CGContextFillRect(context, CGRectMake(0.0, -3*level, 20.0, 350.0)); // a square at the bottom left-hand corner
 
 	
 }
@@ -53,8 +37,6 @@
     if (self = [super initWithFrame:frame]) {
         // Initialization code
 		NSLog(@"levelindicator init");
-		
-		
 	}
     return self;
 }
@@ -86,10 +68,6 @@
 										   userInfo:nil
 											repeats: YES];
 	
-	//levelIndicator *myLevelIndicator = [[levelIndicator alloc] init];
-	//myLevelIndicator = [[levelIndicator alloc] initWithFrame:CGRectMake(0.0, 0.0, 100.0, 100.0)];
-	
-	
 }
 
 -(IBAction)buttonPressed:(id)sender {
@@ -120,40 +98,6 @@
 		
 		[appDelegate play:soundFilePath];
 
-		//play:(NSString*) filePath {
-		
-		/*
-		NSString *soundFilePath = [appDelegate getCurrentQuestion];
-		NSURL *soundFileURL = [[NSURL alloc] initFileURLWithPath: soundFilePath];
-		
-		
-		[[AVAudioSession sharedInstance] setDelegate: self];
-		[[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryAmbient error: nil];
-		
-		// Registers the audio route change listener callback function
-		//  AudioSessionAddPropertyListener (
-		//                                 kAudioSessionProperty_AudioRouteChange,
-		//                               audioRouteChangeListenerCallback,
-        //                             self
-		//                           );
-		
-		// Activates the audio session.
-		
-		NSError *activationError = nil;
-		[[AVAudioSession sharedInstance] setActive: YES error: &activationError];
-		
-		AVAudioPlayer *appSoundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL: soundFileURL error: nil];
-		//[newPlayer release];
-		
-		[appSoundPlayer prepareToPlay];
-		[appSoundPlayer setVolume: 1.0];
-		[appSoundPlayer setDelegate: self];
-		[appSoundPlayer play];
-
-		 */
-		
-		
-	
 	}
 
 	else if ([[sender currentTitle] isEqualToString:(@"record")])
@@ -175,7 +119,9 @@
 /* volume slider */
 - (IBAction)sliderMoved:(id)sender;
 {
-	 //myMidiPlayer->setVolume(100*(volumeSlider.value));
+	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+	[appDelegate setVolume:[volumeSlider value]];
+	
 }
 
 -(void) timerCallback

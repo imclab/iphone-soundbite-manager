@@ -141,6 +141,12 @@
 	[self updateButtonStati];
 }
 
+- (void)updateButtonStati {
+	//	[self.toolBar buttonWithTag:10].enabled = [self.webView canGoBack]; 
+	//	[self.toolBar buttonWithTag:11].enabled = [self.webView canGoForward];
+}
+
+
 // Action Sheet ....
 - (void)actionSheet:(UIActionSheet *)actionSheet
 clickedButtonAtIndex:(NSInteger)buttonIndex {
