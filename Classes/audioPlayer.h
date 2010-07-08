@@ -16,11 +16,13 @@
 @interface audioPlayer : NSObject {
 
 	AVAudioSession *audioSession;
-    AVAudioRecorder *recorder;
+    AVAudioRecorder *recorder;  
+	
 	NSString *recorderFilePath; 
-	NSString *currentQuestion;
+	NSString *currentQuestionFile;
 	
 	AVAudioPlayer *appSoundPlayer;
+	
 	float playBackVolume;
 	
 }
@@ -30,6 +32,7 @@
 - (void) stopRecording;
 - (void) play:(NSString*)fileName; 
 - (bool) isRecording;
+- (bool) isPlaying;
 
 - (void) reviewRecorded;
 
@@ -37,5 +40,7 @@
 - (float) getInputLevel;
 - (float) getOutputLevel;
 
+@property(readwrite, assign) NSString *recorderFilePath;
+@property(readwrite, assign) NSString *currentQuestionFile;
 
 @end

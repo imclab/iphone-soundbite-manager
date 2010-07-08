@@ -12,35 +12,64 @@
 #define RELEASE_SAFELY(__POINTER) { [__POINTER release]; __POINTER = nil; }
 
 
-
 @implementation downloadManager
 
 
 // UPLOAD methods
-- (void) confirmRecievedNewItems
-{
+- (void) confirmRecievedNewItems {
 	
-	// Here we send a quick response to the server to indicate that we recieved the new items
-	// The server PHP handles these requests and marks the files as delivered
-	/////////////////////////////////////////
-	NSString *URL = @"http://www.flyloops.com/iphone/index.php";
-	NSURL* url = [NSURL URLWithString:URL];
+	// This is npw handled in the Library code ....
+	///////////////////////////////////////////////////////
+ 
+	
+	//NSString *URL = [@"http://www.flyloops.com/iphone/index.php?questionNum=" stringByAppendingString:questionID];
+	//NSURL* url = [NSURL URLWithString:URL];
 	
 	// ping the web app, note that this question has been recieved ....
-	//ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
-	//[request setPostValue:@"1" forKey:@"QuestionNum"];
+	
+	//ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
 	//[request startAsynchronous];
 	
 }
-
-- (void) uploadAnAnswer {
+- (void) uploadAnswer {
 	
-	// hmmm .....
+	NSLog(@"upload");
+	
+	// create the POST
+	NSString *URL = @"http://www.flyloops.com/iphone/index.php";
+	NSURL* url = [NSURL URLWithString:URL];
+	
+	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+	 
+	
+	NSString *answerPath = [appDelegate getAnswerPath];
+	
+	//NSString *questionOrSet = [appDelegate getCurrentQuestionOrSet]; 	
+	
+	
+	// ping the web app, note that this question has been recieved ....
+	ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+	
+	
+	//[request setPostValue:questionOrSet forKey:@"questionOrQuestionSet"];
+	
+	
+	NSLog(@"question %@", [appDelegate CurrentQuestionID]);
+	NSLog(@"question %@", answerPath);
+	
+	
+	
+	
+	// answer path ....
+	//[request setFile:@"/Users/ben/Desktop/ben.jpg" forKey:@"photo"];
+	//[request startAsynchronous];
+	
+	// async session ...
+	
+	
 	
 }
-
-
-- (void) uploadANewQuestion {
+- (void) uploadNewQuestion {
 	
 	// hmmm ....
 }
@@ -48,7 +77,37 @@
 
 
 // DOWNLOAD methods 
-
+- (void) triggerDownload:(NSURL*) newItem {
+	NSLog(@"triggering download to library");
+	
+	if (networkQueue == nil) {
+		networkQueue = [ASINetworkQueue queue];
+		[networkQueue retain];
+		[networkQueue go];
+	}
+	
+	NSString* appDirectory = [[[NSBundle mainBundle] bundlePath] stringByDeletingLastPathComponent];
+	NSString* docDirectory  = [appDirectory stringByAppendingString:@"/Documents/"];
+	NSString* theFileName = [[newItem path] lastPathComponent];
+	NSString *path = [docDirectory stringByAppendingString:theFileName];
+	NSLog(@" DOWNLOAD to path: %@ FROM %@", path, newItem);
+	
+	[ASIHTTPRequest clearSession]; //Silly @HACK
+	RELEASE_SAFELY(downloadRequest);
+	downloadRequest = [[ASIHTTPRequest alloc] initWithURL:newItem];
+	[downloadRequest setDownloadDestinationPath: path];
+	[downloadRequest setTimeOutSeconds: 60];
+	[downloadRequest setDelegate: self];
+	[downloadRequest setRequestMethod: @"GET"];
+	[downloadRequest setAllowResumeForFileDownloads: YES];
+	[downloadRequest setDownloadProgressDelegate:self];
+	[downloadRequest setDidFinishSelector: @selector(downloadFinished:)];
+	[networkQueue setShowAccurateProgress: YES];
+	[networkQueue addOperation: downloadRequest];
+	//self.progressView.progress = 0.0;
+	[networkQueue go];	
+	
+}
 -(void)downloadItem {
 	if (networkQueue == nil) {
 		networkQueue = [ASINetworkQueue queue];
@@ -65,7 +124,7 @@
 	NSLog(@"downloading to: %@", docDirectory); 
 	
 	NSString *path = [docDirectory stringByAppendingString:theFileName];
-	NSLog(@"*** starting download to path: %@ FROM %@", path, [currentURL path]);
+	NSLog(@" starting download to path: %@ FROM %@", path, [currentURL path]);
 	
 	[ASIHTTPRequest clearSession]; //Silly @HACK
 	RELEASE_SAFELY(downloadRequest);
@@ -84,43 +143,9 @@
 	
 	
 }
-
-- (void) triggerDownload:(NSURL*) newItem {
-	NSLog(@"triggering download to library");
-	
-	if (networkQueue == nil) {
-		networkQueue = [ASINetworkQueue queue];
-		[networkQueue retain];
-		[networkQueue go];
-	}
-	
-	NSString* appDirectory = [[[NSBundle mainBundle] bundlePath] stringByDeletingLastPathComponent];
-	NSString* docDirectory  = [appDirectory stringByAppendingString:@"/Documents/"];
-	NSString* theFileName = [[newItem path] lastPathComponent];
-	NSString *path = [docDirectory stringByAppendingString:theFileName];
-	NSLog(@"*** DOWNLOAD to path: %@ FROM %@", path, newItem);
-	
-	[ASIHTTPRequest clearSession]; //Silly @HACK
-	RELEASE_SAFELY(downloadRequest);
-	downloadRequest = [[ASIHTTPRequest alloc] initWithURL:newItem];
-	[downloadRequest setDownloadDestinationPath: path];
-	[downloadRequest setTimeOutSeconds: 60];
-	[downloadRequest setDelegate: self];
-	[downloadRequest setRequestMethod: @"GET"];
-	[downloadRequest setAllowResumeForFileDownloads: YES];
-	[downloadRequest setDownloadProgressDelegate:self];
-	[downloadRequest setDidFinishSelector: @selector(downloadFinished:)];
-	[networkQueue setShowAccurateProgress: YES];
-	[networkQueue addOperation: downloadRequest];
-	//self.progressView.progress = 0.0;
-	[networkQueue go];	
-	
-}
-
 -(IBAction)cancelDownload:(UIBarButtonItem*)btn {
 	[networkQueue cancelAllOperations]; 
 }
- 
 - (void)downloadFinished:(ASIHTTPRequest *)request {
 	
 	NSLog(@"finished download");
@@ -160,7 +185,6 @@
 }
 
 // other ....
-
 - (void)requestFailed:(ASIHTTPRequest *)request {
 	NSError *error = [request error];
 	
@@ -176,13 +200,12 @@
 	NSLog(@"Server Response: %d, %@", request.responseStatusCode, request.responseHeaders);
 	//[NLPAlert alert:@"DownloadError" withMessage:[NSString stringWithFormat:@"%@", error]];
 }
- 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
 	[self loadURL:textField.text];
 	[textField resignFirstResponder];
 	return YES;
 }
- 
+
 
 /**
  Some reference material here:

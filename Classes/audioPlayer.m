@@ -12,8 +12,10 @@
 
 @implementation audioPlayer
 
+@synthesize currentQuestionFile;
+@synthesize recorderFilePath;
+
 -(id) init {
-	
 	
 	audioSession = [AVAudioSession sharedInstance];
 	NSError *err = nil;
@@ -29,7 +31,7 @@
         //return;
 	}
 	
-	playBackVolume = 1;
+	 playBackVolume = 1;
 	
 	NSMutableDictionary *recordSetting = [[NSMutableDictionary alloc] init];
 	
@@ -71,6 +73,7 @@
 	
 }
 
+// RECORD / PLAY
 - (void) startRecording{
 	
 	//prepare to record
@@ -120,6 +123,19 @@
 	// place it in a temp file ??? , and trigger modal dialog / review ....
 	
 }
+- (void) reviewRecorded {
+	
+	[self play:recorderFilePath];
+	
+}
+- (void) audioRecorderDidFinishRecording:(AVAudioRecorder *) aRecorder successfully:(BOOL)flag {
+	NSLog (@"audioRecorderDidFinishRecording:successfully:");
+	
+	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+	
+	[appDelegate showReviewPanel];
+	
+}
 - (void) play:(NSString*) filePath {
 	
 	NSLog(@"play %@",filePath);
@@ -128,28 +144,29 @@
 	NSString *soundFilePath = filePath;// [[NSBundle mainBundle] pathForResource:fileName ofType:@"wav" inDirectory:@"audio files"];
 	NSURL *soundFileURL = [[NSURL alloc] initFileURLWithPath: soundFilePath];
 	
-    //NSError *activationError = nil;
-    //[[AVAudioSession sharedInstance] setActive: YES error: &activationError];
 	[appSoundPlayer release];
-	appSoundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL: soundFileURL error: nil];
+	 appSoundPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL: soundFileURL error: nil];
 	[appSoundPlayer prepareToPlay];
 	[appSoundPlayer setMeteringEnabled: YES];
     [appSoundPlayer setVolume:playBackVolume];
 	[appSoundPlayer play];
+	 
 	
 }
 
+// PROPERTIES
 -(bool) isRecording {
 	return recorder.recording;
 }
-
-- (void) setPlaybackVolume:(float) newVolume
-{
+-(bool) isPlaying {
+	
+	return [appSoundPlayer isPlaying];
+}
+- (void) setPlaybackVolume:(float) newVolume {
 	NSLog(@"volume changed: %f", newVolume);
 	[appSoundPlayer setVolume:newVolume];
 	playBackVolume = newVolume;
 }
-
 - (float) getInputLevel {
 	[recorder updateMeters];
 	 return ([recorder averagePowerForChannel:0] +[recorder averagePowerForChannel:1]);
@@ -161,21 +178,6 @@
 		  
 	return (playBackVolume*([appSoundPlayer averagePowerForChannel:0]+[appSoundPlayer averagePowerForChannel:1]));
 }
- 
-- (void) reviewRecorded {
-
-	[self play:recorderFilePath];
-
-}
-
-- (void)audioRecorderDidFinishRecording:(AVAudioRecorder *) aRecorder successfully:(BOOL)flag
-{
-	NSLog (@"audioRecorderDidFinishRecording:successfully:");
-	
-	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
-	
-	[appDelegate showReviewPanel];
-
-}
 
 @end
+

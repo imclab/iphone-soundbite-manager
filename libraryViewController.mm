@@ -7,6 +7,7 @@
  
 #import <Foundation/Foundation.h> 
 
+#import "libraryManager.h"
 NSArray* libraryArray;
 
 #import "libraryViewController.h"
@@ -62,6 +63,7 @@ NSArray* libraryArray;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+	
 	// if currently viewing groups .... just refresh the view with a view of this group
 	if ([CurrentGroup length] == 0)
 	{
@@ -69,6 +71,22 @@ NSArray* libraryArray;
 		[self refreshLibraryView];
 		return;
 	}
+	
+	
+	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+	
+	
+	//[appDelegate getCurrentSoundBiteArray];
+	 	
+	NSMutableArray *currentSoundbites = [[NSMutableArray alloc] init];
+	[currentSoundbites addObjectsFromArray:[appDelegate getSoundBiteArray:CurrentGroup]]; 		
+	
+	SoundBite *current = [[SoundBite alloc] init];
+	current = [currentSoundbites objectAtIndex:indexPath.row];
+	
+	NSLog(@"current %@", [current sqlID]);
+	
+	// for now, tell the player what number it is playing ....
 	
 	
 	// load the appropriate file to the midiPlayer
@@ -83,9 +101,10 @@ NSArray* libraryArray;
 	 
 	}
 
-	// start Playing ...
-	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
-	[appDelegate setCurrentQuestion:fileName];
+	// set the filename, which is used to tell te player what to play
+	[appDelegate setCurrentQuestion:fileName withID:[current sqlID]];
+	
+	// also set the currentID .... in case we need to upload .... 	
 	[appDelegate play:dbFilePath];
 	
 	// switch view ....

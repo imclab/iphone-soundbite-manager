@@ -78,7 +78,7 @@
 		
 		audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
 		
-		if ([[appDelegate getCurrentQuestion] length] == 0)
+		if ([[appDelegate getCurrentQuestionFile] length] == 0)
 		{ 		 
 		 UIAlertView *alert = [[UIAlertView alloc] 
 		 initWithTitle:@"Error" message:   
@@ -91,7 +91,7 @@
 		 return;
 		}
 	
-		NSString *fileName = [appDelegate getCurrentQuestion];
+		NSString *fileName = [appDelegate getCurrentQuestionFile];
 	 	NSString *docDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/"];
 		NSString *soundFilePath = [docDirectory stringByAppendingPathComponent:fileName];
 

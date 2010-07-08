@@ -7,9 +7,31 @@
 //
 
 #import "libraryManager.h"
-
 #import "audioPlayerAppDelegate.h"
 
+@implementation SoundBite
+
+-(id) init {
+	
+	fileName = @"filename";
+	name = @"Qname";
+	sqlID = @"none";
+	
+	return self;
+}
+
+@synthesize sqlID;
+@synthesize name;
+@synthesize fileName;
+@synthesize description;
+@synthesize set;
+@synthesize answered;
+@synthesize comment;
+
+@end
+
+/// LIBARY ::::::::::::::::::::::::::::::::::: 
+////////////////////////////////////////////////////////////////
 @implementation libraryManager
 
 -(id) init
@@ -30,13 +52,16 @@
 	[self refreshLibrary];
 	//[self updateLibrary];
 	
+	currentSoundbite = 0;
 
 	return self;
 	
 }
 
-- (void) refreshLibrary
-{ 
+
+// :::::: reading the library XML
+////////////////////////////////////////////////////////////////
+- (void) refreshLibrary { 
 	
 	[libraryArray removeAllObjects]; // clear ....
 	[self updateLibrary]; // get from online .....
@@ -85,9 +110,7 @@
 	}
 	
 }
-
-- (void) updateLibrary
-{
+- (void) updateLibrary {
 	
 	NSLog(@"checking online for new soundbites ....");
 	
@@ -114,68 +137,7 @@
 	//NSString *html = [[NSString alloc] initWithData:returnData encoding:NSUTF8StringEncoding];
 	
 }
-
-
-- (void) requestFinished:(ASIHTTPRequest *)request
-{
-    NSString *response = [request responseString];
-    // response contains the data returned from the server.
-	
-	NSLog(@"%@", response);
-	
-	//NSData *xmlData = [NSData response];
-	NSData *xmlData = [response dataUsingEncoding:NSUTF8StringEncoding];
-
-	NSXMLParser* parser = [[NSXMLParser alloc] initWithData:xmlData];
-	
-	[parser setDelegate:self];
-	[parser parse];
-	
-}
-
-- (void) requestFailed:(ASIHTTPRequest *)request
-{
-    NSError *error = [request error];
-    // Do something with the error.
-}
-
-
-
-- (NSArray*) getLibraryArray:(NSString*)QuestionGroup
-{
-	
-	// if we are at the root node ...
-	
-	
-	if ([QuestionGroup length] == 0) // if the string is empty, show all groups ....
-	{
-		
-		//NSArray* test = [libraryArray allKeys];
-
-		NSMutableArray *keys;
-		keys = [[NSMutableArray alloc] initWithCapacity: [[libraryArray allKeys] count]];
-		[keys addObjectsFromArray:[libraryArray allKeys]]; 		
-		
-		return keys; 
-		// Aaron - memory leak ??
-	}
-	else // return an array showing just this Question Group ...
-	{
-		return [libraryArray objectForKey:QuestionGroup];
-	}
-	
-	
-	
-}
-
--(void) saveLibrary
-{
-	NSString *libFile = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/Library"];
-	[libraryArray writeToFile:libFile atomically:YES]; 	
-	
-}
-
-
+//////////////// Parsing the XML
 - (void) parser:(NSXMLParser *)parser 
 didStartElement:(NSString *)elementName 
    namespaceURI:(NSString *)namespaceURI 
@@ -187,11 +149,11 @@ didStartElement:(NSString *)elementName
 	
 	if([elementName isEqualToString:@"question"]) 
 	{
-		 
+		
 		//Extract the attribute here.
 		NSString *fileName = [attributeDict objectForKey:@"name"]; 
-		
-		//NSString *fileName =  [attributeDict objectForKey:@"id"]; 
+		NSString *questionSet =  [attributeDict objectForKey:@"questionSet"]; 
+		NSString *questionID =  [attributeDict objectForKey:@"id"]; 
 		
 		// intuit the path from the filename for now ....
 		NSString *remotePath = @"http://www.flyloops.com/iphone/questions/";
@@ -213,20 +175,29 @@ didStartElement:(NSString *)elementName
 			audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
 			[appDelegate triggerDownload:newItemURL];
 			
-			// and add to the library 
-			//[libraryArray addObject:fileName];
-
-			//self.tableDataSource = [AppDelegate.data objectForKey:@"Rows"];
 			
+			// ::::: ADD it to the LIBRARY 
+			///////////////////////////////////////////////////
+			
+			// create a new soundbite ...
+			SoundBite *QorA = [[SoundBite alloc] init];
+			NSLog(@"setting string %@", fileName);
+			QorA.fileName = [fileName copy];
+			QorA.set = [questionSet copy];
+			QorA.set = [questionSet copy];
+			QorA.sqlID = [questionID copy];
+			
+			
+			// Pull up the appropriate question set (array) and add this
+			// note *** if this is an answer ... the "questionset" is the questionID it maps too .....
 			NSMutableArray *tempArray = [[NSMutableArray alloc] init];
-			[tempArray addObjectsFromArray:[libraryArray objectForKey:@"test"]];
-			[tempArray addObject:fileName];
-			[libraryArray setObject:tempArray forKey:@"test"];
+			[tempArray addObjectsFromArray:[libraryArray objectForKey:questionSet]];
+			[tempArray addObject:QorA];
+			[libraryArray setObject:tempArray forKey:questionSet];
 			[tempArray release];
-		
+			
 			
 			// for now, assume this downloads correctly ... and ping the server that i has been recieved 
-			NSString *questionID =  [attributeDict objectForKey:@"id"]; 
 			NSString* docDirectory  = [appDirectory stringByAppendingString:@"/Documents/"];
 			
 			NSString *URL = [@"http://www.flyloops.com/iphone/index.php?questionNum=" stringByAppendingString:questionID];
@@ -252,6 +223,87 @@ didStartElement:(NSString *)elementName
 	
 }
 
+
+// :::::: Connectivity stuff 
+////////////////////////////////////////////////////////////////
+- (void) requestFinished:(ASIHTTPRequest *)request
+{
+    NSString *response = [request responseString];
+    // response contains the data returned from the server.
+	
+	NSLog(@"%@", response);
+	
+	//NSData *xmlData = [NSData response];
+	NSData *xmlData = [response dataUsingEncoding:NSUTF8StringEncoding];
+
+	NSXMLParser* parser = [[NSXMLParser alloc] initWithData:xmlData];
+	
+	[parser setDelegate:self];
+	[parser parse];
+	
+}
+- (void) requestFailed:(ASIHTTPRequest *)request
+{
+    NSError *error = [request error];
+    // Do something with the error.
+}
+
+// :::::: Library management
+////////////////////////////////////////////////////////////////
+- (NSArray*) getLibraryArray:(NSString*)QuestionGroup
+{
+	
+	// if we are at the root node ...
+	if ([QuestionGroup length] == 0) // if the string is empty, show all groups ....
+	{
+		//NSArray* test = [libraryArray allKeys];
+
+		NSMutableArray *keys;
+		keys = [[NSMutableArray alloc] initWithCapacity: [[libraryArray allKeys] count]];
+		[keys addObjectsFromArray:[libraryArray allKeys]]; 		
+		
+		return keys; 
+		// Aaron - memory leak ??
+	}
+	else // return an array showing just this Question Group ...
+	{
+		NSLog(@"key %@", QuestionGroup);
+		
+		NSMutableArray *currentSoundbites = [[NSMutableArray alloc] init];
+		[currentSoundbites addObjectsFromArray:[libraryArray objectForKey:QuestionGroup]]; 		
+		
+		// reduce to a list f filenames .....
+		NSMutableArray* fileNames;
+		fileNames = [[NSMutableArray alloc] init];
+		for (SoundBite *soundBite in currentSoundbites) {
+		 	NSLog(@" aSASD %@", [soundBite fileName]);
+			[fileNames addObject:[soundBite fileName]];
+		}
+		
+		return fileNames;
+	}
+	
+	
+	
+}
+-(void) saveLibrary
+{
+	NSString *libFile = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/Library"];
+	[libraryArray writeToFile:libFile atomically:YES]; 	
+	
+}
+
+
+
+- (NSMutableArray*)getCurrentSoundBiteArray:(NSString*)group
+{
+	
+	NSMutableArray *currentSoundbites = [[NSMutableArray alloc] init];
+	[currentSoundbites addObjectsFromArray:[libraryArray objectForKey:group]]; 		
+	
+	return currentSoundbites;
+	
+}
 
 
 @end

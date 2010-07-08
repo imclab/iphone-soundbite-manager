@@ -1,0 +1,8 @@
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:48: warning: incomplete implementation of class 'levelIndicator'
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:48: warning: method definition for '-init' not found
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:151: warning: property 'instrumentSelector' requires method '-instrumentSelector' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:151: warning: property 'instrumentSelector' requires the method 'setInstrumentSelector:' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:151: warning: incomplete implementation of class 'playViewController'
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:151: warning: method definition for '-pickerView:numberOfRowsInComponent:' not found
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:151: warning: method definition for '-numberOfComponentsInPickerView:' not found
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/../playViewController.mm:151: warning: class 'playViewController' does not fully implement the 'UIPickerViewDataSource' protocol

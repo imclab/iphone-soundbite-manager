@@ -1,0 +1,7 @@
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayer.m: In function '-[audioPlayer startRecording]':
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayer.m:80: warning: class 'audioPlayer' does not implement the 'AVAudioRecorderDelegate' protocol
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayer.m: In function '-[audioPlayer audioRecorderDidFinishRecording:successfully:]':
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayer.m:136: warning: 'audioPlayerAppDelegate' may not respond to '-showReviewPanel'
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayer.m:136: warning: (Messages without a matching method signature
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayer.m:136: warning: will be assumed to return 'id' and accept
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayer.m:136: warning: '...' as arguments.)

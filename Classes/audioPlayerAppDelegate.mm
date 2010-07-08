@@ -10,6 +10,7 @@
 
 @implementation audioPlayerAppDelegate
 
+@synthesize CurrentQuestionID;
 @synthesize window;
 @synthesize tabBarController;
 
@@ -34,10 +35,18 @@
 	[myLibrary saveLibrary];
 	
 }
+- (void)dealloc {
+	
+    [tabBarController release];
+    [window release];
+	[myAudioPlayer release];
+	[downloader release];
+	[myLibrary release];
+    [super dealloc];
+}
 
-// action sheet methods ... for review/save dialog ...
-- (void)actionSheet:(UIActionSheet *)actionSheet
-clickedButtonAtIndex:(NSInteger)buttonIndex {
+// ACTION SHEET methods ... for review/save dialog ...
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
 	
 	NSLog(@"action sheet button clicked");
 	
@@ -55,6 +64,7 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
 		// Sae ...
 		NSLog(@"upload the answer");
 		
+		[downloader uploadAnswer];
 		
     }
 	else if (buttonIndex == 3) {
@@ -62,9 +72,7 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
 		NSLog(@"cancelled"); 
     }
 }
-
-- (void)showReviewPanel // show the action sheet
-{
+- (void)showReviewPanel {
 	UIActionSheet *popupQuery = [[UIActionSheet alloc]
 								 initWithTitle:nil
 								 delegate:self
@@ -78,16 +86,7 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
 	
 }
 
-- (void)dealloc {
-	
-    [tabBarController release];
-    [window release];
-	[myAudioPlayer release];
-	[downloader release];
-	[myLibrary release];
-    [super dealloc];
-}
-
+// AUDIO :::::::::
 - (void) startRecording{
 	
 	[myAudioPlayer startRecording];
@@ -97,72 +96,79 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
 
 	[myAudioPlayer stopRecording];
 }
-
--(void) play:(NSString*) filePath {
+- (void) play:(NSString*) filePath {
 	
 	NSLog(@"trigger play");
 	[myAudioPlayer play:filePath];
 	
 }
-
--(bool) isRecording {
+- (bool) isRecording {
 	
 	return [myAudioPlayer isRecording];
 }
-
-- (void)audioRecorderDidFinishRecording:(AVAudioRecorder *) aRecorder successfully:(BOOL)flag
-{
+- (void) audioRecorderDidFinishRecording:(AVAudioRecorder *) aRecorder successfully:(BOOL)flag {
 	NSLog (@"audioRecorderDidFinishRecording:successfully:");
 	 
 	[self showReviewPanel];
 	 
 }
-
-
-- (NSString*) getCurrentQuestion
-{
-	return currentQuestion;
+- (void) setVolume:(float)newVolume {
+	
+	[myAudioPlayer setPlaybackVolume:newVolume];	
 }
-- (void) setCurrentQuestion : (NSString*) questionPath
-{ 
-	currentQuestion = questionPath;
+- (float) getInputOrOutputLevel {
+	
+	
+	if ([myAudioPlayer isPlaying])
+	{
+		return [myAudioPlayer getOutputLevel];
+	}
+	else // ([myAudioPlayer isRecording])
+	{
+		return [myAudioPlayer getInputLevel];
+	}
+	
+	//else return float(-20.0);
+	
+	
+	
 }
 
-
+// DOWNLOAD / UPLOAD ::::::::
 - (void) triggerDownload:(NSURL*) newItem {
 	[downloader triggerDownload:newItem];
 }
-
-- (void) refreshLibraryView
-{
+- (void) refreshLibraryView {
 	NSLog(@"refresh Library View ...");
 	[myLibraryView refreshLibraryView];
 	
 }
 
-- (void) setVolume:(float)newVolume {
-	 
-	[myAudioPlayer setPlaybackVolume:newVolume];	
-}
 
-- (float) getInputOrOutputLevel {
-	
-	if ([myAudioPlayer isRecording])
-	{
-		return [myAudioPlayer getInputLevel];
-	}
-	else 
-	{
-		return [myAudioPlayer getOutputLevel];
-	}
-
-	
-	
-}
-
-- (NSArray*) getLibrary:(NSString*)QuestionGroup
-{  
+// CUSTOM GETTER/SETTER s :::::
+- (NSArray*) getLibrary:(NSString*)QuestionGroup {  
 	return [myLibrary getLibraryArray:QuestionGroup];}
+- (NSString*) getCurrentQuestionFile {
+	return myAudioPlayer.currentQuestionFile;
+}
+- (NSString*) getAnswerPath {
+	return myAudioPlayer.recorderFilePath;
+}
+- (void) setCurrentQuestion : (NSString*) path  withID:(NSString*)sqlID { 
+	
+	// set the file, so the audioPlayer kows what to play 
+	myAudioPlayer.currentQuestionFile = path;
+	
+	// set the ID, so the downloader / uploader knows whasqlID to use ...
+	CurrentQuestionID = sqlID;
+	
+}
+- (NSMutableArray*) getSoundBiteArray:(NSString*) group {
+	
+	
+	[myLibrary getCurrentSoundBiteArray:group];
+	
+}
 
 @end
 

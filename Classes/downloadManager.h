@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import "ASIHTTPRequest.h"
+//#import "ASIHTTPRequest.h"
 #import "ASINetworkQueue.h"
- 
+#import "ASIFormDataRequest.h" 
 
 
 @interface downloadManager : NSObject {
@@ -24,6 +24,9 @@
 
 
 -(void)downloadItem;
+-(void)uploadAnswer;
+-(void)uploadNewQuestion;
+
 -(void)triggerDownload:(NSURL*)newItem;
 
 @end

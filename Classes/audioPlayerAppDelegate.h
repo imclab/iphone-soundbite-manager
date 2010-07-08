@@ -19,8 +19,6 @@
     UIWindow *window;
     UITabBarController *tabBarController;
  
-	NSString *currentQuestion;
-	 	
 	// custom classed objects ...
 	libraryManager *myLibrary;
 	audioPlayer *myAudioPlayer;
@@ -28,7 +26,10 @@
 	
 	IBOutlet libraryViewController *myLibraryView;
 
+	NSString *CurrentQuestionID;
 }
+
+@property (nonatomic, retain) NSString *CurrentQuestionID;
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
@@ -41,7 +42,9 @@
 - (bool) isRecording;
 - (float) getInputOrOutputLevel;
 
-- (NSString *) getCurrentQuestion;
+- (NSString *) getCurrentQuestionFile;
+- (void) setCurrentQuestion:(NSString*)group withID:(NSString*)sqlID;
+- (NSMutableArray*) getSoundBiteArray:(NSString*)group;
 
 - (void) triggerDownload:(NSURL*) newItem;
 - (NSArray*) getLibrary:(NSString*)QuestionGroup;

@@ -166,7 +166,7 @@ Content-Disposition: attachment; filename=fname.ext
 	NSString *fileUID = [(NSString *)string autorelease];
 	//@TODO set correct file extention
 	NSString *path = [tempDirectory stringByAppendingPathComponent: [NSString stringWithFormat: @"%@.pdf", fileUID]];
-	LOG(@"*** starting download to path: %@ FROM %@", path, [currentURL path]);
+	LOG(@" starting download to path: %@ FROM %@", path, [currentURL path]);
 	[ASIHTTPRequest clearSession]; //Silly @HACK
 	RELEASE_SAFELY(downloadRequest);
 	downloadRequest = [[ASIHTTPRequest alloc] initWithURL:currentURL];
