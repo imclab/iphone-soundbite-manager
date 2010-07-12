@@ -31,6 +31,20 @@
 }
 - (void)applicationWillTerminate:(UIApplication *)application{
 	
+	
+	NSLog(@"closing");
+	
+	  		 
+	UIAlertView *alert = [[UIAlertView alloc] 
+							  initWithTitle:@"Error" message:   
+							  @"testing"
+							  delegate:self cancelButtonTitle:@"OK" 
+							  otherButtonTitles:nil, nil];
+	[alert show];
+	[alert release];
+		
+		//return;
+	
 	// save the library .... 
 	[myLibrary saveLibrary];
 	
@@ -168,6 +182,17 @@
 	
 	[myLibrary getCurrentSoundBiteArray:group];
 	
+}
+
+
+-(SoundBite*) getCurrentSoundbite
+{
+	return [myLibrary getCurrentSoundBite];
+}
+
+- (void) setCurrentSoundbite:(SoundBite*) currentSoundbite
+{
+		[myLibrary setCurrentSoundbite:currentSoundbite];
 }
 
 @end

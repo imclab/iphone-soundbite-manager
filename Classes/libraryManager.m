@@ -9,27 +9,6 @@
 #import "libraryManager.h"
 #import "audioPlayerAppDelegate.h"
 
-@implementation SoundBite
-
--(id) init {
-	
-	fileName = @"filename";
-	name = @"Qname";
-	sqlID = @"none";
-	
-	return self;
-}
-
-@synthesize sqlID;
-@synthesize name;
-@synthesize fileName;
-@synthesize description;
-@synthesize set;
-@synthesize answered;
-@synthesize comment;
-
-@end
-
 /// LIBARY ::::::::::::::::::::::::::::::::::: 
 ////////////////////////////////////////////////////////////////
 @implementation libraryManager
@@ -49,8 +28,7 @@
 		libraryArray = [[NSMutableDictionary alloc] init];
 	}
 	
-	[self refreshLibrary];
-	//[self updateLibrary];
+	[self refreshLibrary]; 
 	
 	currentSoundbite = 0;
 
@@ -152,8 +130,13 @@ didStartElement:(NSString *)elementName
 		
 		//Extract the attribute here.
 		NSString *fileName = [attributeDict objectForKey:@"name"]; 
+		NSString *answerFileName = [attributeDict objectForKey:@"answer"]; 
 		NSString *questionSet =  [attributeDict objectForKey:@"questionSet"]; 
+		NSString *comments =  [attributeDict objectForKey:@"comments"]; 
 		NSString *questionID =  [attributeDict objectForKey:@"id"]; 
+		
+		NSLog(@"filename: %@", [attributeDict objectForKey:@"name"]);
+		
 		
 		// intuit the path from the filename for now ....
 		NSString *remotePath = @"http://www.flyloops.com/iphone/questions/";
@@ -162,16 +145,15 @@ didStartElement:(NSString *)elementName
 		NSLog(@"url: %@", newItemURL);
 		
 		// Local path
-		NSString* appDirectory = [[[NSBundle mainBundle] bundlePath] stringByDeletingLastPathComponent];
-		NSString* docDirectory  = [appDirectory stringByAppendingString:@"/Documents/"];
-		NSString *path = [docDirectory stringByAppendingString:fileName];
-		NSLog(@"local path: %@", path);
-		
+		NSString *appDirectory = [[[NSBundle mainBundle] bundlePath] stringByDeletingLastPathComponent];
+		NSString *docDirectory  = [appDirectory stringByAppendingString:@"/Documents/"];
+		NSString *questionPath = [docDirectory stringByAppendingString:fileName];
+		NSLog(@"local path: %@", questionPath);
 		
 		// if this is a question that is not in the local library already, download and add it ....
-		if ([[path pathExtension] isEqualToString: @"wav"])
+		if ([[questionPath pathExtension] isEqualToString: @"wav"] || [[questionPath pathExtension] isEqualToString: @"caf"])
 		{
-			//download  
+			// DOWNLOAD 
 			audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
 			[appDelegate triggerDownload:newItemURL];
 			
@@ -184,8 +166,62 @@ didStartElement:(NSString *)elementName
 			NSLog(@"setting string %@", fileName);
 			QorA.fileName = [fileName copy];
 			QorA.set = [questionSet copy];
-			QorA.set = [questionSet copy];
 			QorA.sqlID = [questionID copy];
+			QorA.comments = [comments copy];	
+			QorA.answerFile = [answerFileName copy];			
+			
+			// Pull up the appropriate question set (array) and add this
+			// note *** if this is an answer ... the "questionset" is the questionID it maps too .....
+			NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+			[tempArray addObjectsFromArray:[libraryArray objectForKey:questionSet]];
+			[tempArray addObject:QorA];
+			[libraryArray setObject:tempArray forKey:questionSet];
+			[tempArray release];
+			
+			
+			NSString *URL = [@"http://www.flyloops.com/iphone/index.php?questionNum=" stringByAppendingString:questionID];
+			NSURL* url = [NSURL URLWithString:URL];
+
+			
+			// ping the web app, note that this question has been recieved ....
+			
+			//ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+			//[request startAsynchronous];
+			
+			
+		}
+		
+		if (answerFileName == NULL) return;
+		else if ([answerFileName length] == 0) return;
+		else NSLog(@"question has been answered: %@", answerFileName);
+		
+		// handle ANSWER
+		NSString *answerPath = [docDirectory stringByAppendingString:answerFileName];
+		NSLog(@"local path: %@", answerPath);
+		
+		// if this is a question that is not in the local library already, download and add it ....
+		if ([[answerPath pathExtension] isEqualToString: @"wav"] || [[answerPath pathExtension] isEqualToString: @"caf"])
+		{
+			// DOWNLOAD 
+			audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+			[appDelegate triggerDownload:newItemURL];
+			
+			// ::::: ADD it to the LIBRARY 
+			///////////////////////////////////////////////////
+			
+			
+			// get the appropriate question from the Library, and set it's answer .....
+		
+			
+			
+			/*
+			// create a new soundbite ...
+			SoundBite *QorA = [[SoundBite alloc] init];
+			NSLog(@"setting string %@", answerFileName);
+			QorA.answerFile = [answerFileName copy];
+			//QorA.set = [questionSet copy];
+			//QorA.set = [questionSet copy];
+			//QorA.sqlID = [questionID copy];
 			
 			
 			// Pull up the appropriate question set (array) and add this
@@ -208,14 +244,9 @@ didStartElement:(NSString *)elementName
 			
 			//ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
 			//[request startAsynchronous];
-			
+			 */
 			
 		}
-		
-		// if it is in the library .... OVERWRITE it ....
-		
-		// refresh the view ?
-		
 		
 		
 	}		
@@ -276,7 +307,7 @@ didStartElement:(NSString *)elementName
 		NSMutableArray* fileNames;
 		fileNames = [[NSMutableArray alloc] init];
 		for (SoundBite *soundBite in currentSoundbites) {
-		 	NSLog(@" aSASD %@", [soundBite fileName]);
+		 	NSLog(@" fileName: %@", [soundBite fileName]);
 			[fileNames addObject:[soundBite fileName]];
 		}
 		
@@ -293,8 +324,6 @@ didStartElement:(NSString *)elementName
 	
 }
 
-
-
 - (NSMutableArray*)getCurrentSoundBiteArray:(NSString*)group
 {
 	
@@ -305,6 +334,16 @@ didStartElement:(NSString *)elementName
 	
 }
 
+- (SoundBite*) getCurrentSoundBite
+{
+	return currentSoundbite;
+}
+
+- (void) setCurrentSoundbite:(SoundBite*) newCurrentSoundbite
+{
+	NSLog(@"new soundbite set - %@", [newCurrentSoundbite comments]);
+	currentSoundbite = newCurrentSoundbite;
+}
 
 @end
  

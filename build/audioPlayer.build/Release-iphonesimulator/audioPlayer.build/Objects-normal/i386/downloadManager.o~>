@@ -1,0 +1,15 @@
+In file included from /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.h:15,
+                 from /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/downloadManager.m:10:
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.h:22: error: statically allocated instance of Objective-C class 'NSString'
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/downloadManager.m: In function '-[downloadManager uploadAnswer]':
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/downloadManager.m:45: warning: 'audioPlayerAppDelegate' may not respond to '-getAnswerPath'
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/downloadManager.m:45: warning: (Messages without a matching method signature
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/downloadManager.m:45: warning: will be assumed to return 'id' and accept
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/downloadManager.m:45: warning: '...' as arguments.)
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/downloadManager.m: In function '-[downloadManager downloadFinished:]':
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/downloadManager.m:166: warning: unused variable 'err'
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/downloadManager.m:182: warning: 'audioPlayerAppDelegate' may not respond to '-refreshLibraryView'
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/downloadManager.m: In function '-[downloadManager textFieldShouldReturn:]':
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/downloadManager.m:204: warning: 'downloadManager' may not respond to '-loadURL:'
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/downloadManager.m: At top level:
+/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/downloadManager.m:219: warning: method possibly missing a [super dealloc] call

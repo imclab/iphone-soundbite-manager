@@ -8,6 +8,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h> 
  
+#import "soundBite.h"
 
 @interface libraryViewController : UITableViewController {
 	
@@ -16,7 +17,7 @@
 	
 	NSArray *tableDataSource; // current data ....
 	NSString *CurrentGroup; 
-} 
+	 } 
 
 
 @property (nonatomic, retain) NSArray *tableDataSource;
@@ -26,6 +27,7 @@
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityIndicator; 
  
 - (void) refreshLibraryView;
+
 
 @end
 

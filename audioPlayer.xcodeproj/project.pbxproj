@@ -34,6 +34,7 @@
 		36C8086B11CAA26A0021B247 /* Hi-Hat6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 36C8086711CAA26A0021B247 /* Hi-Hat6.wav */; };
 		36C8086C11CAA26A0021B247 /* Hi-Hat7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 36C8086811CAA26A0021B247 /* Hi-Hat7.wav */; };
 		36CE40FA11DE5AB5009962A1 /* downloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CE40F911DE5AB5009962A1 /* downloadManager.m */; };
+		36E5F98C11EB7A060056E823 /* soundBite.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E5F98B11EB7A060056E823 /* soundBite.m */; };
 		36EB8E84119CA16000E343E4 /* NLPDownloadWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EB8E83119CA16000E343E4 /* NLPDownloadWebView.m */; };
 		36FBF9C8119CC26400491F35 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF98B119CC26400491F35 /* ASIAuthenticationDialog.m */; };
 		36FBF9C9119CC26400491F35 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF98D119CC26400491F35 /* ASIInputStream.m */; };
@@ -85,6 +86,8 @@
 		36C8086811CAA26A0021B247 /* Hi-Hat7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Hi-Hat7.wav"; sourceTree = "<group>"; };
 		36CE40F811DE5AB5009962A1 /* downloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = downloadManager.h; sourceTree = "<group>"; };
 		36CE40F911DE5AB5009962A1 /* downloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = downloadManager.m; sourceTree = "<group>"; };
+		36E5F98A11EB7A060056E823 /* soundBite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soundBite.h; sourceTree = "<group>"; };
+		36E5F98B11EB7A060056E823 /* soundBite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = soundBite.m; sourceTree = "<group>"; };
 		36EB8E82119CA16000E343E4 /* NLPDownloadWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLPDownloadWebView.h; path = Classes/NLPDownloadWebView.h; sourceTree = "<group>"; };
 		36EB8E83119CA16000E343E4 /* NLPDownloadWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NLPDownloadWebView.m; path = Classes/NLPDownloadWebView.m; sourceTree = "<group>"; };
 		36FBF987119CC26400491F35 /* ASIHTTPRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIHTTPRequestConfig.h; sourceTree = "<group>"; };
@@ -227,6 +230,8 @@
 				36CE40F911DE5AB5009962A1 /* downloadManager.m */,
 				3655F9C911DBC6BF00C00E2E /* libraryManager.h */,
 				3655F9CA11DBC6BF00C00E2E /* libraryManager.m */,
+				36E5F98A11EB7A060056E823 /* soundBite.h */,
+				36E5F98B11EB7A060056E823 /* soundBite.m */,
 			);
 			name = "Objects and Managers";
 			sourceTree = "<group>";
@@ -378,6 +383,7 @@
 				3655F9CB11DBC6BF00C00E2E /* libraryManager.m in Sources */,
 				3655FA9511DBCFAD00C00E2E /* audioPlayer.m in Sources */,
 				36CE40FA11DE5AB5009962A1 /* downloadManager.m in Sources */,
+				36E5F98C11EB7A060056E823 /* soundBite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

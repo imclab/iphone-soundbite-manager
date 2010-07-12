@@ -48,4 +48,7 @@
 
 - (void) triggerDownload:(NSURL*) newItem;
 - (NSArray*) getLibrary:(NSString*)QuestionGroup;
+
+-(SoundBite*) getCurrentSoundbite;
+- (void) setCurrentSoundbite:(SoundBite*) currentSoundbite;
 @end

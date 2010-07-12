@@ -47,22 +47,20 @@
 	//NSString *questionOrSet = [appDelegate getCurrentQuestionOrSet]; 	
 	
 	
+	NSLog(@"sqlID %@", [appDelegate CurrentQuestionID]);
+	NSLog(@"path %@", answerPath);
+	
+	
 	// ping the web app, note that this question has been recieved ....
 	ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
 	
-	
-	//[request setPostValue:questionOrSet forKey:@"questionOrQuestionSet"];
-	
-	
-	NSLog(@"question %@", [appDelegate CurrentQuestionID]);
-	NSLog(@"question %@", answerPath);
-	
-	
-	
-	
+	[request setPostValue:[appDelegate CurrentQuestionID] forKey:@"questionOrQuestionSet"];
+	[request setPostValue:@"1" forKey:@"user"];
+	[request setPostValue:@"1" forKey:@"isAnswer"];
 	// answer path ....
-	//[request setFile:@"/Users/ben/Desktop/ben.jpg" forKey:@"photo"];
-	//[request startAsynchronous];
+	[request setFile:answerPath forKey:@"datafile"];
+	
+	[request startAsynchronous];
 	
 	// async session ...
 	
@@ -75,10 +73,12 @@
 }
 
 
-
 // DOWNLOAD methods 
 - (void) triggerDownload:(NSURL*) newItem {
+	
 	NSLog(@"triggering download to library");
+	NSLog(@"item name: %@", [newItem path]);
+	
 	
 	if (networkQueue == nil) {
 		networkQueue = [ASINetworkQueue queue];

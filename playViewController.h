@@ -25,14 +25,18 @@
 @end
 
 
-@interface playViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+@interface playViewController : UIViewController
 {
 	
 	IBOutlet UIButton* playButton;
 	IBOutlet UIButton* stopButton; 
+	IBOutlet UIButton *playAnswerButton;
+	
 	IBOutlet UIButton* recButton; 
 	IBOutlet UISlider* volumeSlider;	
-	IBOutlet UILabel* statusLabel;
+	IBOutlet UILabel* answerLabel;
+	
+	IBOutlet UITextView *comments;
 	
 	UIActivityIndicatorView* activityIndicator;
 	UITabBarController* tabBar;
@@ -50,10 +54,12 @@
 
 @property (nonatomic, retain) UIButton *recButton; 
 @property (nonatomic, retain) UIButton *playButton; 
+@property (nonatomic, retain) UIButton *playAnswerButton; 
 @property (nonatomic, retain) UIButton *stopButton; 
 @property (nonatomic, retain) UISlider *volumeSlider; 
-@property (nonatomic, retain) UILabel *statusLabel; 
+@property (nonatomic, retain) UILabel *answerLabel; 
 @property (nonatomic, retain) UIPickerView *instrumentSelector; 
+@property (nonatomic, retain) UITextView *comments; 
 
 
 

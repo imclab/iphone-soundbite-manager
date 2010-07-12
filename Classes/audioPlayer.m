@@ -31,7 +31,7 @@
         //return;
 	}
 	
-	 playBackVolume = 1;
+	playBackVolume = 1;
 	
 	NSMutableDictionary *recordSetting = [[NSMutableDictionary alloc] init];
 	
@@ -44,11 +44,10 @@
 	[recordSetting setValue :[NSNumber numberWithBool:NO] forKey:AVLinearPCMIsFloatKey];
 	
 	
-	// Create a new dated file
-	NSDate *now = [NSDate dateWithTimeIntervalSinceNow:0];
-	NSString *caldate = [now description];
+	NSTimeInterval now = [NSDate timeIntervalSinceReferenceDate];
+	NSString *seconds = [NSString stringWithFormat:@"%qu", now]; 
 	
-	recorderFilePath = [[NSString stringWithFormat:@"%@/%@.caf", DOCUMENTS_FOLDER, caldate] retain];
+	recorderFilePath = [[NSString stringWithFormat:@"%@/%@.caf", DOCUMENTS_FOLDER, seconds] retain];
 	
 	NSURL *url = [NSURL fileURLWithPath:recorderFilePath];
 	err = nil;
@@ -67,6 +66,7 @@
         [alert show];
         [alert release];
         //return;
+		
 	}
 	
 	return self;

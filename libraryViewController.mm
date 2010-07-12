@@ -22,11 +22,22 @@ NSArray* libraryArray;
 {	
 	NSLog(@"lib View loading ...");
 	
-	CurrentGroup = @"";
 	
 	// init the library Array
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
 	libraryArray = [appDelegate getLibrary:@""];
+	
+	[self refreshLibraryView];
+}
+
+-(void)viewDidAppear:(BOOL)animated 
+{
+	
+	NSLog(@"lib View appearing ...");
+	
+	CurrentGroup = @"";
+	[self refreshLibraryView];
+	
 }
 
 - (void) refreshLibraryView
@@ -75,9 +86,6 @@ NSArray* libraryArray;
 	
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
 	
-	
-	//[appDelegate getCurrentSoundBiteArray];
-	 	
 	NSMutableArray *currentSoundbites = [[NSMutableArray alloc] init];
 	[currentSoundbites addObjectsFromArray:[appDelegate getSoundBiteArray:CurrentGroup]]; 		
 	
@@ -85,9 +93,7 @@ NSArray* libraryArray;
 	current = [currentSoundbites objectAtIndex:indexPath.row];
 	
 	NSLog(@"current %@", [current sqlID]);
-	
-	// for now, tell the player what number it is playing ....
-	
+	[appDelegate setCurrentSoundbite:current];
 	
 	// load the appropriate file to the midiPlayer
 	NSString *fileName = [libraryArray objectAtIndex:indexPath.row]; //[[NSBundle mainBundle] pathForResource:testin ofType:@"mid"];
@@ -109,15 +115,7 @@ NSArray* libraryArray;
 	
 	// switch view ....
 	[tabBar setSelectedIndex:1];
-
-	/*
-	 playViewController *detailViewController = [[playViewController alloc] initWithNibName:@"test" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-	 [self.navigationController pushViewController:detailViewController animated:YES];
-	 [detailViewController release];
-	 */
 	 
 }
-  
+ 
 @end

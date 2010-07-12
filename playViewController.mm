@@ -6,16 +6,13 @@
 //
 
 #import "playViewController.h"
-
 #import "audioPlayerAppDelegate.h"
-
+#import "soundBite.h"
 #import <AVFoundation/AVFoundation.h>
-
 
 @implementation levelIndicator
 
-- (void)drawRect:(CGRect)rect
-{
+- (void)drawRect:(CGRect)rect {
 	
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
 	float level = [appDelegate getInputOrOutputLevel];
@@ -32,7 +29,6 @@
 
 	
 }
-
 - (id)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         // Initialization code
@@ -40,7 +36,6 @@
 	}
     return self;
 }
-
 - (void)dealloc {
     [super dealloc];
 }
@@ -51,15 +46,16 @@
 @implementation playViewController
 
 @synthesize playButton; 
+@synthesize playAnswerButton; 
 @synthesize stopButton; 
 @synthesize recButton; 
 @synthesize volumeSlider;  
-@synthesize statusLabel; 
+@synthesize answerLabel; 
+@synthesize comments; 
 
 -(void)viewDidLoad
 {	
-	self.statusLabel.text = @"";
-
+	
 	volumeSlider.transform = CGAffineTransformRotate(volumeSlider.transform, 270.0/180*M_PI);
 	
 	timer = [NSTimer scheduledTimerWithTimeInterval:0.1
@@ -68,15 +64,77 @@
 										   userInfo:nil
 											repeats: YES];
 	
+	
+	// set the comments field text ...
+	
+	
+	// check and see if there is an answer, disable the playAnswer button if not ...
+	
+	
+	//if (answerFile)
+	/*
+	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+	
+	SoundBite *soundBite = [appDelegate getCurrentSoundbite];
+	[comments setText:[soundBite comments]];
+	
+	NSLog(@"bite %@", [soundBite answerFile]);
+	
+	if ([[soundBite answerFile] length] != 0)
+	{
+		[playAnswerButton setEnabled:true];
+		[answerLabel setText:[soundBite answerFile]];
+	}
+	else 
+	{
+		[playAnswerButton setEnabled:false];
+		[answerLabel setText:@""];
+	}
+	 */
+	
+	
+}
+
+-(void)viewDidAppear:(BOOL)animated 
+{ 
+	
+	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+	
+	SoundBite *soundBite = [appDelegate getCurrentSoundbite];
+	[comments setText:[soundBite comments]];
+	
+	NSLog(@"bite %@", [soundBite answerFile]);
+	
+	if ([[soundBite answerFile] length] != 0)
+	{
+		[playAnswerButton setEnabled:true];
+		
+		NSDateFormatter *df = [[NSDateFormatter alloc] init];
+		
+		NSTimeInterval timeStamp = [[[soundBite answerFile] stringByDeletingPathExtension] doubleValue];
+		
+		NSDate *myDate = [NSDate dateWithTimeIntervalSinceReferenceDate: timeStamp];
+		
+		NSString *dateString = [myDate description];
+	
+		[answerLabel setText:dateString];
+	}
+	else 
+	{
+		[playAnswerButton setEnabled:false];
+		[answerLabel setText:@""];
+	}
+
+	
 }
 
 -(IBAction)buttonPressed:(id)sender {
 	
+	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+	
 	  	
 	if ([[sender currentTitle] isEqualToString:(@"play question")])
 	{ 
-		
-		audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
 		
 		if ([[appDelegate getCurrentQuestionFile] length] == 0)
 		{ 		 
@@ -99,21 +157,43 @@
 		[appDelegate play:soundFilePath];
 
 	}
-
 	else if ([[sender currentTitle] isEqualToString:(@"record")])
 	{
-		
-		 audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
-		[appDelegate startRecording];
-		  		
+		 [appDelegate startRecording];
 	}
 	else if ([[sender currentTitle] isEqualToString:(@"stop")])
 	{
-		
-		audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
-		[appDelegate stopRecording];
-		 
+		 [appDelegate stopRecording];
 	}
+	else if ([[sender currentTitle] isEqualToString:(@"play answer")])
+	{
+		/*
+		if ([[appDelegate getCurrentQuestionFile] length] == 0)
+		{ 		 
+			UIAlertView *alert = [[UIAlertView alloc] 
+								  initWithTitle:@"Error" message:   
+								  @"please select a question to play"
+								  delegate:self cancelButtonTitle:@"OK" 
+								  otherButtonTitles:nil, nil];
+			[alert show];
+			[alert release];
+			
+			return;
+		}
+		 */
+		
+		SoundBite *soundBite = [appDelegate getCurrentSoundbite];
+		
+		
+		NSString *fileName = [soundBite answerFile];
+	 	NSString *docDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/"];
+		NSString *soundFilePath = [docDirectory stringByAppendingPathComponent:fileName];
+		
+		
+		[appDelegate play:soundFilePath];
+		
+	}
+
 }
 
 /* volume slider */
