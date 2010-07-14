@@ -43,6 +43,7 @@
 - (float) getInputOrOutputLevel;
 
 - (NSString *) getCurrentQuestionFile;
+- (NSString*) getRecordedToPath;
 - (void) setCurrentQuestion:(NSString*)group withID:(NSString*)sqlID;
 - (NSMutableArray*) getSoundBiteArray:(NSString*)group;
 

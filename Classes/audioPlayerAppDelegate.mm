@@ -165,7 +165,7 @@
 - (NSString*) getCurrentQuestionFile {
 	return myAudioPlayer.currentQuestionFile;
 }
-- (NSString*) getAnswerPath {
+- (NSString*) getRecordedToPath {
 	return myAudioPlayer.recorderFilePath;
 }
 - (void) setCurrentQuestion : (NSString*) path  withID:(NSString*)sqlID { 
@@ -185,8 +185,7 @@
 }
 
 
--(SoundBite*) getCurrentSoundbite
-{
+-(SoundBite*) getCurrentSoundbite {
 	return [myLibrary getCurrentSoundBite];
 }
 

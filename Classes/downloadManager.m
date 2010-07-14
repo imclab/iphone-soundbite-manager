@@ -41,12 +41,8 @@
 	
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
 	 
-	
-	NSString *answerPath = [appDelegate getAnswerPath];
-	
-	//NSString *questionOrSet = [appDelegate getCurrentQuestionOrSet]; 	
-	
-	
+	NSString *answerPath = [appDelegate getRecordedToPath];
+
 	NSLog(@"sqlID %@", [appDelegate CurrentQuestionID]);
 	NSLog(@"path %@", answerPath);
 	
@@ -69,9 +65,39 @@
 }
 - (void) uploadNewQuestion {
 	
-	// hmmm ....
-}
+	NSLog(@"upload new question");
+	
+	// create the POST
+	NSString *URL = @"http://www.flyloops.com/iphone/index.php";
+	NSURL* url = [NSURL URLWithString:URL];
+	
+	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+	
+	NSString *questionPath = [appDelegate getRecordedToPath]; 
+	
+	SoundBite *currentSounbite = [appDelegate getCurrentSoundbite];
+	
+	NSLog(@"sqlID %@", [appDelegate CurrentQuestionID]);
+	NSLog(@"path %@", questionPath);
+	
 
+	// ping the web app, note that this question has been recieved ....
+	ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+	
+	[request setPostValue:currentSounbite.set forKey:@"questionOrQuestionSet"];
+	[request setPostValue:@"1" forKey:@"user"];
+	 
+	//  path ....
+	[request setFile:questionPath forKey:@"datafile"];
+	
+	[request startAsynchronous];
+	
+	// async session ...
+	
+	
+	
+	
+}
 
 // DOWNLOAD methods 
 - (void) triggerDownload:(NSURL*) newItem {
