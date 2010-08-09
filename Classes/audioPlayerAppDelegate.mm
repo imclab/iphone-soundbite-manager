@@ -160,8 +160,19 @@
 
 
 // CUSTOM GETTER/SETTER s :::::
-- (NSArray*) getLibrary:(NSString*)QuestionGroup {  
-	return [myLibrary getLibraryArray:QuestionGroup];}
+- (NSArray*) getCurrentQuestionGroup {  
+	// get the current question group .....
+	return [myLibrary getCurrentQuestionGroupArray];
+}
+
+- (void) setCurrentQuestionGroup:(NSString*) newGroup {  
+	// set the current question group .....
+	NSLog(@"setting new Group: %@", newGroup);
+	[myLibrary setCurrentGroup:(NSString*) newGroup];
+}
+
+
+
 - (NSString*) getCurrentQuestionFile {
 	return myAudioPlayer.currentQuestionFile;
 }
@@ -177,10 +188,9 @@
 	CurrentQuestionID = sqlID;
 	
 }
-- (NSMutableArray*) getSoundBiteArray:(NSString*) group {
+- (NSMutableArray*) getSoundBiteArray {
 	
-	
-	[myLibrary getCurrentSoundBiteArray:group];
+	[myLibrary getCurrentSoundBiteArray];
 	
 }
 

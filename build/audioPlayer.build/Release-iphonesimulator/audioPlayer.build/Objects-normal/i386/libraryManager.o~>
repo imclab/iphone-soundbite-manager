@@ -1,18 +1,19 @@
-In file included from /Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m:9:
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.h:22: error: statically allocated instance of Objective-C class 'NSString'
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m:27: error: type of property 'answerFile' does not match type of ivar 'answerFile'
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m: In function '-[libraryManager refreshLibrary]':
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m:84: warning: 'directoryContentsAtPath:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileManager.h:164)
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m:93: warning: 'NSMutableDictionary' may not respond to '-addObject:'
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m:93: warning: (Messages without a matching method signature
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m:93: warning: will be assumed to return 'id' and accept
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m:93: warning: '...' as arguments.)
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m:99: warning: 'directoryContentsAtPath:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileManager.h:164)
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m:108: warning: 'NSMutableDictionary' may not respond to '-addObject:'
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m: In function '-[libraryManager parser:didStartElement:namespaceURI:qualifiedName:attributes:]':
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m:207: warning: unused variable 'url'
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m:204: warning: unused variable 'docDirectory'
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m: In function '-[libraryManager requestFinished:]':
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m:295: warning: class 'libraryManager' does not implement the 'NSXMLParserDelegate' protocol
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m: In function '-[libraryManager requestFailed:]':
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/libraryManager.m:301: warning: unused variable 'error'
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m: In function '-[libraryManager refreshLibrary]':
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m:64: warning: 'directoryContentsAtPath:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileManager.h:164)
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m:73: warning: 'NSMutableDictionary' may not respond to '-addObject:'
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m:73: warning: (Messages without a matching method signature
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m:73: warning: will be assumed to return 'id' and accept
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m:73: warning: '...' as arguments.)
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m:79: warning: 'directoryContentsAtPath:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileManager.h:164)
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m:88: warning: 'NSMutableDictionary' may not respond to '-addObject:'
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m: In function '-[libraryManager parser:didStartElement:namespaceURI:qualifiedName:attributes:]':
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m:185: warning: unused variable 'url'
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m: In function '-[libraryManager requestFinished:]':
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m:274: warning: class 'libraryManager' does not implement the 'NSXMLParserDelegate' protocol
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m: In function '-[libraryManager requestFailed:]':
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m:280: warning: unused variable 'error'
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m: At top level:
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m:361: warning: incomplete implementation of class 'libraryManager'
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m:361: warning: method definition for '-getCurrentGroup:' not found
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m:361: warning: method definition for '-setAnswerPath:' not found
+/Users/aaronleese/iphone-soundbite-manager/Classes/libraryManager.m:361: warning: method definition for '-getCurrentSoundBiteArray:' not found

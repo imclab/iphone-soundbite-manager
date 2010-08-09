@@ -31,7 +31,9 @@
 	[self refreshLibrary]; 
 	
 	currentSoundbite = 0;
-
+	
+	currentGroup = @"";
+	
 	return self;
 	
 }
@@ -281,11 +283,10 @@ didStartElement:(NSString *)elementName
 
 // :::::: Library management
 ////////////////////////////////////////////////////////////////
-- (NSArray*) getLibraryArray:(NSString*)QuestionGroup
+- (NSArray*) getCurrentQuestionGroupArray
 {
-	
 	// if we are at the root node ...
-	if ([QuestionGroup length] == 0) // if the string is empty, show all groups ....
+	if ([currentGroup length] == 0) // if the string is empty, show all groups ....
 	{
 		//NSArray* test = [libraryArray allKeys];
 
@@ -298,10 +299,10 @@ didStartElement:(NSString *)elementName
 	}
 	else // return an array showing just this Question Group ...
 	{
-		NSLog(@"key %@", QuestionGroup);
+		NSLog(@"key %@", currentGroup);
 		
 		NSMutableArray *currentSoundbites = [[NSMutableArray alloc] init];
-		[currentSoundbites addObjectsFromArray:[libraryArray objectForKey:QuestionGroup]]; 		
+		[currentSoundbites addObjectsFromArray:[libraryArray objectForKey:currentGroup]]; 		
 		
 		// reduce to a list f filenames .....
 		NSMutableArray* fileNames;
@@ -316,7 +317,7 @@ didStartElement:(NSString *)elementName
 	
 	
 	
-}
+} 
 -(void) saveLibrary
 {
 	NSString *libFile = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/Library"];
@@ -324,11 +325,11 @@ didStartElement:(NSString *)elementName
 	
 }
 
-- (NSMutableArray*)getCurrentSoundBiteArray:(NSString*)group
+- (NSMutableArray*)getCurrentSoundBiteArray
 {
 	
 	NSMutableArray *currentSoundbites = [[NSMutableArray alloc] init];
-	[currentSoundbites addObjectsFromArray:[libraryArray objectForKey:group]]; 		
+	[currentSoundbites addObjectsFromArray:[libraryArray objectForKey:currentGroup]]; 		
 	
 	return currentSoundbites;
 	
@@ -344,6 +345,18 @@ didStartElement:(NSString *)elementName
 	NSLog(@"new soundbite set - %@", [newCurrentSoundbite comments]);
 	currentSoundbite = newCurrentSoundbite;
 }
+
+
+- (NSString*) getCurrentGroup
+{
+	return currentGroup;
+	
+}
+- (void) setCurrentGroup:(NSString*) newGroup;
+{
+	currentGroup = newGroup;
+}
+ 
 
 @end
  

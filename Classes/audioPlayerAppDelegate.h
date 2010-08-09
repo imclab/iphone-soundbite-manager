@@ -45,10 +45,14 @@
 - (NSString *) getCurrentQuestionFile;
 - (NSString*) getRecordedToPath;
 - (void) setCurrentQuestion:(NSString*)group withID:(NSString*)sqlID;
-- (NSMutableArray*) getSoundBiteArray:(NSString*)group;
+- (NSMutableArray*) getSoundBiteArray;
 
 - (void) triggerDownload:(NSURL*) newItem;
-- (NSArray*) getLibrary:(NSString*)QuestionGroup;
+
+
+// Library ////////////////////////////////////// 
+- (NSArray*) getCurrentQuestionGroup;
+- (void) setCurrentQuestionGroup:(NSString*) newGroup;
 
 -(SoundBite*) getCurrentSoundbite;
 - (void) setCurrentSoundbite:(SoundBite*) currentSoundbite;

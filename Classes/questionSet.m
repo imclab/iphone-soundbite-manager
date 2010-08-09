@@ -4,26 +4,24 @@
 //  Created by Aaron Leese on 5/7/10.
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
- 
+
 #import <Foundation/Foundation.h> 
 
 #import "libraryManager.h"
 NSArray* libraryArray;
 
-#import "libraryViewController.h"
-
-#import "questionSet.h"
-
+#import "QuestionSet.h"
 #import "audioPlayerAppDelegate.h"
 #import "playViewController.h"
 
-@implementation libraryViewController
+@implementation QuestionSetView
 
 @synthesize activityIndicator;
 
 -(void)viewDidLoad
 {	
 	NSLog(@"lib View loading ...");
+	
 	
 	// init the library Array
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -36,11 +34,7 @@ NSArray* libraryArray;
 {
 	
 	NSLog(@"lib View appearing ...");
-	
-	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
-	
-	[appDelegate setCurrentQuestionGroup:@""];
-	
+	 
 	[self refreshLibraryView];
 	
 }
@@ -48,9 +42,7 @@ NSArray* libraryArray;
 - (void) refreshLibraryView
 { 
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
-	
 	libraryArray = [appDelegate getCurrentQuestionGroup];
-	
 	[self.view reloadData];
 }
 
@@ -83,24 +75,6 @@ NSArray* libraryArray;
     
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
 	
-	
-	// if currently viewing groups .... just refresh the view with a view of this group
-	
-	// always teh case now .... since we have two controllers .
-	//if ([CurrentGroup length] == 0)
-	//{
-	//	CurrentGroup = [libraryArray objectAtIndex:indexPath.row]; //[[NSBundle mainBundle] pathForResource:testin ofType:@"mid"];
-		
-		[appDelegate setCurrentQuestionGroup:[libraryArray objectAtIndex:indexPath.row]];
-		
-		QuestionSetView* newQuestionSet = [[QuestionSetView alloc] init];
-		
-		[self.navigationController pushViewController:newQuestionSet animated:YES]; 
-		
-		//[self refreshLibraryView];
-		return;
-	//}
-	
 	NSMutableArray *currentSoundbites = [[NSMutableArray alloc] init];
 	[currentSoundbites addObjectsFromArray:[appDelegate getSoundBiteArray]]; 		
 	
@@ -119,9 +93,9 @@ NSArray* libraryArray;
 	{
 		NSString *docDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/"];
 		dbFilePath = [docDirectory stringByAppendingPathComponent:fileName];
-	 
+		
 	}
-
+	
 	// set the filename, which is used to tell te player what to play
 	[appDelegate setCurrentQuestion:fileName withID:[current sqlID]];
 	
@@ -130,10 +104,10 @@ NSArray* libraryArray;
 	
 	// switch view ....
 	//[tabBar setSelectedIndex:1];
-	//playViewController* test = [[playViewController alloc] init];
-	//[self.navigationController pushViewController:test animated:YES]; 
+	playViewController* test = [[playViewController alloc] init];
+	[self.navigationController pushViewController:test animated:YES]; 
 	
 	
 }
- 
+
 @end

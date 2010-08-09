@@ -7,16 +7,15 @@
 
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h> 
- 
+
 #import "soundBite.h"
 
-@interface libraryViewController : UITableViewController {
+@interface QuestionSetView : UITableViewController {
 	
 	UIActivityIndicatorView *activityIndicator;
 	IBOutlet UITabBarController* tabBar;
 	
 	NSArray *tableDataSource; // current data ....
-	
 } 
 
 
@@ -25,7 +24,7 @@
 
 
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityIndicator; 
- 
+
 - (void) refreshLibraryView;
 
 

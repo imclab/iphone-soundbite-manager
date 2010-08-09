@@ -27,6 +27,7 @@
 		364D513211948AC7006396FC /* playViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 364D513111948AC7006396FC /* playViewController.mm */; };
 		3655F9CB11DBC6BF00C00E2E /* libraryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655F9CA11DBC6BF00C00E2E /* libraryManager.m */; };
 		3655FA9511DBCFAD00C00E2E /* audioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3655FA9411DBCFAD00C00E2E /* audioPlayer.m */; };
+		368449A21210B5FC000D01BB /* questionSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 368449A11210B5FC000D01BB /* questionSet.m */; };
 		36C19E4011878026008CB824 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C19E3F11878026008CB824 /* AudioToolbox.framework */; };
 		36C8078E11CA97880021B247 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C8078D11CA97880021B247 /* AVFoundation.framework */; };
 		36C8086911CAA26A0021B247 /* Hi-Hat4.wav in Resources */ = {isa = PBXBuildFile; fileRef = 36C8086511CAA26A0021B247 /* Hi-Hat4.wav */; };
@@ -78,6 +79,8 @@
 		3655F9CA11DBC6BF00C00E2E /* libraryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = libraryManager.m; sourceTree = "<group>"; };
 		3655FA9311DBCFAD00C00E2E /* audioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = audioPlayer.h; sourceTree = "<group>"; };
 		3655FA9411DBCFAD00C00E2E /* audioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = audioPlayer.m; sourceTree = "<group>"; };
+		368449A01210B5FC000D01BB /* questionSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = questionSet.h; sourceTree = "<group>"; };
+		368449A11210B5FC000D01BB /* questionSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = questionSet.m; sourceTree = "<group>"; };
 		36C19E3F11878026008CB824 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		36C8078D11CA97880021B247 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		36C8086511CAA26A0021B247 /* Hi-Hat4.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Hi-Hat4.wav"; sourceTree = "<group>"; };
@@ -245,6 +248,8 @@
 				364D5112119489E9006396FC /* libraryViewController.mm */,
 				362EA7521199C4A2006174AF /* downloadViewController.h */,
 				362EA7531199C4A2006174AF /* downloadViewController.mm */,
+				368449A01210B5FC000D01BB /* questionSet.h */,
+				368449A11210B5FC000D01BB /* questionSet.m */,
 			);
 			name = "view Controllers";
 			sourceTree = "<group>";
@@ -384,6 +389,7 @@
 				3655FA9511DBCFAD00C00E2E /* audioPlayer.m in Sources */,
 				36CE40FA11DE5AB5009962A1 /* downloadManager.m in Sources */,
 				36E5F98C11EB7A060056E823 /* soundBite.m in Sources */,
+				368449A21210B5FC000D01BB /* questionSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

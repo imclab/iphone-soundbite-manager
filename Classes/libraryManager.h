@@ -16,18 +16,26 @@
 
 	NSMutableDictionary *libraryArray;
 	
+	// STATE variables .... //////////
+	NSString *currentGroup; 
+	
 	SoundBite* currentSoundbite;
 }
 
 - (void) updateLibrary;
 - (void) refreshLibrary;
 
-- (NSArray*) getLibraryArray:(NSString*)QuestionGroup;
-- (NSMutableArray*)getCurrentSoundBiteArray:(NSString*)group;
+- (NSArray*) getCurrentQuestionGroupArray;
+- (NSMutableArray*)getCurrentSoundBiteArray;
 
 - (void) setAnswerPath:(NSString*) answerPath;
 
 - (SoundBite*) getCurrentSoundBite;
 - (void) setCurrentSoundbite:(SoundBite*) newCurrentSoundbite;
+
+
+- (NSString*) getCurrentGroup;
+- (void) getCurrentGroup:(NSString*) newGroup;
+
 
 @end
