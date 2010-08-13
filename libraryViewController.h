@@ -10,6 +10,9 @@
  
 #import "soundBite.h"
 
+#import "questionSet.h"
+
+
 @interface libraryViewController : UITableViewController {
 	
 	UIActivityIndicatorView *activityIndicator;
@@ -17,6 +20,7 @@
 	
 	NSArray *tableDataSource; // current data ....
 	
+	IBOutlet QuestionSetView* questionSetview;
 } 
 
 

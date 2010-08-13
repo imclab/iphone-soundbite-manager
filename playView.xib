@@ -74,7 +74,7 @@
 					<object class="IBUISlider" id="850543682">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{-144, 184}, {350, 23}}</string>
+						<string key="NSFrame">{{-29, 72}, {142, 23}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -108,7 +108,7 @@
 					<object class="IBUIView" id="470425040">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{53, 20}, {15, 350}}</string>
+						<string key="NSFrame">{{53, 20}, {23, 127}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -122,7 +122,7 @@
 					<object class="IBUIButton" id="237769154">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{84, 333}, {210, 37}}</string>
+						<string key="NSFrame">{{84, 110}, {210, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -144,7 +144,7 @@
 					<object class="IBUITextView" id="524241118">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{84, 125}, {210, 185}}</string>
+						<string key="NSFrame">{{20, 190}, {280, 150}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
@@ -326,10 +326,10 @@
 							<reference ref="482974465"/>
 							<reference ref="478156460"/>
 							<reference ref="470425040"/>
+							<reference ref="324401616"/>
+							<reference ref="237769154"/>
 							<reference ref="850543682"/>
 							<reference ref="524241118"/>
-							<reference ref="237769154"/>
-							<reference ref="324401616"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -357,11 +357,9 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">27</int>
 						<reference key="object" ref="470425040"/>
-						<reference key="parent" ref="191373211"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">6</int>
-						<reference key="object" ref="850543682"/>
+						<object class="NSMutableArray" key="children">
+							<bool key="EncodedWithXMLCoder">YES</bool>
+						</object>
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -377,6 +375,11 @@
 					<object class="IBObjectRecord">
 						<int key="objectID">39</int>
 						<reference key="object" ref="324401616"/>
+						<reference key="parent" ref="191373211"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">6</int>
+						<reference key="object" ref="850543682"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</object>

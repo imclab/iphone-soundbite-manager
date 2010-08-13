@@ -17,11 +17,19 @@ NSArray* libraryArray;
 @implementation QuestionSetView
 
 @synthesize activityIndicator;
+@synthesize myNavItem;
 
 -(void)viewDidLoad
 {	
 	NSLog(@"lib View loading ...");
 	
+	// Set the Right nav bar button ....
+	newQuestionButton = [[[UIBarButtonItem alloc] 
+										   initWithTitle:@"new question" style:UIBarButtonItemStyleBordered
+										   target:self 
+										   action:@selector(newQuestion)] autorelease];
+	
+	self.navigationItem.rightBarButtonItem = newQuestionButton;
 	
 	// init the library Array
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -33,9 +41,13 @@ NSArray* libraryArray;
 -(void)viewDidAppear:(BOOL)animated 
 {
 	
-	NSLog(@"lib View appearing ...");
+	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+	 
+	NSLog(@"q set view appearing ...");
 	 
 	[self refreshLibraryView];
+	
+	self.title =  [appDelegate getCurrentQuestionGroupName]; 
 	
 }
 
@@ -108,6 +120,11 @@ NSArray* libraryArray;
 	[self.navigationController pushViewController:test animated:YES]; 
 	
 	
+}
+
+- (void) newQuestion
+{
+	NSLog(@"newwww");
 }
 
 @end

@@ -174,7 +174,7 @@
 - (float) getOutputLevel {
 	[appSoundPlayer updateMeters];
 	
-	NSLog(@"output %f", playBackVolume*([appSoundPlayer averagePowerForChannel:0]+[appSoundPlayer averagePowerForChannel:1]));
+	//NSLog(@"output %f", playBackVolume*([appSoundPlayer averagePowerForChannel:0]+[appSoundPlayer averagePowerForChannel:1]));
 		  
 	return (playBackVolume*([appSoundPlayer averagePowerForChannel:0]+[appSoundPlayer averagePowerForChannel:1]));
 }

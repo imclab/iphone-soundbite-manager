@@ -43,7 +43,7 @@
 ////////////////////////////////////////////////////////////////
 - (void) refreshLibrary { 
 	
-	[libraryArray removeAllObjects]; // clear ....
+	//[libraryArray removeAllObjects]; // clear ....
 	[self updateLibrary]; // get from online .....
 	return;
 	
@@ -318,6 +318,7 @@ didStartElement:(NSString *)elementName
 	
 	
 } 
+ 
 -(void) saveLibrary
 {
 	NSString *libFile = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/Library"];
@@ -344,6 +345,12 @@ didStartElement:(NSString *)elementName
 {
 	NSLog(@"new soundbite set - %@", [newCurrentSoundbite comments]);
 	currentSoundbite = newCurrentSoundbite;
+}
+
+
+- (NSString*) getCurrentQuestionGroupName {  
+	// get the current question group ..... 
+	return currentGroup;
 }
 
 

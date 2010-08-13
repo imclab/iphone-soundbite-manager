@@ -15,9 +15,8 @@
 #import "libraryManager.h"
 #import "audioPlayer.h"
 
-@interface audioPlayerAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
-    UIWindow *window;
-    UITabBarController *tabBarController;
+@interface audioPlayerAppDelegate : NSObject <UIApplicationDelegate> {
+    UIWindow *window; 
  
 	// custom classed objects ...
 	libraryManager *myLibrary;
@@ -27,12 +26,13 @@
 	IBOutlet libraryViewController *myLibraryView;
 
 	NSString *CurrentQuestionID;
+	
+	
 }
 
 @property (nonatomic, retain) NSString *CurrentQuestionID;
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet UITabBarController *tabBarController;
+@property (nonatomic, retain) IBOutlet UIWindow *window; 
 
 //- (void) audioRecorderDidFinishRecording:(AVAudioRecorder *) aRecorder successfully:(BOOL)flag;
 - (void) startRecording;
@@ -48,11 +48,13 @@
 - (NSMutableArray*) getSoundBiteArray;
 
 - (void) triggerDownload:(NSURL*) newItem;
-
+ 
 
 // Library ////////////////////////////////////// 
 - (NSArray*) getCurrentQuestionGroup;
 - (void) setCurrentQuestionGroup:(NSString*) newGroup;
+
+- (NSString*) getCurrentQuestionGroupName;
 
 -(SoundBite*) getCurrentSoundbite;
 - (void) setCurrentSoundbite:(SoundBite*) currentSoundbite;

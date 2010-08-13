@@ -12,8 +12,6 @@ NSArray* libraryArray;
 
 #import "libraryViewController.h"
 
-#import "questionSet.h"
-
 #import "audioPlayerAppDelegate.h"
 #import "playViewController.h"
 
@@ -28,6 +26,8 @@ NSArray* libraryArray;
 	// init the library Array
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
 	libraryArray = [appDelegate getCurrentQuestionGroup];
+	
+	questionSetview = [[QuestionSetView alloc] init];
 	
 	[self refreshLibraryView];
 }
@@ -91,12 +91,26 @@ NSArray* libraryArray;
 	//{
 	//	CurrentGroup = [libraryArray objectAtIndex:indexPath.row]; //[[NSBundle mainBundle] pathForResource:testin ofType:@"mid"];
 		
-		[appDelegate setCurrentQuestionGroup:[libraryArray objectAtIndex:indexPath.row]];
+	[appDelegate setCurrentQuestionGroup:[libraryArray objectAtIndex:indexPath.row]];
 		
-		QuestionSetView* newQuestionSet = [[QuestionSetView alloc] init];
-		
-		[self.navigationController pushViewController:newQuestionSet animated:YES]; 
-		
+	
+   // questionSetview.title = [appDelegate getCurrentQuestionGroupName];
+	
+	
+//    newQuestionSet.location = location;
+  //  newQuestionSet.delegate = delegate;
+
+	
+	//UIBarButtonItem *barButton = [[UIBarButtonItem alloc] initWithTitle: NSLocalizedString(@"flip", @"flip") style:UIBarButtonItemStylePlain target:self action:@selector(flip)];
+	//[questionSetview setRightBarButtonItem: barButton];
+	
+	
+	[self.navigationController pushViewController:questionSetview animated:YES]; 
+
+	
+	 
+	
+	
 		//[self refreshLibraryView];
 		return;
 	//}

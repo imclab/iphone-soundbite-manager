@@ -33,6 +33,8 @@
 - (SoundBite*) getCurrentSoundBite;
 - (void) setCurrentSoundbite:(SoundBite*) newCurrentSoundbite;
 
+- (NSString*) getCurrentQuestionGroupName;
+
 
 - (NSString*) getCurrentGroup;
 - (void) getCurrentGroup:(NSString*) newGroup;

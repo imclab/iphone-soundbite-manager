@@ -11,8 +11,7 @@
 @implementation audioPlayerAppDelegate
 
 @synthesize CurrentQuestionID;
-@synthesize window;
-@synthesize tabBarController;
+@synthesize window; 
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
 	
@@ -26,7 +25,7 @@
 	myLibrary = [[libraryManager alloc] init];
 	
 	NSLog(@"Init views");
-	[window addSubview:tabBarController.view];
+	//[window addSubview:tabBarController.view];
 
 }
 - (void)applicationWillTerminate:(UIApplication *)application{
@@ -51,8 +50,7 @@
 }
 - (void)dealloc {
 	
-    [tabBarController release];
-    [window release];
+	[window release];
 	[myAudioPlayer release];
 	[downloader release];
 	[myLibrary release];
@@ -95,7 +93,7 @@
 								 otherButtonTitles:@"Review", @"Record", @"Upload", nil];
 	
 	popupQuery.actionSheetStyle = UIActionSheetStyleBlackOpaque;
-	[popupQuery showInView:self.tabBarController.view];
+	//[popupQuery showInView:self.tabBarController.view];
 	[popupQuery release];
 	
 }
@@ -157,12 +155,16 @@
 	[myLibraryView refreshLibraryView];
 	
 }
-
+ 
 
 // CUSTOM GETTER/SETTER s :::::
 - (NSArray*) getCurrentQuestionGroup {  
 	// get the current question group .....
 	return [myLibrary getCurrentQuestionGroupArray];
+}
+- (NSString*) getCurrentQuestionGroupName {  
+	// get the current question group ..... 
+	return [myLibrary getCurrentQuestionGroupName];
 }
 
 - (void) setCurrentQuestionGroup:(NSString*) newGroup {  
@@ -170,8 +172,6 @@
 	NSLog(@"setting new Group: %@", newGroup);
 	[myLibrary setCurrentGroup:(NSString*) newGroup];
 }
-
-
 
 - (NSString*) getCurrentQuestionFile {
 	return myAudioPlayer.currentQuestionFile;
