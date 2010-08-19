@@ -1,11 +1,13 @@
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate applicationWillTerminate:](audioPlayerAppDelegate*, objc_selector*, UIApplication*)':
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:34: warning: 'libraryManager' may not respond to '-saveLibrary'
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:34: warning: (Messages without a matching method signature
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:34: warning: will be assumed to return 'id' and accept
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:34: warning: '...' as arguments.)
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate actionSheet:clickedButtonAtIndex:](audioPlayerAppDelegate*, objc_selector*, UIActionSheet*, NSInteger)':
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:47: warning: 'audioPlayerAppDelegate' may not respond to '-showReviewPanel'
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate audioRecorderDidFinishRecording:successfully:](audioPlayerAppDelegate*, objc_selector*, AVAudioRecorder*, BOOL)':
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:99: warning: 'audioPlayerAppDelegate' may not respond to '-showReviewPanel'
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate showReviewPanel](audioPlayerAppDelegate*, objc_selector*)':
-/Users/aaronleese/Desktop/FlyLoops/iphone/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:110: warning: class 'audioPlayerAppDelegate' does not implement the 'UIActionSheetDelegate' protocol
+/Users/aaronleese/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate applicationWillTerminate:](audioPlayerAppDelegate*, objc_selector*, UIApplication*)':
+/Users/aaronleese/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:48: warning: 'libraryManager' may not respond to '-saveLibrary'
+/Users/aaronleese/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:48: warning: (Messages without a matching method signature
+/Users/aaronleese/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:48: warning: will be assumed to return 'id' and accept
+/Users/aaronleese/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:48: warning: '...' as arguments.)
+/Users/aaronleese/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate actionSheet:clickedButtonAtIndex:](audioPlayerAppDelegate*, objc_selector*, UIActionSheet*, NSInteger)':
+/Users/aaronleese/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:68: warning: 'audioPlayerAppDelegate' may not respond to '-showReviewPanel'
+/Users/aaronleese/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate showReviewPanel](audioPlayerAppDelegate*, objc_selector*)':
+/Users/aaronleese/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:93: warning: class 'audioPlayerAppDelegate' does not implement the 'UIActionSheetDelegate' protocol
+/Users/aaronleese/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'void -[audioPlayerAppDelegate setCurrentQuestionGroup:](audioPlayerAppDelegate*, objc_selector*, NSString*)':
+/Users/aaronleese/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:172: warning: 'libraryManager' may not respond to '-setCurrentGroup:'
+/Users/aaronleese/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm: In function 'NSMutableArray* -[audioPlayerAppDelegate getSoundBiteArray](audioPlayerAppDelegate*, objc_selector*)':
+/Users/aaronleese/iphone-soundbite-manager/Classes/audioPlayerAppDelegate.mm:193: warning: control reaches end of non-void function

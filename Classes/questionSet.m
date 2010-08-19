@@ -125,6 +125,8 @@ NSArray* libraryArray;
 - (void) newQuestion
 {
 	NSLog(@"newwww");
+	
+	
 }
-
+ 
 @end

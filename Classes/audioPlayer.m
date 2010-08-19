@@ -132,7 +132,6 @@
 	NSLog (@"audioRecorderDidFinishRecording:successfully:");
 	
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
-	
 	[appDelegate showReviewPanel];
 	
 }

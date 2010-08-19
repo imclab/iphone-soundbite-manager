@@ -11,16 +11,14 @@
 NSArray* libraryArray;
 
 #import "libraryViewController.h"
-
 #import "audioPlayerAppDelegate.h"
 #import "playViewController.h"
+ 
+#import "groupModal.h"
 
 @implementation libraryViewController
-
-@synthesize activityIndicator;
-
--(void)viewDidLoad
-{	
+ 
+-(void)viewDidLoad {	
 	NSLog(@"lib View loading ...");
 	
 	// init the library Array
@@ -31,9 +29,7 @@ NSArray* libraryArray;
 	
 	[self refreshLibraryView];
 }
-
--(void)viewDidAppear:(BOOL)animated 
-{
+-(void)viewDidAppear:(BOOL)animated {
 	
 	NSLog(@"lib View appearing ...");
 	
@@ -44,9 +40,7 @@ NSArray* libraryArray;
 	[self refreshLibraryView];
 	
 }
-
-- (void) refreshLibraryView
-{ 
+- (void)refreshLibraryView { 
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
 	
 	libraryArray = [appDelegate getCurrentQuestionGroup];
@@ -78,7 +72,6 @@ NSArray* libraryArray;
 	
     return cell;
 }
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
@@ -149,5 +142,21 @@ NSArray* libraryArray;
 	
 	
 }
- 
+-(IBAction) newQuestionGroup:(id)sender {
+	NSLog(@"add new Question");
+	
+	//audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+	//[appDelegate newQuestionGroup]	
+	
+	 
+	[self presentModalViewController:[[groupModal alloc]init] animated:YES];
+	
+	
+	
+	
+	//[self dismissModalViewControllerAnimated:YES];
+	
+}
+
+
 @end

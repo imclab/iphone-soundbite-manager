@@ -35,6 +35,7 @@
 
 - (NSString*) getCurrentQuestionGroupName;
 
+- (void) createNewGroup:(NSString*) newGroupName;
 
 - (NSString*) getCurrentGroup;
 - (void) getCurrentGroup:(NSString*) newGroup;

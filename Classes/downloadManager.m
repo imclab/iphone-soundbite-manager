@@ -84,10 +84,10 @@
 	// ping the web app, note that this question has been recieved ....
 	ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
 	
-	[request setPostValue:currentSounbite.set forKey:@"questionOrQuestionSet"];
+	[request setPostValue:currentSounbite.parentQuestionOrSet forKey:@"questionOrQuestionSet"];
 	[request setPostValue:@"1" forKey:@"user"];
 	 
-	//  path ....
+	// path ....
 	[request setFile:questionPath forKey:@"datafile"];
 	
 	[request startAsynchronous];

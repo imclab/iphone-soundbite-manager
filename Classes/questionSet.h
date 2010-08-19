@@ -29,7 +29,7 @@
 
 - (void) refreshLibraryView;
 
-- (void) newQuestion;
+- (void) newQuestion; 
 
 
 @end

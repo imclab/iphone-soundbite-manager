@@ -24,8 +24,7 @@
 @synthesize fileName;
 @synthesize description;
 @synthesize answerFile;
-@synthesize set;
-@synthesize answered;
+@synthesize parentQuestionOrSet; 
 @synthesize comments;
 
 @end

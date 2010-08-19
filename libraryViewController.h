@@ -14,22 +14,16 @@
 
 
 @interface libraryViewController : UITableViewController {
-	
-	UIActivityIndicatorView *activityIndicator;
+	 
 	IBOutlet UITabBarController* tabBar;
-	
 	NSArray *tableDataSource; // current data ....
 	
-	IBOutlet QuestionSetView* questionSetview;
+	IBOutlet QuestionSetView *questionSetview;
+		
 } 
 
+-(IBAction) newQuestionGroup:(id)sender;
 
-@property (nonatomic, retain) NSArray *tableDataSource;
-@property (nonatomic, retain) NSString *CurrentTitle; 
-
-
-@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityIndicator; 
- 
 - (void) refreshLibraryView;
 
 

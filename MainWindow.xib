@@ -12,8 +12,8 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="172"/>
 			<integer value="166"/>
+			<integer value="172"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -56,7 +56,7 @@
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 				<bool key="IBUIVisibleAtLaunch">YES</bool>
 			</object>
-			<object class="IBUIViewController" id="83509788">
+			<object class="IBUIViewController" id="683291891">
 				<reference key="IBUIToolbarItems" ref="0"/>
 				<string key="IBUINibName">libraryView</string>
 				<object class="IBUISimulatedNavigationBarMetrics" key="IBUISimulatedTopBarMetrics">
@@ -92,7 +92,7 @@
 						<object class="IBUINavigationItem" key="IBUINavigationItem" id="415791020">
 							<reference key="IBUINavigationBar"/>
 							<string key="IBUITitle">Library</string>
-							<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="780495357">
+							<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="400018817">
 								<string key="IBUITitle">new group</string>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIStyle">1</int>
@@ -154,7 +154,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">questionSetview</string>
 						<reference key="source" ref="445583148"/>
-						<reference key="destination" ref="83509788"/>
+						<reference key="destination" ref="683291891"/>
 					</object>
 					<int key="connectionID">176</int>
 				</object>
@@ -165,6 +165,14 @@
 						<reference key="destination" ref="432950070"/>
 					</object>
 					<int key="connectionID">183</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">newQuestionGroup:</string>
+						<reference key="source" ref="400018817"/>
+						<reference key="destination" ref="445583148"/>
+					</object>
+					<int key="connectionID">188</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -202,7 +210,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">172</int>
-						<reference key="object" ref="83509788"/>
+						<reference key="object" ref="683291891"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 						</object>
@@ -238,13 +246,13 @@
 						<reference key="object" ref="415791020"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="780495357"/>
+							<reference ref="400018817"/>
 						</object>
 						<reference key="parent" ref="445583148"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">171</int>
-						<reference key="object" ref="780495357"/>
+						<reference key="object" ref="400018817"/>
 						<reference key="parent" ref="415791020"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -285,7 +293,7 @@
 					<string>playViewController</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>libraryViewController</string>
-					<string>{{350, 231}, {320, 480}}</string>
+					<string>{{640, 207}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -320,7 +328,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">187</int>
+			<int key="maxID">188</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -416,17 +424,26 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">libraryViewController</string>
 					<string key="superclassName">UITableViewController</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">newQuestionGroup:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">newQuestionGroup:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">newQuestionGroup:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>activityIndicator</string>
 							<string>questionSetview</string>
 							<string>tabBar</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>UIActivityIndicatorView</string>
 							<string>QuestionSetView</string>
 							<string>UITabBarController</string>
 						</object>
@@ -435,16 +452,11 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>activityIndicator</string>
 							<string>questionSetview</string>
 							<string>tabBar</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBToOneOutletInfo">
-								<string key="name">activityIndicator</string>
-								<string key="candidateClassName">UIActivityIndicatorView</string>
-							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">questionSetview</string>
 								<string key="candidateClassName">QuestionSetView</string>

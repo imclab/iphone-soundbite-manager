@@ -73,7 +73,7 @@
 		[self startRecording];
     }
 	else if (buttonIndex == 2) {
-		// Sae ...
+		// Save ...
 		NSLog(@"upload the answer");
 		
 		[downloader uploadAnswer];
@@ -157,7 +157,7 @@
 }
  
 
-// CUSTOM GETTER/SETTER s :::::
+// CUSTOM GETTER/SETTER :::::
 - (NSArray*) getCurrentQuestionGroup {  
 	// get the current question group .....
 	return [myLibrary getCurrentQuestionGroupArray];
@@ -166,13 +166,11 @@
 	// get the current question group ..... 
 	return [myLibrary getCurrentQuestionGroupName];
 }
-
 - (void) setCurrentQuestionGroup:(NSString*) newGroup {  
 	// set the current question group .....
 	NSLog(@"setting new Group: %@", newGroup);
 	[myLibrary setCurrentGroup:(NSString*) newGroup];
 }
-
 - (NSString*) getCurrentQuestionFile {
 	return myAudioPlayer.currentQuestionFile;
 }
@@ -193,16 +191,24 @@
 	[myLibrary getCurrentSoundBiteArray];
 	
 }
-
-
 -(SoundBite*) getCurrentSoundbite {
 	return [myLibrary getCurrentSoundBite];
 }
-
-- (void) setCurrentSoundbite:(SoundBite*) currentSoundbite
-{
+- (void) setCurrentSoundbite:(SoundBite*) currentSoundbite {
 		[myLibrary setCurrentSoundbite:currentSoundbite];
 }
+
+- (void) createQuestionGroup:(NSString*) newGroupName
+{
+	NSLog(@"app del - create new group");
+	
+	[myLibrary createNewGroup:newGroupName];
+	
+}
+
+
+
+
 
 @end
 

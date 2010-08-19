@@ -15,12 +15,11 @@
 	NSString *name;
 	NSString *description;
 	NSString *fileName;
-	NSString *set; // the set of questions this belongs too ... or the ID of a question, if this is an answer ...
-	
-	BOOL answered;
-	NSString *answerFile;
+	 
+	NSString *parentQuestionOrSet; // the set of questions this belongs too ... or the ID of a question, if this is an answer ...
 	
 	NSString *comments;
+	
 	
 }
 
@@ -29,8 +28,7 @@
 @property(readwrite, assign)  NSString *answerFile;
 @property(readwrite, assign)  NSString *description;
 @property(readwrite, assign)  NSString *fileName;
-@property(readwrite, assign)  NSString *set;
-@property(readwrite, assign)  BOOL answered;
+@property(readwrite, assign)  NSString *parentQuestionOrSet; 
 @property(readwrite, assign)  NSString *comments;
 
 @end

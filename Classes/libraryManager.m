@@ -13,8 +13,7 @@
 ////////////////////////////////////////////////////////////////
 @implementation libraryManager
 
--(id) init
-{
+-(id) init {
 	
 	NSString *libFile = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/Library"];
 	BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:libFile];
@@ -38,12 +37,10 @@
 	
 }
 
-
 // :::::: reading the library XML
 ////////////////////////////////////////////////////////////////
 - (void) refreshLibrary { 
 	
-	//[libraryArray removeAllObjects]; // clear ....
 	[self updateLibrary]; // get from online .....
 	return;
 	
@@ -96,8 +93,7 @@
 	
 	// CHECK ONLINE for new soundbites  ::::::::::::::::::::::::::::
 	///////////////////////////////////////////////////////////////////////
-	//NSString *const URL = @"http://www.flyloops.com/iphone/test10.xml";
-	
+	 
 	NSString *URL = @"http://www.flyloops.com/iphone/index.php?viewNew=1&user=1";
 	NSURL* url = [NSURL URLWithString:URL];
 	
@@ -167,7 +163,7 @@ didStartElement:(NSString *)elementName
 			SoundBite *QorA = [[SoundBite alloc] init];
 			NSLog(@"setting string %@", fileName);
 			QorA.fileName = [fileName copy];
-			QorA.set = [questionSet copy];
+			QorA.parentQuestionOrSet = [questionSet copy];
 			QorA.sqlID = [questionID copy];
 			QorA.comments = [comments copy];	
 			QorA.answerFile = [answerFileName copy];			
@@ -256,11 +252,15 @@ didStartElement:(NSString *)elementName
 	
 }
 
+-(void) saveLibrary {
+	NSString *libFile = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/Library"];
+	[libraryArray writeToFile:libFile atomically:YES]; 	
+	
+}
 
 // :::::: Connectivity stuff 
 ////////////////////////////////////////////////////////////////
-- (void) requestFinished:(ASIHTTPRequest *)request
-{
+- (void) requestFinished:(ASIHTTPRequest *)request {
     NSString *response = [request responseString];
     // response contains the data returned from the server.
 	
@@ -275,21 +275,17 @@ didStartElement:(NSString *)elementName
 	[parser parse];
 	
 }
-- (void) requestFailed:(ASIHTTPRequest *)request
-{
+- (void) requestFailed:(ASIHTTPRequest *)request {
     NSError *error = [request error];
     // Do something with the error.
 }
 
 // :::::: Library management
 ////////////////////////////////////////////////////////////////
-- (NSArray*) getCurrentQuestionGroupArray
-{
+- (NSArray*) getCurrentQuestionGroupArray {
 	// if we are at the root node ...
 	if ([currentGroup length] == 0) // if the string is empty, show all groups ....
 	{
-		//NSArray* test = [libraryArray allKeys];
-
 		NSMutableArray *keys;
 		keys = [[NSMutableArray alloc] initWithCapacity: [[libraryArray allKeys] count]];
 		[keys addObjectsFromArray:[libraryArray allKeys]]; 		
@@ -304,7 +300,7 @@ didStartElement:(NSString *)elementName
 		NSMutableArray *currentSoundbites = [[NSMutableArray alloc] init];
 		[currentSoundbites addObjectsFromArray:[libraryArray objectForKey:currentGroup]]; 		
 		
-		// reduce to a list f filenames .....
+		// reduce to a list of filenames .....
 		NSMutableArray* fileNames;
 		fileNames = [[NSMutableArray alloc] init];
 		for (SoundBite *soundBite in currentSoundbites) {
@@ -319,15 +315,7 @@ didStartElement:(NSString *)elementName
 	
 } 
  
--(void) saveLibrary
-{
-	NSString *libFile = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/Library"];
-	[libraryArray writeToFile:libFile atomically:YES]; 	
-	
-}
-
-- (NSMutableArray*)getCurrentSoundBiteArray
-{
+- (NSMutableArray*)getCurrentSoundBiteArray {
 	
 	NSMutableArray *currentSoundbites = [[NSMutableArray alloc] init];
 	[currentSoundbites addObjectsFromArray:[libraryArray objectForKey:currentGroup]]; 		
@@ -335,32 +323,34 @@ didStartElement:(NSString *)elementName
 	return currentSoundbites;
 	
 }
-
-- (SoundBite*) getCurrentSoundBite
-{
+- (SoundBite*) getCurrentSoundBite {
 	return currentSoundbite;
 }
-
-- (void) setCurrentSoundbite:(SoundBite*) newCurrentSoundbite
-{
+- (void) setCurrentSoundbite:(SoundBite*) newCurrentSoundbite {
 	NSLog(@"new soundbite set - %@", [newCurrentSoundbite comments]);
 	currentSoundbite = newCurrentSoundbite;
 }
-
 
 - (NSString*) getCurrentQuestionGroupName {  
 	// get the current question group ..... 
 	return currentGroup;
 }
 
+- (void) createNewGroup:(NSString*) newGroupName {
+	
+	NSLog(@"library - adding new group: %@", newGroupName);
+	NSMutableArray *newArray = [[NSMutableArray alloc] init];
+	
+	[libraryArray setObject:newArray forKey:newGroupName];
+	
+	// refresh ??
+}
 
-- (NSString*) getCurrentGroup
-{
+- (NSString*) getCurrentGroup {
 	return currentGroup;
 	
 }
-- (void) setCurrentGroup:(NSString*) newGroup;
-{
+- (void) setCurrentGroup:(NSString*) newGroup {
 	currentGroup = newGroup;
 }
  

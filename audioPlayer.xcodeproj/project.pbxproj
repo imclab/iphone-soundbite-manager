@@ -21,6 +21,8 @@
 		361F8A3211A3099100178E9B /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 361F8A2C11A3099100178E9B /* play.png */; };
 		362EA7511199C443006174AF /* downloadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 362EA7501199C443006174AF /* downloadView.xib */; };
 		362EA7541199C4A2006174AF /* downloadViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 362EA7531199C4A2006174AF /* downloadViewController.mm */; };
+		363FA174121DBB0900604F14 /* groupModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 363FA172121DBB0900604F14 /* groupModal.m */; };
+		363FA175121DBB0900604F14 /* groupModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363FA173121DBB0900604F14 /* groupModal.xib */; };
 		364D511011948969006396FC /* libraryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364D510F11948969006396FC /* libraryView.xib */; };
 		364D5113119489E9006396FC /* libraryViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 364D5112119489E9006396FC /* libraryViewController.mm */; };
 		364D512F11948AA8006396FC /* playView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 364D512E11948AA8006396FC /* playView.xib */; };
@@ -69,6 +71,9 @@
 		362EA7501199C443006174AF /* downloadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = downloadView.xib; sourceTree = "<group>"; };
 		362EA7521199C4A2006174AF /* downloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = downloadViewController.h; path = ../downloadViewController.h; sourceTree = "<group>"; };
 		362EA7531199C4A2006174AF /* downloadViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = downloadViewController.mm; path = ../downloadViewController.mm; sourceTree = "<group>"; };
+		363FA171121DBB0900604F14 /* groupModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groupModal.h; sourceTree = "<group>"; };
+		363FA172121DBB0900604F14 /* groupModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = groupModal.m; sourceTree = "<group>"; };
+		363FA173121DBB0900604F14 /* groupModal.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = groupModal.xib; path = Classes/groupModal.xib; sourceTree = "<group>"; };
 		364D510F11948969006396FC /* libraryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = libraryView.xib; sourceTree = "<group>"; };
 		364D5111119489E9006396FC /* libraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libraryViewController.h; path = ../libraryViewController.h; sourceTree = "<group>"; };
 		364D5112119489E9006396FC /* libraryViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = libraryViewController.mm; path = ../libraryViewController.mm; sourceTree = "<group>"; };
@@ -192,6 +197,7 @@
 				361F8A2A11A3099100178E9B /* Icon.png */,
 				361F8A2B11A3099100178E9B /* library.png */,
 				361F8A2C11A3099100178E9B /* play.png */,
+				363FA173121DBB0900604F14 /* groupModal.xib */,
 				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
 				364D510F11948969006396FC /* libraryView.xib */,
 				362EA7501199C443006174AF /* downloadView.xib */,
@@ -250,6 +256,8 @@
 				362EA7531199C4A2006174AF /* downloadViewController.mm */,
 				368449A01210B5FC000D01BB /* questionSet.h */,
 				368449A11210B5FC000D01BB /* questionSet.m */,
+				363FA171121DBB0900604F14 /* groupModal.h */,
+				363FA172121DBB0900604F14 /* groupModal.m */,
 			);
 			name = "view Controllers";
 			sourceTree = "<group>";
@@ -362,6 +370,7 @@
 				36C8086A11CAA26A0021B247 /* Hi-Hat5.wav in Resources */,
 				36C8086B11CAA26A0021B247 /* Hi-Hat6.wav in Resources */,
 				36C8086C11CAA26A0021B247 /* Hi-Hat7.wav in Resources */,
+				363FA175121DBB0900604F14 /* groupModal.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +399,7 @@
 				36CE40FA11DE5AB5009962A1 /* downloadManager.m in Sources */,
 				36E5F98C11EB7A060056E823 /* soundBite.m in Sources */,
 				368449A21210B5FC000D01BB /* questionSet.m in Sources */,
+				363FA174121DBB0900604F14 /* groupModal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
