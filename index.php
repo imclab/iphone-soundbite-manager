@@ -16,16 +16,14 @@ define('WP_USE_THEMES', false);
 /** Loads the WordPress Environment and Template */
 require('.././wp-blog-header.php');
 
-
 global $wpdb; 
 $table_name = $wpdb->prefix . "questions";
-
 
 //::::::::  UPLOADS :::::::: handle new file submissions
 ///////////////////////////////////////////////////////////
 if (isset($_REQUEST["user"]) && isset($_FILES['datafile']['tmp_name']))
 {
-
+           
   // filename is valid ?  File is valid type ?
   $allowedExtensions = array("wav","mp3","caf");
 
@@ -49,24 +47,19 @@ if (isset($_REQUEST["user"]) && isset($_FILES['datafile']['tmp_name']))
   $questionOrQuestionSet = $_REQUEST["questionOrQuestionSet"];
 
   
-  // Now ... if it's a new question, insert a new SQL record
+  // Now ... if it's an answer, insert a new SQL record
   if ($_REQUEST["isAnswer"])
   {
   	  $wpdb->update($table_name, array('answer' => $fileName),  array( 'ID' => $questionOrQuestionSet));
-
   }
   else // this is a new question ...
   {
-  	  
-  
   	  $wpdb->insert( $table_name, array( 'time' => current_time('mysql'), 
   	  	  'owner' => $userName,
   	  	  'path' => $fileName,
   	  	  'questionSet' => $questionOrQuestionSet
   	  	  ));
-  
   }
-  
   
 }
 
@@ -75,8 +68,11 @@ if (isset($_REQUEST["user"]) && isset($_FILES['datafile']['tmp_name']))
 ///////////////////////////////////////////////////////////////////////////
 if ($_REQUEST['viewNew'])
 {
+//	var_dump($_REQUEST["lastUpdate"]);
+//	2010-08-31
 	// query the DB and get new questions ... 
-	$sql = "SELECT * FROM " . $table_name." WHERE owner = ".$_REQUEST["user"];
+	$sql = "SELECT * FROM " . $table_name." WHERE updated > '".$_REQUEST["lastUpdate"]."' AND owner = ".$_REQUEST["user"];
+	
  	$soundbites = $wpdb->get_results($sql);
 	
  	header("Content-Type:text/xml; charset=iso-8859-1");
@@ -86,18 +82,21 @@ if ($_REQUEST['viewNew'])
  	$userXML = $dom->appendChild($dom->createElement('user')); 
  
  	foreach($soundbites as $soundbite)
- 	{ 
- 	
- 		if( ! $soundbite->delivered)
- 		{
-			$question = $userXML->appendChild($dom->createElement('question')); 
-			$question->setAttribute('id',  $soundbite->id);
-			$question->setAttribute('name', $soundbite->path);
-			$question->setAttribute('questionSet', $soundbite->questionSet);
-			$question->setAttribute('answer', $soundbite->answer);
-			$question->setAttribute('comments', $soundbite->comments);
-		}
+ 	{ 	 
+		$question = $userXML->appendChild($dom->createElement('question')); 
+		$question->setAttribute('id',  $soundbite->id);
+		$question->setAttribute('name', $soundbite->path);
+		$question->setAttribute('questionSet', $soundbite->questionSet);
+		$question->setAttribute('answer', $soundbite->answer);
+		$question->setAttribute('comments', $soundbite->comments);
 	}
+	
+	
+	// and a timestamp ..... for tracking ...
+ 	$updated = $userXML->appendChild($dom->createElement('updatedTime')); 
+ 	$timestamp = date("Y-m-d G:i:s");
+ 	$updated->setAttribute('time', $timestamp );
+	
               
 	//generate xml 
 	$dom->formatOutput = true; // set the formatOutput attribute of 
@@ -110,7 +109,7 @@ if ($_REQUEST['viewNew'])
 	die;
 
 }
-else // HTML dpcument header 
+else // HTML document header 
 {
 	?>
 		<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -157,7 +156,7 @@ echo '<div style="width:400px; position:relative; left:100px; background:white; 
  	 // this is the schema ....
  	 // it is not accurate, as I have made changes through PHPAdmin
  	 $sql = "CREATE TABLE " . $table_name . " (
-	  id mediumint(9) NOT NULL AUTO_INCREMENT,
+	  id mediumint	(9) NOT NULL AUTO_INCREMENT,
 	  time bigint(11) DEFAULT '0' NOT NULL,
 	  owner tinytext NOT NULL,
 	  questionSet text NOT NULL,
@@ -195,10 +194,13 @@ else
 		question - <?php echo $result->questionPath ?></p>
 			<form method='post' enctype="multipart/form-data">
 			<input name='user' type='hidden' value='1'>
-			<input name='questionNum' type='hidden' value="<?php echo $result->id; ?>">
+			<input name='questionNum' type='hidden' value="<?php echo $result->id; ?>"> 
 			<input type="submit" name="submit" style="float:right;" value="got it!">
 			</form>
 
+		</li>
+		<li>
+		 	<?php echo $result->updated; ?>
 		</li>
 		<?php
 	}
