@@ -6,6 +6,8 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
+//  This is the modal dialog that appears when a user creates a new group ....
+
 #import <UIKit/UIKit.h>
 
 

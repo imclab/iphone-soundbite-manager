@@ -18,15 +18,10 @@
 	float level = [appDelegate getInputOrOutputLevel];
 	 
 	CGContextRef context = UIGraphicsGetCurrentContext(); 
-    
-	CGContextClearRect(context, CGRectMake(0, 0, 20, 350));
-	
-	CGContextSetRGBStrokeColor(context, 1.0, 1.0, 0.0, 1.0); // yellow line
 	
 	// recall - level is in dB (hance negative)
 	CGContextSetRGBFillColor(context, (level/60 + 1), 1.0, 0.0, 1.0); // green color, half transparent ....
-	CGContextFillRect(context, CGRectMake(0.0, -3*level, 20.0, 350.0)); // a square at the bottom left-hand corner
-
+	CGContextFillRect(context, CGRectMake(0.0, -2*level, 80.0, 350.0)); // a square at the bottom left-hand corner
 	
 }
 - (id)initWithFrame:(CGRect)frame {
@@ -34,6 +29,10 @@
         // Initialization code
 		NSLog(@"levelindicator init");
 	}
+	
+	[self setBackgroundColor:[UIColor clearColor]];
+	[self opaque:NO];
+	
     return self;
 }
 - (void)dealloc {
@@ -53,8 +52,50 @@
 @synthesize answerLabel; 
 @synthesize comments; 
 
--(void)viewDidLoad
-{	
+// ACTION SHEET methods ... for review/save dialog ...
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+	
+	NSLog(@"action sheet button clicked");
+	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+	
+    if (buttonIndex == 0) { 
+		NSLog(@"review"); 
+		[appDelegate reviewRecorded];
+		[self showReviewPanel];
+		
+    } else if (buttonIndex == 1) {
+		// Rerecord ...
+		NSLog(@"re record");
+		[appDelegate startRecording];
+    }
+	else if (buttonIndex == 2) {
+		// Save ...
+		NSLog(@"upload the answer");
+		
+		[appDelegate uploadAnswer];
+		
+    }
+	else if (buttonIndex == 3) {
+		// cancel ... do nothing
+		NSLog(@"cancelled"); 
+    }
+}
+- (void)showReviewPanel {
+	UIActionSheet *popupQuery = [[UIActionSheet alloc]
+								 initWithTitle:nil
+								 delegate:self
+								 cancelButtonTitle:@"Cancel"
+								 destructiveButtonTitle:nil
+								 otherButtonTitles:@"Review", @"Record", @"Upload", nil];
+	
+	popupQuery.actionSheetStyle = UIActionSheetStyleBlackOpaque;
+	[popupQuery showInView:self.view];
+	[popupQuery release];
+	
+}
+
+//////////////////////////////////////////////////////
+-(void)viewDidLoad {	
 	
 	volumeSlider.transform = CGAffineTransformRotate(volumeSlider.transform, 270.0/180*M_PI);
 	
@@ -95,23 +136,22 @@
 	
 }
 
--(void)viewDidAppear:(BOOL)animated 
-{ 
+-(void)viewDidAppear:(BOOL)animated { 
 	
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
 	
 	SoundBite *soundBite = [appDelegate getCurrentSoundbite];
-	[comments setText:[soundBite comments]];
+	[comments setText:[soundBite objectForKey:@"comments"]];
 	
-	NSLog(@"bite %@", [soundBite answerFile]);
+	NSLog(@"bite %@", [soundBite objectForKey:@"answerFile"]);
 	
-	if ([[soundBite answerFile] length] != 0)
+	if ([[soundBite objectForKey:@"answerFile"] length] != 0)
 	{
 		[playAnswerButton setEnabled:true];
 		
 		NSDateFormatter *df = [[NSDateFormatter alloc] init];
 		
-		NSTimeInterval timeStamp = [[[soundBite answerFile] stringByDeletingPathExtension] doubleValue];
+		NSTimeInterval timeStamp = [[[soundBite objectForKey:@"answerFile"] stringByDeletingPathExtension] doubleValue];
 		
 		NSDate *myDate = [NSDate dateWithTimeIntervalSinceReferenceDate: timeStamp];
 		
@@ -132,7 +172,6 @@
 	
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
 	
-	  	
 	if ([[sender currentTitle] isEqualToString:(@"play question")])
 	{ 
 		
@@ -153,7 +192,6 @@
 	 	NSString *docDirectory = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/"];
 		NSString *soundFilePath = [docDirectory stringByAppendingPathComponent:fileName];
 
-		
 		[appDelegate play:soundFilePath];
 
 	}
@@ -163,7 +201,9 @@
 	}
 	else if ([[sender currentTitle] isEqualToString:(@"stop")])
 	{
-		 [appDelegate stopRecording];
+		[appDelegate stopRecording];
+		
+		[self showReviewPanel];
 	}
 	else if ([[sender currentTitle] isEqualToString:(@"play answer")])
 	{
@@ -197,15 +237,13 @@
 }
 
 /* volume slider */
-- (IBAction)sliderMoved:(id)sender;
-{
+- (IBAction)sliderMoved:(id)sender {
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
 	[appDelegate setVolume:[volumeSlider value]];
 	
 }
 
--(void) timerCallback
-{
+-(void) timerCallback {
 	
 	[myLevelIndicator setNeedsDisplay];
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];

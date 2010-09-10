@@ -34,28 +34,29 @@
 
 @property (nonatomic, retain) IBOutlet UIWindow *window; 
 
-//- (void) audioRecorderDidFinishRecording:(AVAudioRecorder *) aRecorder successfully:(BOOL)flag;
+///////////////////////////////// AUDIO
 - (void) startRecording;
 - (void) stopRecording;
 - (void) play:(NSString*)fileName; 
 - (void) setVolume:(float) newVolume;
 - (bool) isRecording;
 - (float) getInputOrOutputLevel;
+- (void) reviewRecorded;
+- (void) recordNewQuestion;
 
+///////////////////////////////// LIBRARY
 - (NSString *) getCurrentQuestionFile;
 - (NSString*) getRecordedToPath;
 - (void) setCurrentQuestion:(NSString*)group withID:(NSString*)sqlID;
 - (NSMutableArray*) getSoundBiteArray;
-
-- (void) triggerDownload:(NSURL*) newItem;
- 
-
-// Library ////////////////////////////////////// 
 - (NSArray*) getCurrentQuestionGroup;
 - (void) setCurrentQuestionGroup:(NSString*) newGroup;
-
 - (NSString*) getCurrentQuestionGroupName;
-
 -(SoundBite*) getCurrentSoundbite;
 - (void) setCurrentSoundbite:(SoundBite*) currentSoundbite;
+
+///////////////////////////////// UPLOAD / DOWNLOAD
+- (void) triggerDownload:(NSURL*) newItem;
+- (void) uploadAnswer;
+
 @end

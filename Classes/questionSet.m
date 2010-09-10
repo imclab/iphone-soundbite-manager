@@ -93,7 +93,7 @@ NSArray* libraryArray;
 	SoundBite *current = [[SoundBite alloc] init];
 	current = [currentSoundbites objectAtIndex:indexPath.row];
 	
-	NSLog(@"current %@", [current sqlID]);
+	NSLog(@"current %@", [current  objectForKey:@"sqlID"]);
 	[appDelegate setCurrentSoundbite:current];
 	
 	// load the appropriate file to the midiPlayer
@@ -109,7 +109,7 @@ NSArray* libraryArray;
 	}
 	
 	// set the filename, which is used to tell te player what to play
-	[appDelegate setCurrentQuestion:fileName withID:[current sqlID]];
+	[appDelegate setCurrentQuestion:fileName withID:[current objectForKey:@"sqlID"]];
 	
 	// also set the currentID .... in case we need to upload .... 	
 	[appDelegate play:dbFilePath];
@@ -122,9 +122,18 @@ NSArray* libraryArray;
 	
 }
 
-- (void) newQuestion
-{
-	NSLog(@"newwww");
+- (void) newQuestion {
+	
+	NSLog(@"new question button clicked");
+	
+	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+	
+	[appDelegate recordNewQuestion];
+	
+	// switch view .... 
+	playViewController* playView = [[playViewController alloc] init];
+	[self.navigationController pushViewController:playView animated:YES]; 
+	
 	
 	
 }

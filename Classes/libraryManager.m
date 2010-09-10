@@ -18,14 +18,16 @@
 	NSString *libFile = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/Library"];
 	BOOL fileExists = [[NSFileManager defaultManager] fileExistsAtPath:libFile];
 	
+	NSLog(@"file .... %@", libFile);
+
 	if (fileExists)
 	{
 		libraryArray = [[NSMutableDictionary alloc] initWithContentsOfFile:libFile];
+		
+		NSLog(@"library file: %@", libraryArray);
+		
 	}
-	else
-	{
-		libraryArray = [[NSMutableDictionary alloc] init];
-	}
+	else libraryArray = [[NSMutableDictionary alloc] init];
 	
 	[self refreshLibrary]; 
 	
@@ -93,9 +95,29 @@
 	
 	// CHECK ONLINE for new soundbites  ::::::::::::::::::::::::::::
 	///////////////////////////////////////////////////////////////////////
+	
+	NSString *SQLTimeString = @"0"; 
+	
+	if ([libraryArray objectForKey:@"updatedTime"] !=  nil)
+		SQLTimeString = [libraryArray objectForKey:@"updatedTime"];
+	
+	NSString *lastUpdateTime = [@"&lastUpdate=" stringByAppendingString:SQLTimeString];
+	
+	NSLog(@"url: %@", SQLTimeString);
+
+	//NSURL* url = [NSURL URLWithString:[baseURL stringByAppendingString:lastUpdateTime]];
+		
+	NSString *baseURL = @"http://www.flyloops.com/iphone/index.php?viewNew=1&user=1";
 	 
-	NSString *URL = @"http://www.flyloops.com/iphone/index.php?viewNew=1&user=1";
-	NSURL* url = [NSURL URLWithString:URL];
+
+	NSLog(@"url: %@", lastUpdateTime);
+	NSLog(@"url: %@", [baseURL stringByAppendingString:lastUpdateTime]);
+
+	NSString *tete = [baseURL stringByAppendingString:[lastUpdateTime stringByReplacingOccurrencesOfString:@" " withString:@"%20"] ];
+	
+	NSURL* url = [NSURL URLWithString:tete];
+	
+	NSLog(@"url: %@", url);
 	
 	
 	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
@@ -123,10 +145,22 @@ didStartElement:(NSString *)elementName
     
 	NSLog(@"Started parsing %@", elementName); 	
 	
+	// GET time for LAST UPDATE tracking ::::::
+	if([elementName isEqualToString:@"updatedTime"]) 
+	{
+		// save this as the most recent time that this app has been updated 
+		NSString *time = [attributeDict objectForKey:@"time"]; 
+	
+		NSLog(@"setting update time: ");
+		
+		[libraryArray setObject:time forKey:@"updatedTime"];
+		
+		
+	}
 	if([elementName isEqualToString:@"question"]) 
 	{
 		
-		//Extract the attribute here.
+		//Extract the attributes here.
 		NSString *fileName = [attributeDict objectForKey:@"name"]; 
 		NSString *answerFileName = [attributeDict objectForKey:@"answer"]; 
 		NSString *questionSet =  [attributeDict objectForKey:@"questionSet"]; 
@@ -166,14 +200,14 @@ didStartElement:(NSString *)elementName
 			QorA.parentQuestionOrSet = [questionSet copy];
 			QorA.sqlID = [questionID copy];
 			QorA.comments = [comments copy];	
-			QorA.answerFile = [answerFileName copy];			
+			//QorA.answerFile = [answerFileName copy];			
 			
 			// Pull up the appropriate question set (array) and add this
 			// note *** if this is an answer ... the "questionset" is the questionID it maps too .....
 			NSMutableArray *tempArray = [[NSMutableArray alloc] init];
-			[tempArray addObjectsFromArray:[libraryArray objectForKey:questionSet]];
-			[tempArray addObject:QorA];
-			[libraryArray setObject:tempArray forKey:questionSet];
+			[tempArray addObjectsFromArray:[libraryArray objectForKey:questionSet]]; // existing set
+			[tempArray addObject:[QorA getDictionary]]; // add the new one ....
+			[libraryArray setObject:tempArray forKey:questionSet]; // set as the new set ...
 			[tempArray release];
 			
 			
@@ -253,10 +287,85 @@ didStartElement:(NSString *)elementName
 }
 
 -(void) saveLibrary {
-	NSString *libFile = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/Library"];
-	[libraryArray writeToFile:libFile atomically:YES]; 	
 	
-}
+	NSLog(@"saving library file");
+	
+	NSString *libFile = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/Library"];
+	
+	//NSMutableDictionary* copy = [[NSMutableDictionary alloc] init];
+ 
+	NSDictionary *copy = [[NSDictionary alloc] initWithDictionary:libraryArray copyItems:YES];
+
+	/*
+	// or all sets .....
+	for (id qset in [libraryArray allKeys]) {
+		 
+		NSLog(@"all keys: %@", qset);
+		
+		if (qset == @"updatedTime" || qset == NULL || qset == @"") continue;
+		
+		//[copy setObject:[getthevalue ...] forKey:@"updatedTime"];
+		
+		// copy to an IMMUTABLE arry .....
+		NSArray* soundbitesArray = [[NSArray alloc] initWithArray:[libraryArray objectForKey:qset] copyItems:YES];
+		
+		//NSMutableDictionary* copyOfQSet = [[NSMutableDictionary alloc] init];
+		
+		NSEnumerator *e = [soundbitesArray objectEnumerator];
+		
+		id soundBite;
+		while (soundBite = [e nextObject]) { 
+			
+			//NSLog(@"%@", [soundBite getDictionary]);
+			
+			//[soundbitesArray setObject:[soundBite getDictionary] forKey:[soundBite getID]];
+			 
+		}
+		
+		//[soundbitesTemp release];
+		//[soundbitesArray retain];
+		
+		[copy setObject:soundbitesArray forKey:qset];
+		//[qsets addObjectsFromArray:[soundbitesArray copyWithZone:nil]]; // add immutables to a mutable .....
+		
+	}
+	*/
+	
+	//NSArray* allSets = [[NSArray alloc] initWithArray:qsets copyItems:YES];  // now copy all the sets to an immutable	
+	//[qsets release];
+	
+	// add the immutable array to the Mutable dictionary .....
+	 
+	//NSDictionary *test = [[NSDictionary alloc] initWithArray:qsets copyItems:YES];
+		
+		//for (id qset in setsArray) {
+			 
+		//	NSMutableArray* soundbitesArray = [[NSArray alloc] initWithArray:[libraryArray objectForKey:qset] copyItems:YES];
+			 
+			
+		//}
+	 
+		//[newArray initWithArray:[libraryArray objectForKey:key] copyItems:YES];
+		
+		//[copy setObject:newArray forKey:key];
+	
+	//}
+	  
+	//NSDictionary *staticDict = [[NSDictionary alloc] initWithDictionary:libraryArray copyItems:YES];
+	
+	BOOL worked = [copy writeToFile:libFile atomically:YES]; 	
+	
+	NSLog(@"%@",copy);
+	//[staticDict print];
+	
+	if (worked == false)
+	{
+		NSLog(@"unable to save library ..");
+		
+	}
+	
+	
+}   
 
 // :::::: Connectivity stuff 
 ////////////////////////////////////////////////////////////////
@@ -290,6 +399,10 @@ didStartElement:(NSString *)elementName
 		keys = [[NSMutableArray alloc] initWithCapacity: [[libraryArray allKeys] count]];
 		[keys addObjectsFromArray:[libraryArray allKeys]]; 		
 		
+		// SEPCIAL CASE ::::::
+		// remove the timestamp (updated at)
+		[keys removeObject:@"updatedTime"]; 		
+		
 		return keys; 
 		// Aaron - memory leak ??
 	}
@@ -303,9 +416,10 @@ didStartElement:(NSString *)elementName
 		// reduce to a list of filenames .....
 		NSMutableArray* fileNames;
 		fileNames = [[NSMutableArray alloc] init];
+		
 		for (SoundBite *soundBite in currentSoundbites) {
-		 	NSLog(@" fileName: %@", [soundBite fileName]);
-			[fileNames addObject:[soundBite fileName]];
+		 	NSLog(@" fileName: %@", [soundBite objectForKey:@"fileName"]);
+			[fileNames addObject:[soundBite objectForKey:@"fileName"]];
 		}
 		
 		return fileNames;
@@ -327,7 +441,8 @@ didStartElement:(NSString *)elementName
 	return currentSoundbite;
 }
 - (void) setCurrentSoundbite:(SoundBite*) newCurrentSoundbite {
-	NSLog(@"new soundbite set - %@", [newCurrentSoundbite comments]);
+
+	NSLog(@"new soundbite set - %@", [newCurrentSoundbite objectForKey:@"comments"]);
 	currentSoundbite = newCurrentSoundbite;
 }
 

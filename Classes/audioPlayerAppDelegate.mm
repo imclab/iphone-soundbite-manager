@@ -28,24 +28,15 @@
 	//[window addSubview:tabBarController.view];
 
 }
+- (void) applicationWillResignActive:(UIApplication *)application {
+	
+	//[self applicationWillTerminate:application];
+	[myLibrary saveLibrary];
+}
+
 - (void)applicationWillTerminate:(UIApplication *)application{
 	
-	
 	NSLog(@"closing");
-	
-	  		 
-	UIAlertView *alert = [[UIAlertView alloc] 
-							  initWithTitle:@"Error" message:   
-							  @"testing"
-							  delegate:self cancelButtonTitle:@"OK" 
-							  otherButtonTitles:nil, nil];
-	[alert show];
-	[alert release];
-		
-		//return;
-	
-	// save the library .... 
-	[myLibrary saveLibrary];
 	
 }
 - (void)dealloc {
@@ -56,48 +47,7 @@
 	[myLibrary release];
     [super dealloc];
 }
-
-// ACTION SHEET methods ... for review/save dialog ...
-- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
-	
-	NSLog(@"action sheet button clicked");
-	
-    if (buttonIndex == 0) { 
-		NSLog(@"review"); 
-		[myAudioPlayer reviewRecorded];
-		[self showReviewPanel];
-
-    } else if (buttonIndex == 1) {
-		// Rerecord ...
-		NSLog(@"re record");
-		[self startRecording];
-    }
-	else if (buttonIndex == 2) {
-		// Save ...
-		NSLog(@"upload the answer");
-		
-		[downloader uploadAnswer];
-		
-    }
-	else if (buttonIndex == 3) {
-		// cancel ... do nothing
-		NSLog(@"cancelled"); 
-    }
-}
-- (void)showReviewPanel {
-	UIActionSheet *popupQuery = [[UIActionSheet alloc]
-								 initWithTitle:nil
-								 delegate:self
-								 cancelButtonTitle:@"Cancel"
-								 destructiveButtonTitle:nil
-								 otherButtonTitles:@"Review", @"Record", @"Upload", nil];
-	
-	popupQuery.actionSheetStyle = UIActionSheetStyleBlackOpaque;
-	//[popupQuery showInView:self.tabBarController.view];
-	[popupQuery release];
-	
-}
-
+ 
 // AUDIO :::::::::
 - (void) startRecording{
 	
@@ -108,6 +58,9 @@
 
 	[myAudioPlayer stopRecording];
 }
+- (void) reviewRecorded {
+	[myAudioPlayer reviewRecorded];
+}
 - (void) play:(NSString*) filePath {
 	
 	NSLog(@"trigger play");
@@ -117,12 +70,6 @@
 - (bool) isRecording {
 	
 	return [myAudioPlayer isRecording];
-}
-- (void) audioRecorderDidFinishRecording:(AVAudioRecorder *) aRecorder successfully:(BOOL)flag {
-	NSLog (@"audioRecorderDidFinishRecording:successfully:");
-	 
-	[self showReviewPanel];
-	 
 }
 - (void) setVolume:(float)newVolume {
 	
@@ -145,6 +92,10 @@
 	
 	
 }
+- (void) recordNewQuestion {
+	
+	
+}
 
 // DOWNLOAD / UPLOAD ::::::::
 - (void) triggerDownload:(NSURL*) newItem {
@@ -155,7 +106,11 @@
 	[myLibraryView refreshLibraryView];
 	
 }
- 
+- (void) uploadAnswer {
+	
+	[downloader uploadAnswer];
+}
+
 
 // CUSTOM GETTER/SETTER :::::
 - (NSArray*) getCurrentQuestionGroup {  

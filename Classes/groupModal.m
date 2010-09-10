@@ -38,8 +38,7 @@
 
 // this helps dismiss the keyboard then the "done" button is clicked
 
-- (BOOL)textFieldShouldReturn:(UITextField*) myTextField
-{
+- (BOOL)textFieldShouldReturn:(UITextField*) myTextField {
 	[myTextField resignFirstResponder];
 	
 	
@@ -74,7 +73,6 @@
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
-
 
 - (void)dealloc {
     [super dealloc];

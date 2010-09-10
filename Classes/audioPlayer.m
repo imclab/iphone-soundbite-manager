@@ -108,20 +108,8 @@
 	if(!audioData)
         NSLog(@"audio data: %@ %d %@", [err domain], [err code], [[err userInfo] description]);
 	
-	//[audioData setValue:[NSData dataWithContentsOfURL:url] forKey:editedFieldKey];       
-	//[recorder deleteRecording];
-	
-	// remove the file ...
-	//NSFileManager *fm = [NSFileManager defaultManager];
-	//err = nil;
-	//[fm removeItemAtPath:[url path] error:&err];
-	//if(err)
-	//  NSLog(@"File Manager: %@ %d %@", [err domain], [err code], [[err userInfo] description]);
-	
 	NSLog(@"File Recorded To: %@",recorderFilePath);
-	
-	// place it in a temp file ??? , and trigger modal dialog / review ....
-	
+	 
 }
 - (void) reviewRecorded {
 	
@@ -130,10 +118,7 @@
 }
 - (void) audioRecorderDidFinishRecording:(AVAudioRecorder *) aRecorder successfully:(BOOL)flag {
 	NSLog (@"audioRecorderDidFinishRecording:successfully:");
-	
-	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
-	[appDelegate showReviewPanel];
-	
+
 }
 - (void) play:(NSString*) filePath {
 	
