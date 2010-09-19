@@ -29,6 +29,7 @@
 
 - (void) audioRecorderDidFinishRecording:(AVAudioRecorder *) aRecorder successfully:(BOOL)flag;
 - (void) startRecording;
+- (void) recordNewQuestion;
 - (void) stopRecording;
 - (void) play:(NSString*)fileName; 
 - (bool) isRecording;

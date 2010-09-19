@@ -25,7 +25,7 @@
 @end
 
 
-@interface playViewController : UIViewController
+@interface playViewController : UIViewController <UITextFieldDelegate>
 {
 	
 	IBOutlet UIButton* playButton;
@@ -34,7 +34,8 @@
 	
 	IBOutlet UIButton* recButton; 
 	IBOutlet UISlider* volumeSlider;	
-	IBOutlet UILabel* answerLabel;
+	IBOutlet UILabel* answerLabel;	
+	IBOutlet UITextField* questionName;
 	
 	IBOutlet UITextView *comments;
 	
@@ -49,7 +50,7 @@
 
 - (IBAction)buttonPressed:(id)sender;
 - (IBAction)sliderMoved:(id)sender;
- 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField;
 - (void) timerCallback;
 
 @property (nonatomic, retain) UIButton *recButton; 
@@ -58,6 +59,7 @@
 @property (nonatomic, retain) UIButton *stopButton; 
 @property (nonatomic, retain) UISlider *volumeSlider; 
 @property (nonatomic, retain) UILabel *answerLabel; 
+@property (nonatomic, retain) UITextField *questionName; 
 @property (nonatomic, retain) UIPickerView *instrumentSelector; 
 @property (nonatomic, retain) UITextView *comments; 
 

@@ -113,9 +113,9 @@
 	NSLog(@"url: %@", lastUpdateTime);
 	NSLog(@"url: %@", [baseURL stringByAppendingString:lastUpdateTime]);
 
-	NSString *tete = [baseURL stringByAppendingString:[lastUpdateTime stringByReplacingOccurrencesOfString:@" " withString:@"%20"] ];
+	NSString *conditionedString = [baseURL stringByAppendingString:[lastUpdateTime stringByReplacingOccurrencesOfString:@" " withString:@"%20"] ];
 	
-	NSURL* url = [NSURL URLWithString:tete];
+	NSURL* url = [NSURL URLWithString:conditionedString];
 	
 	NSLog(@"url: %@", url);
 	
@@ -292,72 +292,12 @@ didStartElement:(NSString *)elementName
 	
 	NSString *libFile = [NSHomeDirectory() stringByAppendingPathComponent:@"/Documents/Library"];
 	
-	//NSMutableDictionary* copy = [[NSMutableDictionary alloc] init];
- 
 	NSDictionary *copy = [[NSDictionary alloc] initWithDictionary:libraryArray copyItems:YES];
-
-	/*
-	// or all sets .....
-	for (id qset in [libraryArray allKeys]) {
-		 
-		NSLog(@"all keys: %@", qset);
-		
-		if (qset == @"updatedTime" || qset == NULL || qset == @"") continue;
-		
-		//[copy setObject:[getthevalue ...] forKey:@"updatedTime"];
-		
-		// copy to an IMMUTABLE arry .....
-		NSArray* soundbitesArray = [[NSArray alloc] initWithArray:[libraryArray objectForKey:qset] copyItems:YES];
-		
-		//NSMutableDictionary* copyOfQSet = [[NSMutableDictionary alloc] init];
-		
-		NSEnumerator *e = [soundbitesArray objectEnumerator];
-		
-		id soundBite;
-		while (soundBite = [e nextObject]) { 
-			
-			//NSLog(@"%@", [soundBite getDictionary]);
-			
-			//[soundbitesArray setObject:[soundBite getDictionary] forKey:[soundBite getID]];
-			 
-		}
-		
-		//[soundbitesTemp release];
-		//[soundbitesArray retain];
-		
-		[copy setObject:soundbitesArray forKey:qset];
-		//[qsets addObjectsFromArray:[soundbitesArray copyWithZone:nil]]; // add immutables to a mutable .....
-		
-	}
-	*/
-	
-	//NSArray* allSets = [[NSArray alloc] initWithArray:qsets copyItems:YES];  // now copy all the sets to an immutable	
-	//[qsets release];
-	
-	// add the immutable array to the Mutable dictionary .....
-	 
-	//NSDictionary *test = [[NSDictionary alloc] initWithArray:qsets copyItems:YES];
-		
-		//for (id qset in setsArray) {
-			 
-		//	NSMutableArray* soundbitesArray = [[NSArray alloc] initWithArray:[libraryArray objectForKey:qset] copyItems:YES];
-			 
-			
-		//}
-	 
-		//[newArray initWithArray:[libraryArray objectForKey:key] copyItems:YES];
-		
-		//[copy setObject:newArray forKey:key];
-	
-	//}
-	  
-	//NSDictionary *staticDict = [[NSDictionary alloc] initWithDictionary:libraryArray copyItems:YES];
-	
+ 
 	BOOL worked = [copy writeToFile:libFile atomically:YES]; 	
 	
 	NSLog(@"%@",copy);
-	//[staticDict print];
-	
+	 
 	if (worked == false)
 	{
 		NSLog(@"unable to save library ..");
@@ -391,7 +331,7 @@ didStartElement:(NSString *)elementName
 
 // :::::: Library management
 ////////////////////////////////////////////////////////////////
-- (NSArray*) getCurrentQuestionGroupArray {
+- (NSArray*) getCurrentQuestionGroupsArray {
 	// if we are at the root node ...
 	if ([currentGroup length] == 0) // if the string is empty, show all groups ....
 	{
@@ -414,22 +354,21 @@ didStartElement:(NSString *)elementName
 		[currentSoundbites addObjectsFromArray:[libraryArray objectForKey:currentGroup]]; 		
 		
 		// reduce to a list of filenames .....
-		NSMutableArray* fileNames;
-		fileNames = [[NSMutableArray alloc] init];
+		NSMutableArray* names;
+		names = [[NSMutableArray alloc] init];
 		
 		for (SoundBite *soundBite in currentSoundbites) {
-		 	NSLog(@" fileName: %@", [soundBite objectForKey:@"fileName"]);
-			[fileNames addObject:[soundBite objectForKey:@"fileName"]];
+		 	NSLog(@" q name: %@", [soundBite objectForKey:@"name"]);
+			[names addObject:[soundBite objectForKey:@"name"]];
 		}
 		
-		return fileNames;
+		return names;
 	}
 	
 	
 	
-} 
- 
-- (NSMutableArray*)getCurrentSoundBiteArray {
+}  
+- (NSMutableArray*)getCurrentSoundBitesArray {
 	
 	NSMutableArray *currentSoundbites = [[NSMutableArray alloc] init];
 	[currentSoundbites addObjectsFromArray:[libraryArray objectForKey:currentGroup]]; 		
@@ -437,12 +376,13 @@ didStartElement:(NSString *)elementName
 	return currentSoundbites;
 	
 }
-- (SoundBite*) getCurrentSoundBite {
+
+- (id) getCurrentSoundBite {
 	return currentSoundbite;
 }
 - (void) setCurrentSoundbite:(SoundBite*) newCurrentSoundbite {
 
-	NSLog(@"new soundbite set - %@", [newCurrentSoundbite objectForKey:@"comments"]);
+	NSLog(@"new soundbite set");
 	currentSoundbite = newCurrentSoundbite;
 }
 
@@ -460,6 +400,28 @@ didStartElement:(NSString *)elementName
 	
 	// refresh ??
 }
+- (void) createNewSoundbite {
+	
+	NSLog(@"library - new soundbite");
+	
+	SoundBite *newSoundbite = [[SoundBite alloc] init];
+	 
+	//newSoundbite.fileName = [fileName copy];
+	newSoundbite.parentQuestionOrSet = [self getCurrentQuestionGroupName];
+	newSoundbite.questionName = @"some name"; 
+	newSoundbite.comments = @"no comments";	
+	
+	// Pull up the appropriate question set (array) and add this
+	// note *** if this is an answer ... the "questionset" is the questionID it maps too .....
+	NSMutableArray *tempArray = [[NSMutableArray alloc] init];
+	[tempArray addObjectsFromArray:[libraryArray objectForKey:[self getCurrentQuestionGroupName]]]; // existing set
+	[tempArray addObject:[newSoundbite getDictionary]]; // add the new one ....
+	[libraryArray setObject:tempArray forKey:[self getCurrentQuestionGroupName]]; // set as the new set ...
+	[tempArray release];
+	
+	[self setCurrentSoundbite:newSoundbite];
+	
+}
 
 - (NSString*) getCurrentGroup {
 	return currentGroup;
@@ -468,7 +430,15 @@ didStartElement:(NSString *)elementName
 - (void) setCurrentGroup:(NSString*) newGroup {
 	currentGroup = newGroup;
 }
- 
+
+
+- (void) setQuestionName:(NSString*) newName
+{
+	
+	NSLog(@"asdfasdfasf");
+	currentSoundbite.questionName = @"testtttt";
+	
+}
 
 @end
  

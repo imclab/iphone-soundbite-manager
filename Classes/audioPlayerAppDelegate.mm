@@ -92,11 +92,7 @@
 	
 	
 }
-- (void) recordNewQuestion {
-	
-	
-}
-
+ 
 // DOWNLOAD / UPLOAD ::::::::
 - (void) triggerDownload:(NSURL*) newItem {
 	[downloader triggerDownload:newItem];
@@ -110,12 +106,17 @@
 	
 	[downloader uploadAnswer];
 }
-
+- (void) saveSoundbiteToLibrary {
+	
+	// whatever the current soundbite is
+	
+	
+}
 
 // CUSTOM GETTER/SETTER :::::
 - (NSArray*) getCurrentQuestionGroup {  
 	// get the current question group .....
-	return [myLibrary getCurrentQuestionGroupArray];
+	return [myLibrary getCurrentQuestionGroupsArray];
 }
 - (NSString*) getCurrentQuestionGroupName {  
 	// get the current question group ..... 
@@ -143,7 +144,7 @@
 }
 - (NSMutableArray*) getSoundBiteArray {
 	
-	[myLibrary getCurrentSoundBiteArray];
+	[myLibrary getCurrentSoundBitesArray];
 	
 }
 -(SoundBite*) getCurrentSoundbite {
@@ -151,14 +152,29 @@
 }
 - (void) setCurrentSoundbite:(SoundBite*) currentSoundbite {
 		[myLibrary setCurrentSoundbite:currentSoundbite];
+	 
 }
 
-- (void) createQuestionGroup:(NSString*) newGroupName
-{
+- (void) createQuestionGroup:(NSString*) newGroupName {
 	NSLog(@"app del - create new group");
 	
 	[myLibrary createNewGroup:newGroupName];
 	
+}
+- (void) createNewSoundbite {
+	NSLog(@"app del - create new question");
+	
+	[myLibrary createNewSoundbite];
+	
+}
+
+
+
+- (void) setQuestionName:(NSString*) newName
+{
+	NSLog(@"changing q name");
+	[myLibrary setQuestionName:newName];
+	 
 }
 
 

@@ -13,13 +13,12 @@
 -(id) init {
 	
 	fileName = @"filename";
-	name = @"Qname";
+	questionName = @"no name";
 	sqlID = @"none";
 	
 	return self;
 }
 
- 
 -(id)copyWithZone:(NSZone *)zone
 {
 	
@@ -29,14 +28,13 @@
 	SoundBite *another = [[SoundBite alloc] init];
 		
 	another->fileName = [fileName copyWithZone: zone];
-	another->name = [name copyWithZone: zone]; 
+	another->questionName = [questionName copyWithZone: zone]; 
 	another->sqlID = [sqlID copyWithZone: zone]; 
 	another->parentQuestionOrSet = [parentQuestionOrSet copyWithZone: zone];
 	another->comments = [comments copyWithZone: zone];
 	
 	return another;
 }
-
 
 -(id) getDictionary
 {
@@ -45,7 +43,7 @@
 	NSMutableDictionary *newValue = [[NSMutableDictionary alloc] init];
 	
 	[newValue setObject:fileName forKey:@"fileName"]; 
-	[newValue setObject:name forKey:@"name"]; 
+	[newValue setObject:questionName forKey:@"name"]; 
 	[newValue setObject:sqlID forKey:@"sqlID"];  
 	[newValue setObject:parentQuestionOrSet forKey:@"parentQuestionOrSet"]; 
 	[newValue setObject:comments forKey:@"comments"];  
@@ -54,13 +52,41 @@
 	
 }
 
--(NSString*) getID
-{
+-(NSString*) getID {
 	return sqlID; 
 }
 
+-(NSString*) getName {
+	
+	return questionName;
+}
+
+
+-(void) testing: (NSString*) test
+{
+	questionName = @"asdasdasdfsdf";
+
+}
+
+
+/*
+-(NSString*)setName:(NSString*)newName {
+	name = newName;
+}
+
+-(NSString*) getComments {
+	return comments;
+}
+
+-(NSString*) setComments:(NSString*)newComments {
+	comments = newComments;
+}
+ */
+
+
+
 @synthesize sqlID;
-@synthesize name;
+@synthesize questionName;
 @synthesize fileName; 
 @synthesize parentQuestionOrSet; 
 @synthesize comments;

@@ -42,7 +42,7 @@
 - (bool) isRecording;
 - (float) getInputOrOutputLevel;
 - (void) reviewRecorded;
-- (void) recordNewQuestion;
+- (void) createNewSoundbite;
 
 ///////////////////////////////// LIBRARY
 - (NSString *) getCurrentQuestionFile;
@@ -55,8 +55,12 @@
 -(SoundBite*) getCurrentSoundbite;
 - (void) setCurrentSoundbite:(SoundBite*) currentSoundbite;
 
+- (void) setQuestionName:(NSString*) newName;
+
+
 ///////////////////////////////// UPLOAD / DOWNLOAD
 - (void) triggerDownload:(NSURL*) newItem;
 - (void) uploadAnswer;
+- (void) saveSoundbiteToLibrary;	
 
 @end

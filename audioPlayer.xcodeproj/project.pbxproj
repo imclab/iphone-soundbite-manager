@@ -37,6 +37,8 @@
 		36C8086B11CAA26A0021B247 /* Hi-Hat6.wav in Resources */ = {isa = PBXBuildFile; fileRef = 36C8086711CAA26A0021B247 /* Hi-Hat6.wav */; };
 		36C8086C11CAA26A0021B247 /* Hi-Hat7.wav in Resources */ = {isa = PBXBuildFile; fileRef = 36C8086811CAA26A0021B247 /* Hi-Hat7.wav */; };
 		36CE40FA11DE5AB5009962A1 /* downloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CE40F911DE5AB5009962A1 /* downloadManager.m */; };
+		36D96552123D45D2002CB2E2 /* newQuestionModal.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D96551123D45D2002CB2E2 /* newQuestionModal.m */; };
+		36D96654123D4E64002CB2E2 /* newQuestionModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36D96653123D4E64002CB2E2 /* newQuestionModal.xib */; };
 		36E5F98C11EB7A060056E823 /* soundBite.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E5F98B11EB7A060056E823 /* soundBite.m */; };
 		36EB8E84119CA16000E343E4 /* NLPDownloadWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36EB8E83119CA16000E343E4 /* NLPDownloadWebView.m */; };
 		36FBF9C8119CC26400491F35 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 36FBF98B119CC26400491F35 /* ASIAuthenticationDialog.m */; };
@@ -94,6 +96,9 @@
 		36C8086811CAA26A0021B247 /* Hi-Hat7.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Hi-Hat7.wav"; sourceTree = "<group>"; };
 		36CE40F811DE5AB5009962A1 /* downloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = downloadManager.h; sourceTree = "<group>"; };
 		36CE40F911DE5AB5009962A1 /* downloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = downloadManager.m; sourceTree = "<group>"; };
+		36D96550123D45D2002CB2E2 /* newQuestionModal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newQuestionModal.h; sourceTree = "<group>"; };
+		36D96551123D45D2002CB2E2 /* newQuestionModal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = newQuestionModal.m; sourceTree = "<group>"; };
+		36D96653123D4E64002CB2E2 /* newQuestionModal.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = newQuestionModal.xib; path = Classes/newQuestionModal.xib; sourceTree = "<group>"; };
 		36E5F98A11EB7A060056E823 /* soundBite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = soundBite.h; sourceTree = "<group>"; };
 		36E5F98B11EB7A060056E823 /* soundBite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = soundBite.m; sourceTree = "<group>"; };
 		36EB8E82119CA16000E343E4 /* NLPDownloadWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NLPDownloadWebView.h; path = Classes/NLPDownloadWebView.h; sourceTree = "<group>"; };
@@ -198,6 +203,7 @@
 				361F8A2B11A3099100178E9B /* library.png */,
 				361F8A2C11A3099100178E9B /* play.png */,
 				363FA173121DBB0900604F14 /* groupModal.xib */,
+				36D96653123D4E64002CB2E2 /* newQuestionModal.xib */,
 				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
 				364D510F11948969006396FC /* libraryView.xib */,
 				362EA7501199C443006174AF /* downloadView.xib */,
@@ -258,6 +264,8 @@
 				368449A11210B5FC000D01BB /* questionSet.m */,
 				363FA171121DBB0900604F14 /* groupModal.h */,
 				363FA172121DBB0900604F14 /* groupModal.m */,
+				36D96550123D45D2002CB2E2 /* newQuestionModal.h */,
+				36D96551123D45D2002CB2E2 /* newQuestionModal.m */,
 			);
 			name = "view Controllers";
 			sourceTree = "<group>";
@@ -371,6 +379,7 @@
 				36C8086B11CAA26A0021B247 /* Hi-Hat6.wav in Resources */,
 				36C8086C11CAA26A0021B247 /* Hi-Hat7.wav in Resources */,
 				363FA175121DBB0900604F14 /* groupModal.xib in Resources */,
+				36D96654123D4E64002CB2E2 /* newQuestionModal.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +409,7 @@
 				36E5F98C11EB7A060056E823 /* soundBite.m in Sources */,
 				368449A21210B5FC000D01BB /* questionSet.m in Sources */,
 				363FA174121DBB0900604F14 /* groupModal.m in Sources */,
+				36D96552123D45D2002CB2E2 /* newQuestionModal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

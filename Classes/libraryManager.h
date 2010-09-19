@@ -25,20 +25,22 @@
 - (void) updateLibrary;
 - (void) refreshLibrary;
 
-- (NSArray*) getCurrentQuestionGroupArray;
-- (NSMutableArray*)getCurrentSoundBiteArray;
+- (NSMutableArray*)getCurrentQuestionGroupsArray;
+- (NSMutableArray*)getCurrentSoundBitesArray;
 
 - (void) setAnswerPath:(NSString*) answerPath;
 
-- (SoundBite*) getCurrentSoundBite;
+- (id) getCurrentSoundBite;
 - (void) setCurrentSoundbite:(SoundBite*) newCurrentSoundbite;
 
 - (NSString*) getCurrentQuestionGroupName;
 
 - (void) createNewGroup:(NSString*) newGroupName;
+- (void) createNewSoundbite;
 
 - (NSString*) getCurrentGroup;
 - (void) getCurrentGroup:(NSString*) newGroup;
 
+- (void) setQuestionName:(NSString*) newName;
 
 @end

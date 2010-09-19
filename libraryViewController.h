@@ -9,9 +9,7 @@
 #import <Foundation/Foundation.h> 
  
 #import "soundBite.h"
-
 #import "questionSet.h"
-
 
 @interface libraryViewController : UITableViewController {
 	 

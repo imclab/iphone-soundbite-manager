@@ -7,8 +7,8 @@
 //
 
 #import "audioPlayer.h"
-
 #import "audioPlayerAppDelegate.h"
+#import "soundBite.h"
 
 @implementation audioPlayer
 
@@ -77,7 +77,7 @@
 - (void) startRecording{
 	
 	//prepare to record
-	[recorder setDelegate:self];
+	//[recorder setDelegate:self];
 	[recorder prepareToRecord];
 	recorder.meteringEnabled = YES;
 	
@@ -111,6 +111,13 @@
 	NSLog(@"File Recorded To: %@",recorderFilePath);
 	 
 }
+- (void) recordNewQuestion {
+	
+	//currentSoundbite = 0;
+	
+	
+	
+}
 - (void) reviewRecorded {
 	
 	[self play:recorderFilePath];
@@ -124,8 +131,7 @@
 	
 	NSLog(@"play %@",filePath);
 	
-	//return;
-	NSString *soundFilePath = filePath;// [[NSBundle mainBundle] pathForResource:fileName ofType:@"wav" inDirectory:@"audio files"];
+	NSString *soundFilePath = filePath;
 	NSURL *soundFileURL = [[NSURL alloc] initFileURLWithPath: soundFilePath];
 	
 	[appSoundPlayer release];

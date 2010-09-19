@@ -8,11 +8,13 @@
 #import <Foundation/Foundation.h> 
 
 #import "libraryManager.h"
-NSArray* libraryArray;
+NSArray* questionNamesArray;
 
 #import "QuestionSet.h"
 #import "audioPlayerAppDelegate.h"
 #import "playViewController.h"
+
+#import "newQuestionModal.h"
 
 @implementation QuestionSetView
 
@@ -33,7 +35,7 @@ NSArray* libraryArray;
 	
 	// init the library Array
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
-	libraryArray = [appDelegate getCurrentQuestionGroup];
+	questionNamesArray = [appDelegate getCurrentQuestionGroup];
 	
 	[self refreshLibraryView];
 }
@@ -54,7 +56,7 @@ NSArray* libraryArray;
 - (void) refreshLibraryView
 { 
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
-	libraryArray = [appDelegate getCurrentQuestionGroup];
+	questionNamesArray = [appDelegate getCurrentQuestionGroup];
 	[self.view reloadData];
 }
 
@@ -65,7 +67,7 @@ NSArray* libraryArray;
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [libraryArray count];
+    return [questionNamesArray count];
 }
 
 // Customize the appearance of table view cells.
@@ -78,7 +80,7 @@ NSArray* libraryArray;
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
 	
-	cell.textLabel.text = [[[libraryArray objectAtIndex:indexPath.row] lastPathComponent] stringByDeletingPathExtension];
+	cell.textLabel.text = [[[questionNamesArray objectAtIndex:indexPath.row] lastPathComponent] stringByDeletingPathExtension];
 	
     return cell;
 }
@@ -91,13 +93,13 @@ NSArray* libraryArray;
 	[currentSoundbites addObjectsFromArray:[appDelegate getSoundBiteArray]]; 		
 	
 	SoundBite *current = [[SoundBite alloc] init];
-	current = [currentSoundbites objectAtIndex:indexPath.row];
+	current = [currentSoundbites objectAtIndex:indexPath.row]; // custom copy routine .... should get all fields ...
 	
-	NSLog(@"current %@", [current  objectForKey:@"sqlID"]);
+	NSLog(@"current %@", [current objectForKey:@"sqlID"]);
 	[appDelegate setCurrentSoundbite:current];
 	
 	// load the appropriate file to the midiPlayer
-	NSString *fileName = [libraryArray objectAtIndex:indexPath.row]; //[[NSBundle mainBundle] pathForResource:testin ofType:@"mid"];
+	NSString *fileName = [questionNamesArray objectAtIndex:indexPath.row]; //[[NSBundle mainBundle] pathForResource:testin ofType:@"mid"];
 	NSString *dbFilePath = [[NSBundle mainBundle] pathForResource:[fileName stringByDeletingPathExtension] ofType:@"wav"];
 	
 	// since we have files in the main bundle, and ones that are downloaded to the doc folder ....
@@ -114,10 +116,9 @@ NSArray* libraryArray;
 	// also set the currentID .... in case we need to upload .... 	
 	[appDelegate play:dbFilePath];
 	
-	// switch view ....
-	//[tabBar setSelectedIndex:1];
-	playViewController* test = [[playViewController alloc] init];
-	[self.navigationController pushViewController:test animated:YES]; 
+	// switch view .... 
+	playViewController* player = [[playViewController alloc] init];
+	[self.navigationController pushViewController:player animated:YES]; 
 	
 	
 }
@@ -128,11 +129,17 @@ NSArray* libraryArray;
 	
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
 	
-	[appDelegate recordNewQuestion];
+	// add a new soundbite to the library ...
+	[appDelegate createNewSoundbite];
+	
+	// this will set the question name (using the currentQ)
+	[self presentModalViewController:[[newQuestionModal alloc]init] animated:YES];
+	
+	
 	
 	// switch view .... 
-	playViewController* playView = [[playViewController alloc] init];
-	[self.navigationController pushViewController:playView animated:YES]; 
+	//playViewController* playView = [[playViewController alloc] init];
+	//[self.navigationController pushViewController:playView animated:YES]; 
 	
 	
 	

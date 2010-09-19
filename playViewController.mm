@@ -43,7 +43,6 @@
 
 //////////////////////////////////////////////////
 @implementation playViewController
-
 @synthesize playButton; 
 @synthesize playAnswerButton; 
 @synthesize stopButton; 
@@ -70,9 +69,11 @@
     }
 	else if (buttonIndex == 2) {
 		// Save ...
-		NSLog(@"upload the answer");
+		NSLog(@"save the answer");
 		
-		[appDelegate uploadAnswer];
+		//[appDelegate saveSoundbiteToLibrary];
+		
+		//[appDelegate uploadAnswer];
 		
     }
 	else if (buttonIndex == 3) {
@@ -105,35 +106,7 @@
 										   userInfo:nil
 											repeats: YES];
 	
-	
-	// set the comments field text ...
-	
-	
-	// check and see if there is an answer, disable the playAnswer button if not ...
-	
-	
-	//if (answerFile)
-	/*
-	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
-	
-	SoundBite *soundBite = [appDelegate getCurrentSoundbite];
-	[comments setText:[soundBite comments]];
-	
-	NSLog(@"bite %@", [soundBite answerFile]);
-	
-	if ([[soundBite answerFile] length] != 0)
-	{
-		[playAnswerButton setEnabled:true];
-		[answerLabel setText:[soundBite answerFile]];
-	}
-	else 
-	{
-		[playAnswerButton setEnabled:false];
-		[answerLabel setText:@""];
-	}
-	 */
-	
-	
+	 
 }
 
 -(void)viewDidAppear:(BOOL)animated { 
@@ -164,7 +137,14 @@
 		[playAnswerButton setEnabled:false];
 		[answerLabel setText:@""];
 	}
-
+	
+	
+	NSString *Qname = [soundBite objectForKey:@"questionName"];
+	[questionName setText:Qname];
+	
+	//NSString *Qname = [soundBite objectForKey:@"questionName"];
+	//[questionName setText:Qname];
+	
 	
 }
 
@@ -243,10 +223,30 @@
 	
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+	
+	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+	
+	
+	[appDelegate setQuestionName:@"testttt"];
+	
+	//[current setValue:@"teete" forKey:questionName];
+	
+	//[current testing:@"asdfasdf"];
+	
+	 //NSLog(@"ASD %@", [textField text]);
+	//current.questionName = @"adasasdasd"; //[[textField text] copy];
+	
+	[textField resignFirstResponder];
+	
+    return YES;
+}
+
 -(void) timerCallback {
 	
 	[myLevelIndicator setNeedsDisplay];
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
+	
 	
 	NSString *title = [recButton titleForState:UIControlStateNormal];
 	

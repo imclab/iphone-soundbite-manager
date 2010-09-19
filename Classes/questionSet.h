@@ -14,7 +14,6 @@
 	
 	UIActivityIndicatorView *activityIndicator;
 	IBOutlet UITabBarController* tabBar; 
-	NSArray *tableDataSource; // current data ....
 	
 	UIBarButtonItem *newQuestionButton; 
 } 
