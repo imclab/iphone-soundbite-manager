@@ -114,17 +114,20 @@
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
 	
 	SoundBite *soundBite = [appDelegate getCurrentSoundbite];
-	[comments setText:[soundBite objectForKey:@"comments"]];
 	
-	NSLog(@"bite %@", [soundBite objectForKey:@"answerFile"]);
+	[comments setText:soundBite.comments];
 	
-	if ([[soundBite objectForKey:@"answerFile"] length] != 0)
+	//[comments setText:[soundBite objectForKey:@"comments"]];
+	
+	NSLog(@"bite %@", soundBite.answerFile);
+	
+	if ([soundBite.answerFile length] != 0)
 	{
 		[playAnswerButton setEnabled:true];
 		
 		NSDateFormatter *df = [[NSDateFormatter alloc] init];
 		
-		NSTimeInterval timeStamp = [[[soundBite objectForKey:@"answerFile"] stringByDeletingPathExtension] doubleValue];
+		NSTimeInterval timeStamp = [[soundBite.answerFile stringByDeletingPathExtension] doubleValue];
 		
 		NSDate *myDate = [NSDate dateWithTimeIntervalSinceReferenceDate: timeStamp];
 		
@@ -139,12 +142,8 @@
 	}
 	
 	
-	NSString *Qname = [soundBite objectForKey:@"questionName"];
+	NSString *Qname = soundBite.questionName;
 	[questionName setText:Qname];
-	
-	//NSString *Qname = [soundBite objectForKey:@"questionName"];
-	//[questionName setText:Qname];
-	
 	
 }
 
@@ -227,8 +226,7 @@
 	
 	audioPlayerAppDelegate *appDelegate = (audioPlayerAppDelegate *)[[UIApplication sharedApplication] delegate];
 	
-	
-	[appDelegate setQuestionName:@"testttt"];
+	[appDelegate setQuestionName:[textField text]];
 	
 	//[current setValue:@"teete" forKey:questionName];
 	

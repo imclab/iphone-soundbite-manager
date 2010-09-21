@@ -200,13 +200,18 @@ didStartElement:(NSString *)elementName
 			QorA.parentQuestionOrSet = [questionSet copy];
 			QorA.sqlID = [questionID copy];
 			QorA.comments = [comments copy];	
+			QorA.questionName = [fileName copy];
+
 			//QorA.answerFile = [answerFileName copy];			
 			
 			// Pull up the appropriate question set (array) and add this
 			// note *** if this is an answer ... the "questionset" is the questionID it maps too .....
 			NSMutableArray *tempArray = [[NSMutableArray alloc] init];
 			[tempArray addObjectsFromArray:[libraryArray objectForKey:questionSet]]; // existing set
-			[tempArray addObject:[QorA getDictionary]]; // add the new one ....
+			
+			[tempArray addObject:QorA];
+			//[tempArray addObject:[QorA getDictionary]]; // add the new one ....
+			
 			[libraryArray setObject:tempArray forKey:questionSet]; // set as the new set ...
 			[tempArray release];
 			
@@ -294,6 +299,9 @@ didStartElement:(NSString *)elementName
 	
 	NSDictionary *copy = [[NSDictionary alloc] initWithDictionary:libraryArray copyItems:YES];
  
+	
+	
+	
 	BOOL worked = [copy writeToFile:libFile atomically:YES]; 	
 	
 	NSLog(@"%@",copy);
@@ -358,8 +366,16 @@ didStartElement:(NSString *)elementName
 		names = [[NSMutableArray alloc] init];
 		
 		for (SoundBite *soundBite in currentSoundbites) {
-		 	NSLog(@" q name: %@", [soundBite objectForKey:@"name"]);
-			[names addObject:[soundBite objectForKey:@"name"]];
+		 	//NSLog(@" q name: %@", [soundBite objectForKey:@"questionName"]);
+			
+			//NSLog(@" q name: %@", soundBite.questionName);
+			
+			[names addObject:soundBite.questionName];
+			
+			
+			//NSLog(@" name %@", soundBite.questionName);
+			
+			//[names addObject:[soundBite objectForKey:@"questionName"]];
 		}
 		
 		return names;
@@ -432,11 +448,11 @@ didStartElement:(NSString *)elementName
 }
 
 
-- (void) setQuestionName:(NSString*) newName
-{
+- (void) setQuestionName:(NSString*) newName {
 	
-	NSLog(@"asdfasdfasf");
-	currentSoundbite.questionName = @"testtttt";
+	NSLog(@"lib man ... %@" , newName);
+	
+	currentSoundbite.questionName = [newName copy];
 	
 }
 

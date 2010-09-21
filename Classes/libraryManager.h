@@ -19,7 +19,8 @@
 	// STATE variables .... //////////
 	NSString *currentGroup; 
 	
-	SoundBite* currentSoundbite;
+	SoundBite *currentSoundbite;
+	 
 }
 
 - (void) updateLibrary;
@@ -28,7 +29,7 @@
 - (NSMutableArray*)getCurrentQuestionGroupsArray;
 - (NSMutableArray*)getCurrentSoundBitesArray;
 
-- (void) setAnswerPath:(NSString*) answerPath;
+//- (void) setAnswerPath:(NSString*) answerPath;
 
 - (id) getCurrentSoundBite;
 - (void) setCurrentSoundbite:(SoundBite*) newCurrentSoundbite;
@@ -38,7 +39,7 @@
 - (void) createNewGroup:(NSString*) newGroupName;
 - (void) createNewSoundbite;
 
-- (NSString*) getCurrentGroup;
+//- (NSString*) getCurrentGroup;
 - (void) getCurrentGroup:(NSString*) newGroup;
 
 - (void) setQuestionName:(NSString*) newName;

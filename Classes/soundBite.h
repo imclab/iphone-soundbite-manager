@@ -17,6 +17,7 @@
 	NSString *fileName;
 	NSString *parentQuestionOrSet; // the set of questions this belongs too ... or the ID of a question, if this is an answer ...
 	NSString *comments;
+	NSString *answerFile;
 	
 }
 
@@ -30,14 +31,13 @@
 -(NSString*) setName:(NSString*)newName;
 -(NSString*) getComments;
 -(NSString*) setComments:(NSString*)newComments;
-*/
-
--(void) testing: (NSString*) test;
+*/ 
 
 @property(readwrite, assign)  NSString *sqlID;
 @property(readwrite, assign)  NSString *questionName;  
 @property(readwrite, assign)  NSString *fileName;
 @property(readwrite, assign)  NSString *parentQuestionOrSet; 
 @property(readwrite, assign)  NSString *comments;
+@property(readwrite, assign)  NSString *answerFile;
 
 @end

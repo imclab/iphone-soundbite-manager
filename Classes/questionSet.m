@@ -8,7 +8,7 @@
 #import <Foundation/Foundation.h> 
 
 #import "libraryManager.h"
-NSArray* questionNamesArray;
+NSMutableArray* questionNamesArray;
 
 #import "QuestionSet.h"
 #import "audioPlayerAppDelegate.h"
@@ -80,7 +80,11 @@ NSArray* questionNamesArray;
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
 	
-	cell.textLabel.text = [[[questionNamesArray objectAtIndex:indexPath.row] lastPathComponent] stringByDeletingPathExtension];
+	//cell.textLabel.text = [[[questionNamesArray objectAtIndex:indexPath.row] lastPathComponent] stringByDeletingPathExtension];
+	
+	//SoundBite* test =  [questionNamesArray objectAtIndex:indexPath.row];
+	
+	cell.textLabel.text = [questionNamesArray objectAtIndex:indexPath.row];
 	
     return cell;
 }
@@ -95,7 +99,9 @@ NSArray* questionNamesArray;
 	SoundBite *current = [[SoundBite alloc] init];
 	current = [currentSoundbites objectAtIndex:indexPath.row]; // custom copy routine .... should get all fields ...
 	
-	NSLog(@"current %@", [current objectForKey:@"sqlID"]);
+	//NSLog(@"current %@", [current objectForKey:@"sqlID"]); // dictionary method 
+	NSLog(@"current %@", current.sqlID);
+	
 	[appDelegate setCurrentSoundbite:current];
 	
 	// load the appropriate file to the midiPlayer
@@ -111,7 +117,8 @@ NSArray* questionNamesArray;
 	}
 	
 	// set the filename, which is used to tell te player what to play
-	[appDelegate setCurrentQuestion:fileName withID:[current objectForKey:@"sqlID"]];
+	//[appDelegate setCurrentQuestion:fileName withID:[current objectForKey:@"sqlID"]]; dictionary method
+	[appDelegate setCurrentQuestion:fileName withID:current.sqlID];  	
 	
 	// also set the currentID .... in case we need to upload .... 	
 	[appDelegate play:dbFilePath];

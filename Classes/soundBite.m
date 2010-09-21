@@ -16,6 +16,8 @@
 	questionName = @"no name";
 	sqlID = @"none";
 	
+	answerFile = @"not answered";
+	
 	return self;
 }
 
@@ -42,8 +44,8 @@
 	
 	NSMutableDictionary *newValue = [[NSMutableDictionary alloc] init];
 	
-	[newValue setObject:fileName forKey:@"fileName"]; 
-	[newValue setObject:questionName forKey:@"name"]; 
+	[newValue setObject:fileName forKey:@"fileName"];   
+	[newValue setObject:questionName forKey:@"questionName"]; 
 	[newValue setObject:sqlID forKey:@"sqlID"];  
 	[newValue setObject:parentQuestionOrSet forKey:@"parentQuestionOrSet"]; 
 	[newValue setObject:comments forKey:@"comments"];  
@@ -60,36 +62,15 @@
 	
 	return questionName;
 }
-
-
--(void) testing: (NSString*) test
-{
-	questionName = @"asdasdasdfsdf";
-
-}
-
-
-/*
--(NSString*)setName:(NSString*)newName {
-	name = newName;
-}
-
--(NSString*) getComments {
-	return comments;
-}
-
--(NSString*) setComments:(NSString*)newComments {
-	comments = newComments;
-}
- */
-
-
+ 
 
 @synthesize sqlID;
 @synthesize questionName;
 @synthesize fileName; 
 @synthesize parentQuestionOrSet; 
 @synthesize comments;
+@synthesize answerFile
+;
 
 @end
 
